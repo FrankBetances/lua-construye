@@ -1,0 +1,37 @@
+{
+  "skill": "lua-construye-director",
+  "test_cases": [
+    {
+      "name": "jardin_esferas",
+      "input": "Diseña el set ‘Lúa Camiños: El jardín de las esferas’ con ambas variantes",
+      "assertions": [
+        "Define mundo y papel de Lúa",
+        "Inventario con piezas núcleo + Valeria + Descubre",
+        "Retos de rehabilitación (hápticos/prensión/soplo)",
+        "Retos de segundo idioma con TPR inglés",
+        "JSON bilingüe gl/es válido para assets/content/steam/",
+        "Respeta EN 71-1 y niño no toca pantalla"
+      ]
+    },
+    {
+      "name": "expansion_mundo",
+      "input": "Expande el mundo de Lúa Camiños con un nuevo set de rampas y giros",
+      "assertions": [
+        "Mantiene interoperabilidad mecánica 31,80 mm",
+        "Añade piezas específicas de ambas gamas",
+        "Incluye siguiente expansión sugerida",
+        "Formato de salida completo"
+      ]
+    },
+    {
+      "name": "solo_rehab",
+      "input": "Crea un mini-set solo de rehabilitación para prensión bimanual con Lúa",
+      "assertions": [
+        "Prioriza Gama Valeria",
+        "Aún menciona variante idioma o indica cómo expandirla",
+        "Piezas > 31,75 mm",
+        "Adulto opera la app"
+      ]
+    }
+  ]
+}

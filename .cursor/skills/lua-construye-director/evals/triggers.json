@@ -1,0 +1,11 @@
+{
+  "skill": "lua-construye-director",
+  "test_cases": [
+    {"input": "Diseña un set STEAM para Lúa Construye con rehabilitación y segundo idioma", "should_trigger": true},
+    {"input": "Expande el mundo de Lúa Camiños al estilo LEGO Mario", "should_trigger": true},
+    {"input": "Genera inventario y JSON de un set de caminos con Lúa", "should_trigger": true},
+    {"input": "Cómo se usa el lenguaje de programación Lua en Roblox", "should_trigger": false},
+    {"input": "Escribe un script bpy genérico para un cubo", "should_trigger": false},
+    {"input": "Traduce este texto al gallego", "should_trigger": false}
+  ]
+}
