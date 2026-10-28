@@ -1,0 +1,36 @@
+{
+  "audiencia": "adulto que media",
+  "titulo": "La Estación de Sonido y Eco",
+  "fase": "Fase 7 del plan de impresión",
+  "regla_pantalla": {
+    "es": "El niño mueve los bloques. El adulto sostiene la tableta. La criatura no toca la pantalla.",
+    "gl": "O neno move os bloques. O adulto sostén a tableta. A criatura non toca a pantalla."
+  },
+  "premio": {
+    "es": "El reconocimiento es para el adulto que acompaña, no para el niño.",
+    "gl": "O recoñecemento é para o adulto que acompaña, non para o neno."
+  },
+  "orientacion": "Lúa está de frente al niño. No se le pide un giro en espejo.",
+  "escena": {
+    "es": "Lúa mira de frente, con la placa Escucha. El niño pulsa el brazo sobre el resonador. La tableta no habla encima del sonido.",
+    "gl": "Lúa mira de fronte, coa placa Escoita. O neno preme o brazo sobre o resonador. A tableta non fala enriba do son."
+  },
+  "pasos": [
+    {
+      "es": "Baja la placa Escucha al zócalo.",
+      "gl": "Baixa a placa Escoita ao zócalo."
+    },
+    {
+      "es": "Encaja el brazo en el banco. El eje es del propio brazo.",
+      "gl": "Encaixa o brazo no banco. O eixe é do propio brazo."
+    },
+    {
+      "es": "Apoya un resonador en el rebaje. Prueba las tres variantes de cada color y quédate con la que suene distinta.",
+      "gl": "Apoia un resonador no rebaixe. Proba as tres variantes de cada cor e queda coa que soe distinta."
+    },
+    {
+      "es": "El raspado se hace con la espátula sobre el raspador, después del golpe.",
+      "gl": "O raspado faise coa espátula sobre o raspador, despois do golpe."
+    }
+  ]
+}

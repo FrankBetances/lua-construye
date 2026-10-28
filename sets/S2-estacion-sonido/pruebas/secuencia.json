@@ -1,0 +1,551 @@
+{
+  "metodo": "La pieza que recibe va antes. La que entra baja con u = (0, 0, -1).",
+  "montaje": [
+    {
+      "orden": 1,
+      "id": "p1",
+      "codigo": "K-ZOCALO-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        136.8,
+        127.2,
+        19.2
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "orden": 2,
+      "id": "p2",
+      "codigo": "K-PLACA-ESCUCHA",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        150.8,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        89.6,
+        54.0,
+        7.8
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "orden": 3,
+      "id": "p3",
+      "codigo": "S2-BAL-BASE-E",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        254.4,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        120.0,
+        78.0,
+        52.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        36.0
+      ]
+    },
+    {
+      "orden": 4,
+      "id": "p4",
+      "codigo": "S2-BAL-BRAZO-E",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        388.4,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        98.4,
+        58.0,
+        28.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        54.0
+      ]
+    },
+    {
+      "orden": 5,
+      "id": "p5",
+      "codigo": "S2-RES-AZU-E-A",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        500.8,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        78.0,
+        64.0,
+        76.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        72.0
+      ]
+    },
+    {
+      "orden": 6,
+      "id": "p6",
+      "codigo": "S2-RES-AZU-E-B",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        592.8,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        78.0,
+        64.0,
+        76.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        90.0
+      ]
+    },
+    {
+      "orden": 7,
+      "id": "p7",
+      "codigo": "S2-RES-AZU-E-C",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        684.8,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        78.0,
+        64.0,
+        76.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        108.0
+      ]
+    },
+    {
+      "orden": 8,
+      "id": "p8",
+      "codigo": "S2-RES-AMA-E-A",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        776.8,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        78.0,
+        64.0,
+        76.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        126.0
+      ]
+    },
+    {
+      "orden": 9,
+      "id": "p9",
+      "codigo": "S2-RES-AMA-E-B",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        868.8,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        78.0,
+        64.0,
+        76.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        144.0
+      ]
+    },
+    {
+      "orden": 10,
+      "id": "p10",
+      "codigo": "S2-RES-AMA-E-C",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        960.8,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        78.0,
+        64.0,
+        76.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        162.0
+      ]
+    },
+    {
+      "orden": 11,
+      "id": "p11",
+      "codigo": "S2-RES-ROJ-E-A",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        1052.8,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        78.0,
+        64.0,
+        76.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        180.0
+      ]
+    },
+    {
+      "orden": 12,
+      "id": "p12",
+      "codigo": "S2-RES-ROJ-E-B",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        1144.8,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        78.0,
+        64.0,
+        76.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        198.0
+      ]
+    },
+    {
+      "orden": 13,
+      "id": "p13",
+      "codigo": "S2-RES-ROJ-E-C",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        1236.8,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        78.0,
+        64.0,
+        76.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        216.0
+      ]
+    },
+    {
+      "orden": 14,
+      "id": "p14",
+      "codigo": "S2-RAS-E",
+      "cantidad": 2,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        1328.8,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        144.0,
+        44.0,
+        18.2
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        234.0
+      ]
+    },
+    {
+      "orden": 15,
+      "id": "p15",
+      "codigo": "S2-ESP-E",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        1486.8,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        100.0,
+        44.0,
+        44.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        252.0
+      ]
+    },
+    {
+      "orden": 16,
+      "id": "p16",
+      "codigo": "S3-PIL-1-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        1600.8,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        44.0,
+        47.2,
+        25.2
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        270.0
+      ]
+    },
+    {
+      "orden": 17,
+      "id": "p17",
+      "codigo": "S3-PIL-2-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        1658.8,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        44.0,
+        47.2,
+        25.2
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        288.0
+      ]
+    },
+    {
+      "orden": 18,
+      "id": "p18",
+      "codigo": "S3-PIL-3-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        1716.8,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        44.0,
+        47.2,
+        25.2
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        306.0
+      ]
+    },
+    {
+      "orden": 19,
+      "id": "p19",
+      "codigo": "S3-PIL-4-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        1774.8,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        44.0,
+        47.2,
+        25.2
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        324.0
+      ]
+    },
+    {
+      "orden": 20,
+      "id": "p20",
+      "codigo": "S3-PIL-5-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        1832.8,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        44.0,
+        47.2,
+        25.2
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        342.0
+      ]
+    },
+    {
+      "orden": 21,
+      "id": "p21",
+      "codigo": "S3-PIL-6-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        1890.8,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        44.0,
+        47.2,
+        25.2
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        360.0
+      ]
+    }
+  ]
+}

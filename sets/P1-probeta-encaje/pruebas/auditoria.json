@@ -1,0 +1,282 @@
+{
+  "norma": "EN 71-1, criterio de diseño. No es ensayo de laboratorio.",
+  "cilindro_mm": {
+    "diametro": 31.75,
+    "profundidad": 57.1
+  },
+  "pared_min_mm": 3.2,
+  "esfera_g_min_mm": 44.5,
+  "cama_mm": [
+    220.0,
+    220.0,
+    270.0
+  ],
+  "apto": true,
+  "rechazados": [],
+  "piezas": [
+    {
+      "codigo": "P1-MAC-G-015",
+      "dims_mm": [
+        84.0,
+        55.4,
+        24.5
+      ],
+      "nucleo_mm3": 66421.8,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "P1-HEM-G-015",
+      "dims_mm": [
+        84.0,
+        55.4,
+        20.0
+      ],
+      "nucleo_mm3": 65527.8,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "P1-MAC-G-020",
+      "dims_mm": [
+        84.0,
+        55.4,
+        24.5
+      ],
+      "nucleo_mm3": 66445.8,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "P1-HEM-G-020",
+      "dims_mm": [
+        84.0,
+        55.4,
+        20.0
+      ],
+      "nucleo_mm3": 65540.0,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "P1-MAC-G-025",
+      "dims_mm": [
+        84.0,
+        55.4,
+        24.5
+      ],
+      "nucleo_mm3": 66469.8,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "P1-HEM-G-025",
+      "dims_mm": [
+        84.0,
+        55.4,
+        20.0
+      ],
+      "nucleo_mm3": 65552.1,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "P1-MAC-E-015",
+      "dims_mm": [
+        84.0,
+        55.4,
+        23.2
+      ],
+      "nucleo_mm3": 66303.4,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "P1-HEM-E-015",
+      "dims_mm": [
+        84.0,
+        55.4,
+        20.0
+      ],
+      "nucleo_mm3": 65838.9,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "P1-MAC-E-020",
+      "dims_mm": [
+        84.0,
+        55.4,
+        23.2
+      ],
+      "nucleo_mm3": 66327.4,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "P1-HEM-E-020",
+      "dims_mm": [
+        84.0,
+        55.4,
+        20.0
+      ],
+      "nucleo_mm3": 65853.9,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "P1-MAC-E-025",
+      "dims_mm": [
+        84.0,
+        55.4,
+        23.2
+      ],
+      "nucleo_mm3": 66351.4,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "P1-HEM-E-025",
+      "dims_mm": [
+        84.0,
+        55.4,
+        20.0
+      ],
+      "nucleo_mm3": 65868.7,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    }
+  ]
+}

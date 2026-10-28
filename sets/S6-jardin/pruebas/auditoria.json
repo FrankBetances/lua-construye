@@ -1,0 +1,326 @@
+{
+  "norma": "EN 71-1, criterio de diseño. No es ensayo de laboratorio.",
+  "cilindro_mm": {
+    "diametro": 31.75,
+    "profundidad": 57.1
+  },
+  "pared_min_mm": 3.2,
+  "esfera_g_min_mm": 44.5,
+  "cama_mm": [
+    220.0,
+    220.0,
+    270.0
+  ],
+  "apto": true,
+  "rechazados": [],
+  "piezas": [
+    {
+      "codigo": "S6-TIE-G",
+      "dims_mm": [
+        160.0,
+        120.0,
+        24.0
+      ],
+      "nucleo_mm3": 354161.9,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S6-SEM-G",
+      "dims_mm": [
+        58.0,
+        58.0,
+        50.0
+      ],
+      "nucleo_mm3": 47800.6,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S6-TAL-G",
+      "dims_mm": [
+        48.0,
+        48.0,
+        84.0
+      ],
+      "nucleo_mm3": 33212.8,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S6-FLO-G",
+      "dims_mm": [
+        84.0,
+        77.75,
+        38.0
+      ],
+      "nucleo_mm3": 19625.7,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S6-COP-G",
+      "dims_mm": [
+        72.0,
+        72.0,
+        48.0
+      ],
+      "nucleo_mm3": 56049.5,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S6-FRU-MAN",
+      "dims_mm": [
+        52.0,
+        42.0,
+        43.0
+      ],
+      "nucleo_mm3": 38025.1,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S6-FRU-NAR",
+      "dims_mm": [
+        45.0,
+        45.0,
+        46.5
+      ],
+      "nucleo_mm3": 38178.7,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S6-FRU-MANZ",
+      "dims_mm": [
+        45.0,
+        45.0,
+        45.79
+      ],
+      "nucleo_mm3": 37324.7,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S6-PRI-AZU",
+      "dims_mm": [
+        56.0,
+        48.0,
+        42.0
+      ],
+      "nucleo_mm3": 36312.3,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S6-PRI-AMA",
+      "dims_mm": [
+        48.0,
+        44.0,
+        70.0
+      ],
+      "nucleo_mm3": 51337.2,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S6-SIL-ARB",
+      "dims_mm": [
+        120.0,
+        124.0,
+        8.0
+      ],
+      "nucleo_mm3": 54881.6,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S6-SIL-LUN",
+      "dims_mm": [
+        120.0,
+        110.0,
+        8.0
+      ],
+      "nucleo_mm3": 49847.2,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "K-ZOCALO-G",
+      "dims_mm": [
+        136.8,
+        127.2,
+        19.2
+      ],
+      "nucleo_mm3": 210203.5,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "K-PLACA-JARDIN",
+      "dims_mm": [
+        89.6,
+        54.0,
+        7.8
+      ],
+      "nucleo_mm3": 9649.6,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    }
+  ]
+}

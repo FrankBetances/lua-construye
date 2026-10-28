@@ -1,0 +1,36 @@
+{
+  "audiencia": "adulto que media",
+  "titulo": "El Puente de Equilibrio y Fuerza",
+  "fase": "Fase 4 del plan de impresión",
+  "regla_pantalla": {
+    "es": "El niño mueve los bloques. El adulto sostiene la tableta. La criatura no toca la pantalla.",
+    "gl": "O neno move os bloques. O adulto sostén a tableta. A criatura non toca a pantalla."
+  },
+  "premio": {
+    "es": "El reconocimiento es para el adulto que acompaña, no para el niño.",
+    "gl": "O recoñecemento é para o adulto que acompaña, non para o neno."
+  },
+  "orientacion": "El niño mira a Lúa desde atrás cuando se trabaja la izquierda y la derecha.",
+  "escena": {
+    "es": "Lúa está junto a la viga, con la placa Nivel, nunca encima del balancín suelto. Solo sube al puente cuando los clips lo dejan fijo.",
+    "gl": "Lúa está xunto á viga, coa placa Nivel, nunca enriba do balancín solto. Só sobe á ponte cando os clips a deixan fixa."
+  },
+  "pasos": [
+    {
+      "es": "Apoya la viga en el lomo redondeado del fulcro.",
+      "gl": "Apoia a viga no lombo redondeado do fulcro."
+    },
+    {
+      "es": "Coloca las masas en las posiciones numeradas. La de 60 g en la posición 1 se equilibra con la de 20 g en la posición 3.",
+      "gl": "Coloca as masas nas posicións numeradas. A de 60 g na posición 1 equilibra coa de 20 g na posición 3."
+    },
+    {
+      "es": "Para el puente fijo, apoya la viga en pilares y bájalos clips en U por encima de la viga.",
+      "gl": "Para a ponte fixa, apoia a viga en piares e baixa os clips en U por riba da viga."
+    },
+    {
+      "es": "La placa Nivel baja al zócalo, al lado de la viga.",
+      "gl": "A placa Nivel baixa ao zócalo, ao lado da viga."
+    }
+  ]
+}

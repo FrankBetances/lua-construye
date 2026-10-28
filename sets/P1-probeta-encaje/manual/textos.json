@@ -1,0 +1,32 @@
+{
+  "audiencia": "adulto que media",
+  "titulo": "Probeta de encaje",
+  "fase": "Fase 1 del plan de impresión",
+  "regla_pantalla": {
+    "es": "El niño mueve los bloques. El adulto sostiene la tableta. La criatura no toca la pantalla.",
+    "gl": "O neno move os bloques. O adulto sostén a tableta. A criatura non toca a pantalla."
+  },
+  "premio": {
+    "es": "El reconocimiento es para el adulto que acompaña, no para el niño.",
+    "gl": "O recoñecemento é para o adulto que acompaña, non para o neno."
+  },
+  "orientacion": "No interviene Lúa.",
+  "escena": {
+    "es": "Se imprime antes que los sets. Cada pareja con el mismo sufijo se encaja a mano. No es un juguete y no entra en el kit del niño.",
+    "gl": "Imprímese antes que os sets. Cada parella co mesmo sufixo encaixa á man. Non é un xoguete e non entra no kit do neno."
+  },
+  "pasos": [
+    {
+      "es": "Imprime una pareja del mismo sufijo.",
+      "gl": "Imprime unha parella do mesmo sufixo."
+    },
+    {
+      "es": "Baja el macho sobre el pozo, sin forzar.",
+      "gl": "Baixa o macho sobre o pozo, sen forzar."
+    },
+    {
+      "es": "Anota qué holgura agarra en el PLA de Masque3D y cuál queda floja.",
+      "gl": "Anota que folgura agarra no PLA de Masque3D e cal queda frouxa."
+    }
+  ]
+}

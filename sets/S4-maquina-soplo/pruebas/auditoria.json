@@ -1,0 +1,238 @@
+{
+  "norma": "EN 71-1, criterio de diseño. No es ensayo de laboratorio.",
+  "cilindro_mm": {
+    "diametro": 31.75,
+    "profundidad": 57.1
+  },
+  "pared_min_mm": 3.2,
+  "esfera_g_min_mm": 44.5,
+  "cama_mm": [
+    220.0,
+    220.0,
+    270.0
+  ],
+  "apto": true,
+  "rechazados": [],
+  "piezas": [
+    {
+      "codigo": "S4-CAN-E",
+      "dims_mm": [
+        156.0,
+        52.0,
+        52.0
+      ],
+      "nucleo_mm3": 318271.9,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S4-COD-E",
+      "dims_mm": [
+        78.0,
+        78.0,
+        40.0
+      ],
+      "nucleo_mm3": 84652.4,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S4-ROT-JAULA-E",
+      "dims_mm": [
+        96.0,
+        72.0,
+        72.0
+      ],
+      "nucleo_mm3": 129735.1,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S4-ROT-ASPAS-E",
+      "dims_mm": [
+        80.0,
+        48.0,
+        48.0
+      ],
+      "nucleo_mm3": 2791.4,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S4-COM-LIG-E",
+      "dims_mm": [
+        76.0,
+        44.0,
+        16.0
+      ],
+      "nucleo_mm3": 14565.5,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S4-COM-PES-E",
+      "dims_mm": [
+        76.0,
+        44.0,
+        24.0
+      ],
+      "nucleo_mm3": 38390.3,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S4-MOL-JAULA-G",
+      "dims_mm": [
+        120.0,
+        96.0,
+        96.0
+      ],
+      "nucleo_mm3": 328482.5,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S4-MOL-ASPAS-G",
+      "dims_mm": [
+        104.0,
+        64.0,
+        64.0
+      ],
+      "nucleo_mm3": 7647.0,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "K-ZOCALO-G",
+      "dims_mm": [
+        136.8,
+        127.2,
+        19.2
+      ],
+      "nucleo_mm3": 210203.5,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "K-PLACA-FRONTAL",
+      "dims_mm": [
+        89.6,
+        54.0,
+        7.8
+      ],
+      "nucleo_mm3": 9649.6,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    }
+  ]
+}

@@ -1,0 +1,480 @@
+{
+  "norma": "EN 71-1, criterio de diseño. No es ensayo de laboratorio.",
+  "cilindro_mm": {
+    "diametro": 31.75,
+    "profundidad": 57.1
+  },
+  "pared_min_mm": 3.2,
+  "esfera_g_min_mm": 44.5,
+  "cama_mm": [
+    220.0,
+    220.0,
+    270.0
+  ],
+  "apto": true,
+  "rechazados": [],
+  "piezas": [
+    {
+      "codigo": "K-ZOCALO-G",
+      "dims_mm": [
+        136.8,
+        127.2,
+        19.2
+      ],
+      "nucleo_mm3": 210203.5,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "K-PLACA-ESCUCHA",
+      "dims_mm": [
+        89.6,
+        54.0,
+        7.8
+      ],
+      "nucleo_mm3": 9649.6,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S2-BAL-BASE-E",
+      "dims_mm": [
+        120.0,
+        78.0,
+        52.0
+      ],
+      "nucleo_mm3": 120956.1,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S2-BAL-BRAZO-E",
+      "dims_mm": [
+        98.4,
+        58.0,
+        28.0
+      ],
+      "nucleo_mm3": 28946.9,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S2-RES-AZU-E-A",
+      "dims_mm": [
+        78.0,
+        64.0,
+        76.0
+      ],
+      "nucleo_mm3": 266334.3,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S2-RES-AZU-E-B",
+      "dims_mm": [
+        78.0,
+        64.0,
+        76.0
+      ],
+      "nucleo_mm3": 265918.1,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S2-RES-AZU-E-C",
+      "dims_mm": [
+        78.0,
+        64.0,
+        76.0
+      ],
+      "nucleo_mm3": 271220.9,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S2-RES-AMA-E-A",
+      "dims_mm": [
+        78.0,
+        64.0,
+        76.0
+      ],
+      "nucleo_mm3": 286143.5,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S2-RES-AMA-E-B",
+      "dims_mm": [
+        78.0,
+        64.0,
+        76.0
+      ],
+      "nucleo_mm3": 285145.4,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S2-RES-AMA-E-C",
+      "dims_mm": [
+        78.0,
+        64.0,
+        76.0
+      ],
+      "nucleo_mm3": 290116.1,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S2-RES-ROJ-E-A",
+      "dims_mm": [
+        78.0,
+        64.0,
+        76.0
+      ],
+      "nucleo_mm3": 296693.5,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S2-RES-ROJ-E-B",
+      "dims_mm": [
+        78.0,
+        64.0,
+        76.0
+      ],
+      "nucleo_mm3": 295426.0,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S2-RES-ROJ-E-C",
+      "dims_mm": [
+        78.0,
+        64.0,
+        76.0
+      ],
+      "nucleo_mm3": 299197.7,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S2-RAS-E",
+      "dims_mm": [
+        144.0,
+        44.0,
+        18.2
+      ],
+      "nucleo_mm3": 64736.6,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S2-ESP-E",
+      "dims_mm": [
+        100.0,
+        44.0,
+        44.0
+      ],
+      "nucleo_mm3": 41239.6,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S3-PIL-1-G",
+      "dims_mm": [
+        44.0,
+        47.2,
+        25.2
+      ],
+      "nucleo_mm3": 25638.4,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S3-PIL-2-G",
+      "dims_mm": [
+        44.0,
+        47.2,
+        25.2
+      ],
+      "nucleo_mm3": 25661.6,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S3-PIL-3-G",
+      "dims_mm": [
+        44.0,
+        47.2,
+        25.2
+      ],
+      "nucleo_mm3": 25684.9,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S3-PIL-4-G",
+      "dims_mm": [
+        44.0,
+        47.2,
+        25.2
+      ],
+      "nucleo_mm3": 25708.1,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S3-PIL-5-G",
+      "dims_mm": [
+        44.0,
+        47.2,
+        25.2
+      ],
+      "nucleo_mm3": 25731.3,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S3-PIL-6-G",
+      "dims_mm": [
+        44.0,
+        47.2,
+        25.2
+      ],
+      "nucleo_mm3": 25754.5,
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    }
+  ]
+}

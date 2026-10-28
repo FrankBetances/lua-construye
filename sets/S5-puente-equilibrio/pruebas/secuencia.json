@@ -1,0 +1,369 @@
+{
+  "metodo": "La pieza que recibe va antes. La que entra baja con u = (0, 0, -1).",
+  "montaje": [
+    {
+      "orden": 1,
+      "id": "p1",
+      "codigo": "S5-FUL-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        96.0,
+        52.0,
+        37.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "orden": 2,
+      "id": "p2",
+      "codigo": "S5-VIG-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        110.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        186.0,
+        48.0,
+        19.8
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "orden": 3,
+      "id": "p3",
+      "codigo": "S5-MAS-20",
+      "cantidad": 2,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        310.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        48.0,
+        40.0,
+        15.8
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        36.0
+      ]
+    },
+    {
+      "orden": 4,
+      "id": "p4",
+      "codigo": "S5-MAS-40",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        372.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        56.0,
+        46.0,
+        20.4
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        54.0
+      ]
+    },
+    {
+      "orden": 5,
+      "id": "p5",
+      "codigo": "S5-MAS-60",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        442.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        64.0,
+        50.0,
+        20.1
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        72.0
+      ]
+    },
+    {
+      "orden": 6,
+      "id": "p6",
+      "codigo": "S5-PAS-G",
+      "cantidad": 4,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        520.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        64.0,
+        40.0,
+        28.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        90.0
+      ]
+    },
+    {
+      "orden": 7,
+      "id": "p7",
+      "codigo": "S3-PIL-1-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        598.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        44.0,
+        47.2,
+        25.2
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        108.0
+      ]
+    },
+    {
+      "orden": 8,
+      "id": "p8",
+      "codigo": "S3-PIL-2-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        656.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        44.0,
+        47.2,
+        25.2
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        126.0
+      ]
+    },
+    {
+      "orden": 9,
+      "id": "p9",
+      "codigo": "S3-PIL-3-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        714.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        44.0,
+        47.2,
+        25.2
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        144.0
+      ]
+    },
+    {
+      "orden": 10,
+      "id": "p10",
+      "codigo": "S3-PIL-4-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        772.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        44.0,
+        47.2,
+        25.2
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        162.0
+      ]
+    },
+    {
+      "orden": 11,
+      "id": "p11",
+      "codigo": "S3-PIL-5-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        830.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        44.0,
+        47.2,
+        25.2
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        180.0
+      ]
+    },
+    {
+      "orden": 12,
+      "id": "p12",
+      "codigo": "S3-PIL-6-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        888.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        44.0,
+        47.2,
+        25.2
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        198.0
+      ]
+    },
+    {
+      "orden": 13,
+      "id": "p13",
+      "codigo": "K-ZOCALO-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        946.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        136.8,
+        127.2,
+        19.2
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        216.0
+      ]
+    },
+    {
+      "orden": 14,
+      "id": "p14",
+      "codigo": "K-PLACA-NIVEL",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        1096.8,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        89.6,
+        54.0,
+        7.8
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        234.0
+      ]
+    }
+  ]
+}

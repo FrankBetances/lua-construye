@@ -9,6 +9,8 @@ Especificación detallada de los seis mundos: [`docs/SETS.md`](docs/SETS.md).
 
 Ejemplo ejecutable del Set 1 (STL, despiece y manual): [`docs/EJEMPLO-SET-1.md`](docs/EJEMPLO-SET-1.md). Se genera con `make ejemplo-s1`.
 
+Carpetas de impresión del plan (probeta, kit y sets 2 a 6): [`docs/SETS-IMPRESION.md`](docs/SETS-IMPRESION.md). Se generan con `make sets-todos`. El Set 1 no se regenera.
+
 ---
 
 ## 1. Qué es

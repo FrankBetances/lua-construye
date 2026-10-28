@@ -1,0 +1,369 @@
+{
+  "metodo": "La pieza que recibe va antes. La que entra baja con u = (0, 0, -1).",
+  "montaje": [
+    {
+      "orden": 1,
+      "id": "p1",
+      "codigo": "S6-TIE-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        160.0,
+        120.0,
+        24.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "orden": 2,
+      "id": "p2",
+      "codigo": "S6-SEM-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        174.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        58.0,
+        58.0,
+        50.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "orden": 3,
+      "id": "p3",
+      "codigo": "S6-TAL-G",
+      "cantidad": 5,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        246.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        48.0,
+        48.0,
+        84.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        36.0
+      ]
+    },
+    {
+      "orden": 4,
+      "id": "p4",
+      "codigo": "S6-FLO-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        308.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        84.0,
+        77.7,
+        38.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        54.0
+      ]
+    },
+    {
+      "orden": 5,
+      "id": "p5",
+      "codigo": "S6-COP-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        406.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        72.0,
+        72.0,
+        48.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        72.0
+      ]
+    },
+    {
+      "orden": 6,
+      "id": "p6",
+      "codigo": "S6-FRU-MAN",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        492.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        52.0,
+        42.0,
+        43.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        90.0
+      ]
+    },
+    {
+      "orden": 7,
+      "id": "p7",
+      "codigo": "S6-FRU-NAR",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        558.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        45.0,
+        45.0,
+        46.5
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        108.0
+      ]
+    },
+    {
+      "orden": 8,
+      "id": "p8",
+      "codigo": "S6-FRU-MANZ",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        617.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        45.0,
+        45.0,
+        45.8
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        126.0
+      ]
+    },
+    {
+      "orden": 9,
+      "id": "p9",
+      "codigo": "S6-PRI-AZU",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        676.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        56.0,
+        48.0,
+        42.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        144.0
+      ]
+    },
+    {
+      "orden": 10,
+      "id": "p10",
+      "codigo": "S6-PRI-AMA",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        746.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        48.0,
+        44.0,
+        70.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        162.0
+      ]
+    },
+    {
+      "orden": 11,
+      "id": "p11",
+      "codigo": "S6-SIL-ARB",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        808.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        120.0,
+        124.0,
+        8.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        180.0
+      ]
+    },
+    {
+      "orden": 12,
+      "id": "p12",
+      "codigo": "S6-SIL-LUN",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        942.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        120.0,
+        110.0,
+        8.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        198.0
+      ]
+    },
+    {
+      "orden": 13,
+      "id": "p13",
+      "codigo": "K-ZOCALO-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        1076.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        136.8,
+        127.2,
+        19.2
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        216.0
+      ]
+    },
+    {
+      "orden": 14,
+      "id": "p14",
+      "codigo": "K-PLACA-JARDIN",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        1226.8,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        89.6,
+        54.0,
+        7.8
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        234.0
+      ]
+    }
+  ]
+}

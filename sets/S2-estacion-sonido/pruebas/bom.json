@@ -1,0 +1,171 @@
+{
+  "carpeta": "S2-estacion-sonido",
+  "titulo": "La Estación de Sonido y Eco",
+  "fase": "Fase 7 del plan de impresión",
+  "hipotesis": [
+    "Módulo de planta 31,80 mm y altura de bloque 19,20 mm, como en el Set 1. D1 sigue abierta.",
+    "Cuerpo de Lúa: 72 × 64 × 40 mm. SETS no da el milímetro del tronco.",
+    "Tetón de la probeta G: diámetro 9,40 mm y alto 4,50 mm. Tetón E: diámetro 6,40 mm y alto 3,20 mm.",
+    "Holgura de la probeta, radial: 0,15, 0,20 y 0,25 mm, en la hembra.",
+    "Rampa: H = 19,20 mm y L = 153,60 mm. Con H = 31,80 mm, L = 254,40 mm y no cabe en la cama de 220 mm.",
+    "Viga: 186 × 48 × 18 mm. Diez módulos de 31,80 mm miden 318 mm.",
+    "Resonadores: pared de 8 mm y cavidad distinta. La pared de 1,5 mm queda fuera.",
+    "Rosca del jardín: paso 8 mm, diente 3,60 mm, tres vueltas, impresa en vertical.",
+    "Masas: volumen de PLA a 1,24 g/cm³ como objetivo de 20, 40 y 60 g. Sin báscula.",
+    "Esfera G: diámetro 45 mm. La de 38 mm, marcada por verificar para menores de 36 meses, no se genera."
+  ],
+  "excluidas": [
+    "S2-RES-ROJ con pared de 1,5 mm no se imprime: incumple el mínimo de 3,2 mm.",
+    "Las nueve piezas S2-RES-*-E-A/B/C mantienen pared de 8 mm y cambian la cavidad. El tono no se ha medido.",
+    "S2-BAL-E se entrega como banco y brazo. El eje va unido al brazo; no hay pasador suelto."
+  ],
+  "maestros": [
+    {
+      "codigo": "K-ZOCALO-G",
+      "nombre": "Zócalo universal",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "Mismo sólido que el Set 1."
+    },
+    {
+      "codigo": "K-PLACA-ESCUCHA",
+      "nombre": "Placa Escucha",
+      "cantidad": 1,
+      "union": "snap",
+      "nota": ""
+    },
+    {
+      "codigo": "S2-BAL-BASE-E",
+      "nombre": "Banco del martillo",
+      "cantidad": 1,
+      "union": "snap",
+      "nota": "El código de SETS es S2-BAL-E. Se parte en banco y brazo para que el eje no sea una pieza suelta."
+    },
+    {
+      "codigo": "S2-BAL-BRAZO-E",
+      "nombre": "Brazo del martillo con eje",
+      "cantidad": 1,
+      "union": "snap",
+      "nota": "Eje integral al brazo. Entra a presión en el banco. No hay pasador suelto."
+    },
+    {
+      "codigo": "S2-RES-AZU-E-A",
+      "nombre": "Resonador grave variante A",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "Cavidad r 16.0 mm, profundidad 46.0 mm, garganta r 6.0 mm. Pared 8 mm. La variante de 1,5 mm no se imprime."
+    },
+    {
+      "codigo": "S2-RES-AZU-E-B",
+      "nombre": "Resonador grave variante B",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "Cavidad r 16.0 mm, profundidad 46.0 mm, garganta r 7.2 mm. Pared 8 mm. La variante de 1,5 mm no se imprime."
+    },
+    {
+      "codigo": "S2-RES-AZU-E-C",
+      "nombre": "Resonador grave variante C",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "Cavidad r 16.0 mm, profundidad 40.0 mm, garganta r 6.0 mm. Pared 8 mm. La variante de 1,5 mm no se imprime."
+    },
+    {
+      "codigo": "S2-RES-AMA-E-A",
+      "nombre": "Resonador medio variante A",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "Cavidad r 13.0 mm, profundidad 34.0 mm, garganta r 9.0 mm. Pared 8 mm. La variante de 1,5 mm no se imprime."
+    },
+    {
+      "codigo": "S2-RES-AMA-E-B",
+      "nombre": "Resonador medio variante B",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "Cavidad r 13.0 mm, profundidad 34.0 mm, garganta r 10.2 mm. Pared 8 mm. La variante de 1,5 mm no se imprime."
+    },
+    {
+      "codigo": "S2-RES-AMA-E-C",
+      "nombre": "Resonador medio variante C",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "Cavidad r 13.0 mm, profundidad 28.0 mm, garganta r 9.0 mm. Pared 8 mm. La variante de 1,5 mm no se imprime."
+    },
+    {
+      "codigo": "S2-RES-ROJ-E-A",
+      "nombre": "Resonador agudo variante A",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "Cavidad r 10.0 mm, profundidad 24.0 mm, garganta r 12.0 mm. Pared 8 mm. La variante de 1,5 mm no se imprime."
+    },
+    {
+      "codigo": "S2-RES-ROJ-E-B",
+      "nombre": "Resonador agudo variante B",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "Cavidad r 10.0 mm, profundidad 24.0 mm, garganta r 13.2 mm. Pared 8 mm. La variante de 1,5 mm no se imprime."
+    },
+    {
+      "codigo": "S2-RES-ROJ-E-C",
+      "nombre": "Resonador agudo variante C",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "Cavidad r 10.0 mm, profundidad 18.0 mm, garganta r 12.0 mm. Pared 8 mm. La variante de 1,5 mm no se imprime."
+    },
+    {
+      "codigo": "S2-RAS-E",
+      "nombre": "Raspador estriado",
+      "cantidad": 2,
+      "union": "espiga",
+      "nota": "Estrías redondeadas de 4,4 mm."
+    },
+    {
+      "codigo": "S2-ESP-E",
+      "nombre": "Espátula sin filo",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "La punta es un medio cilindro."
+    },
+    {
+      "codigo": "S3-PIL-1-G",
+      "nombre": "Pilar con marca táctil 1",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "Altura H = 19,20 mm. El 8 × 31,80 mm de la rampa no cabe en la cama."
+    },
+    {
+      "codigo": "S3-PIL-2-G",
+      "nombre": "Pilar con marca táctil 2",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "Altura H = 19,20 mm. El 8 × 31,80 mm de la rampa no cabe en la cama."
+    },
+    {
+      "codigo": "S3-PIL-3-G",
+      "nombre": "Pilar con marca táctil 3",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "Altura H = 19,20 mm. El 8 × 31,80 mm de la rampa no cabe en la cama."
+    },
+    {
+      "codigo": "S3-PIL-4-G",
+      "nombre": "Pilar con marca táctil 4",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "Altura H = 19,20 mm. El 8 × 31,80 mm de la rampa no cabe en la cama."
+    },
+    {
+      "codigo": "S3-PIL-5-G",
+      "nombre": "Pilar con marca táctil 5",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "Altura H = 19,20 mm. El 8 × 31,80 mm de la rampa no cabe en la cama."
+    },
+    {
+      "codigo": "S3-PIL-6-G",
+      "nombre": "Pilar con marca táctil 6",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "Altura H = 19,20 mm. El 8 × 31,80 mm de la rampa no cabe en la cama."
+    }
+  ]
+}

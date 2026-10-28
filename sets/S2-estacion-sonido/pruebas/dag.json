@@ -1,0 +1,207 @@
+{
+  "nodos": [
+    "K-ZOCALO-G",
+    "K-PLACA-ESCUCHA",
+    "S2-BAL-BASE-E",
+    "S2-BAL-BRAZO-E",
+    "S2-RES-AZU-E-A",
+    "S2-RES-AZU-E-B",
+    "S2-RES-AZU-E-C",
+    "S2-RES-AMA-E-A",
+    "S2-RES-AMA-E-B",
+    "S2-RES-AMA-E-C",
+    "S2-RES-ROJ-E-A",
+    "S2-RES-ROJ-E-B",
+    "S2-RES-ROJ-E-C",
+    "S2-RAS-E",
+    "S2-ESP-E",
+    "S3-PIL-1-G",
+    "S3-PIL-2-G",
+    "S3-PIL-3-G",
+    "S3-PIL-4-G",
+    "S3-PIL-5-G",
+    "S3-PIL-6-G"
+  ],
+  "aristas": [
+    {
+      "desde": "K-ZOCALO-G",
+      "hasta": "K-PLACA-ESCUCHA",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "K-PLACA-ESCUCHA",
+      "hasta": "S2-BAL-BASE-E",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S2-BAL-BASE-E",
+      "hasta": "S2-BAL-BRAZO-E",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S2-BAL-BRAZO-E",
+      "hasta": "S2-RES-AZU-E-A",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S2-RES-AZU-E-A",
+      "hasta": "S2-RES-AZU-E-B",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S2-RES-AZU-E-B",
+      "hasta": "S2-RES-AZU-E-C",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S2-RES-AZU-E-C",
+      "hasta": "S2-RES-AMA-E-A",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S2-RES-AMA-E-A",
+      "hasta": "S2-RES-AMA-E-B",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S2-RES-AMA-E-B",
+      "hasta": "S2-RES-AMA-E-C",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S2-RES-AMA-E-C",
+      "hasta": "S2-RES-ROJ-E-A",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S2-RES-ROJ-E-A",
+      "hasta": "S2-RES-ROJ-E-B",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S2-RES-ROJ-E-B",
+      "hasta": "S2-RES-ROJ-E-C",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S2-RES-ROJ-E-C",
+      "hasta": "S2-RAS-E",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S2-RAS-E",
+      "hasta": "S2-ESP-E",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S2-ESP-E",
+      "hasta": "S3-PIL-1-G",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S3-PIL-1-G",
+      "hasta": "S3-PIL-2-G",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S3-PIL-2-G",
+      "hasta": "S3-PIL-3-G",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S3-PIL-3-G",
+      "hasta": "S3-PIL-4-G",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S3-PIL-4-G",
+      "hasta": "S3-PIL-5-G",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S3-PIL-5-G",
+      "hasta": "S3-PIL-6-G",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    }
+  ]
+}

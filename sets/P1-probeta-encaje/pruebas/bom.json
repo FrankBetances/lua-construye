@@ -1,0 +1,106 @@
+{
+  "carpeta": "P1-probeta-encaje",
+  "titulo": "Probeta de encaje",
+  "fase": "Fase 1 del plan de impresión",
+  "hipotesis": [
+    "Módulo de planta 31,80 mm y altura de bloque 19,20 mm, como en el Set 1. D1 sigue abierta.",
+    "Cuerpo de Lúa: 72 × 64 × 40 mm. SETS no da el milímetro del tronco.",
+    "Tetón de la probeta G: diámetro 9,40 mm y alto 4,50 mm. Tetón E: diámetro 6,40 mm y alto 3,20 mm.",
+    "Holgura de la probeta, radial: 0,15, 0,20 y 0,25 mm, en la hembra.",
+    "Rampa: H = 19,20 mm y L = 153,60 mm. Con H = 31,80 mm, L = 254,40 mm y no cabe en la cama de 220 mm.",
+    "Viga: 186 × 48 × 18 mm. Diez módulos de 31,80 mm miden 318 mm.",
+    "Resonadores: pared de 8 mm y cavidad distinta. La pared de 1,5 mm queda fuera.",
+    "Rosca del jardín: paso 8 mm, diente 3,60 mm, tres vueltas, impresa en vertical.",
+    "Masas: volumen de PLA a 1,24 g/cm³ como objetivo de 20, 40 y 60 g. Sin báscula.",
+    "Esfera G: diámetro 45 mm. La de 38 mm, marcada por verificar para menores de 36 meses, no se genera."
+  ],
+  "excluidas": [
+    "No es una pieza del juguete. Sirve para elegir la holgura en el PLA de Masque3D."
+  ],
+  "maestros": [
+    {
+      "codigo": "P1-MAC-G-015",
+      "nombre": "Probeta macho G holgura 0.15 mm",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "Tetón escala G. La holgura se mide en la hembra del mismo sufijo."
+    },
+    {
+      "codigo": "P1-HEM-G-015",
+      "nombre": "Probeta hembra G holgura 0.15 mm",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "Pozo con holgura radial 0.15 mm sobre el tetón G."
+    },
+    {
+      "codigo": "P1-MAC-G-020",
+      "nombre": "Probeta macho G holgura 0.20 mm",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "Tetón escala G. La holgura se mide en la hembra del mismo sufijo."
+    },
+    {
+      "codigo": "P1-HEM-G-020",
+      "nombre": "Probeta hembra G holgura 0.20 mm",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "Pozo con holgura radial 0.20 mm sobre el tetón G."
+    },
+    {
+      "codigo": "P1-MAC-G-025",
+      "nombre": "Probeta macho G holgura 0.25 mm",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "Tetón escala G. La holgura se mide en la hembra del mismo sufijo."
+    },
+    {
+      "codigo": "P1-HEM-G-025",
+      "nombre": "Probeta hembra G holgura 0.25 mm",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "Pozo con holgura radial 0.25 mm sobre el tetón G."
+    },
+    {
+      "codigo": "P1-MAC-E-015",
+      "nombre": "Probeta macho E holgura 0.15 mm",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "Tetón escala E. La holgura se mide en la hembra del mismo sufijo."
+    },
+    {
+      "codigo": "P1-HEM-E-015",
+      "nombre": "Probeta hembra E holgura 0.15 mm",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "Pozo con holgura radial 0.15 mm sobre el tetón E."
+    },
+    {
+      "codigo": "P1-MAC-E-020",
+      "nombre": "Probeta macho E holgura 0.20 mm",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "Tetón escala E. La holgura se mide en la hembra del mismo sufijo."
+    },
+    {
+      "codigo": "P1-HEM-E-020",
+      "nombre": "Probeta hembra E holgura 0.20 mm",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "Pozo con holgura radial 0.20 mm sobre el tetón E."
+    },
+    {
+      "codigo": "P1-MAC-E-025",
+      "nombre": "Probeta macho E holgura 0.25 mm",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "Tetón escala E. La holgura se mide en la hembra del mismo sufijo."
+    },
+    {
+      "codigo": "P1-HEM-E-025",
+      "nombre": "Probeta hembra E holgura 0.25 mm",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "Pozo con holgura radial 0.25 mm sobre el tetón E."
+    }
+  ]
+}

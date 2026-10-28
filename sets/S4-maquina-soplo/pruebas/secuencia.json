@@ -1,0 +1,265 @@
+{
+  "metodo": "La pieza que recibe va antes. La que entra baja con u = (0, 0, -1).",
+  "montaje": [
+    {
+      "orden": 1,
+      "id": "p1",
+      "codigo": "S4-CAN-E",
+      "cantidad": 2,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        156.0,
+        52.0,
+        52.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "orden": 2,
+      "id": "p2",
+      "codigo": "S4-COD-E",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        170.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        78.0,
+        78.0,
+        40.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "orden": 3,
+      "id": "p3",
+      "codigo": "S4-ROT-JAULA-E",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        262.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        96.0,
+        72.0,
+        72.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        36.0
+      ]
+    },
+    {
+      "orden": 4,
+      "id": "p4",
+      "codigo": "S4-ROT-ASPAS-E",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        372.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        80.0,
+        48.0,
+        48.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        54.0
+      ]
+    },
+    {
+      "orden": 5,
+      "id": "p5",
+      "codigo": "S4-COM-LIG-E",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        466.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        76.0,
+        44.0,
+        16.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        72.0
+      ]
+    },
+    {
+      "orden": 6,
+      "id": "p6",
+      "codigo": "S4-COM-PES-E",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        556.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        76.0,
+        44.0,
+        24.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        90.0
+      ]
+    },
+    {
+      "orden": 7,
+      "id": "p7",
+      "codigo": "S4-MOL-JAULA-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        646.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        120.0,
+        96.0,
+        96.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        108.0
+      ]
+    },
+    {
+      "orden": 8,
+      "id": "p8",
+      "codigo": "S4-MOL-ASPAS-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        780.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        104.0,
+        64.0,
+        64.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        126.0
+      ]
+    },
+    {
+      "orden": 9,
+      "id": "p9",
+      "codigo": "K-ZOCALO-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        898.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        136.8,
+        127.2,
+        19.2
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        144.0
+      ]
+    },
+    {
+      "orden": 10,
+      "id": "p10",
+      "codigo": "K-PLACA-FRONTAL",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        1048.8,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        89.6,
+        54.0,
+        7.8
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        162.0
+      ]
+    }
+  ]
+}

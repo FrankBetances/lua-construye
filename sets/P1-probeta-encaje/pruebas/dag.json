@@ -1,0 +1,117 @@
+{
+  "nodos": [
+    "P1-MAC-G-015",
+    "P1-HEM-G-015",
+    "P1-MAC-G-020",
+    "P1-HEM-G-020",
+    "P1-MAC-G-025",
+    "P1-HEM-G-025",
+    "P1-MAC-E-015",
+    "P1-HEM-E-015",
+    "P1-MAC-E-020",
+    "P1-HEM-E-020",
+    "P1-MAC-E-025",
+    "P1-HEM-E-025"
+  ],
+  "aristas": [
+    {
+      "desde": "P1-MAC-G-015",
+      "hasta": "P1-HEM-G-015",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "P1-HEM-G-015",
+      "hasta": "P1-MAC-G-020",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "P1-MAC-G-020",
+      "hasta": "P1-HEM-G-020",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "P1-HEM-G-020",
+      "hasta": "P1-MAC-G-025",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "P1-MAC-G-025",
+      "hasta": "P1-HEM-G-025",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "P1-HEM-G-025",
+      "hasta": "P1-MAC-E-015",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "P1-MAC-E-015",
+      "hasta": "P1-HEM-E-015",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "P1-HEM-E-015",
+      "hasta": "P1-MAC-E-020",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "P1-MAC-E-020",
+      "hasta": "P1-HEM-E-020",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "P1-HEM-E-020",
+      "hasta": "P1-MAC-E-025",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "P1-MAC-E-025",
+      "hasta": "P1-HEM-E-025",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    }
+  ]
+}

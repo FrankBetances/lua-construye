@@ -1,0 +1,88 @@
+{
+  "carpetas": [
+    {
+      "carpeta": "P1-probeta-encaje",
+      "piezas": 12,
+      "auditoria": true,
+      "pdf": true,
+      "typst": [
+        {
+          "comando": "/home/ubuntu/.local/bin/typst compile --root /workspace /workspace/sets/P1-probeta-encaje/manual/manual.typ /workspace/sets/P1-probeta-encaje/manual/manual.pdf",
+          "exit": 0
+        }
+      ]
+    },
+    {
+      "carpeta": "S0-kit-lua",
+      "piezas": 14,
+      "auditoria": true,
+      "pdf": true,
+      "typst": [
+        {
+          "comando": "/home/ubuntu/.local/bin/typst compile --root /workspace /workspace/sets/S0-kit-lua/manual/manual.typ /workspace/sets/S0-kit-lua/manual/manual.pdf",
+          "exit": 0
+        }
+      ]
+    },
+    {
+      "carpeta": "S2-estacion-sonido",
+      "piezas": 21,
+      "auditoria": true,
+      "pdf": true,
+      "typst": [
+        {
+          "comando": "/home/ubuntu/.local/bin/typst compile --root /workspace /workspace/sets/S2-estacion-sonido/manual/manual.typ /workspace/sets/S2-estacion-sonido/manual/manual.pdf",
+          "exit": 0
+        }
+      ]
+    },
+    {
+      "carpeta": "S3-laboratorio-rampas",
+      "piezas": 15,
+      "auditoria": true,
+      "pdf": true,
+      "typst": [
+        {
+          "comando": "/home/ubuntu/.local/bin/typst compile --root /workspace /workspace/sets/S3-laboratorio-rampas/manual/manual.typ /workspace/sets/S3-laboratorio-rampas/manual/manual.pdf",
+          "exit": 0
+        }
+      ]
+    },
+    {
+      "carpeta": "S4-maquina-soplo",
+      "piezas": 10,
+      "auditoria": true,
+      "pdf": true,
+      "typst": [
+        {
+          "comando": "/home/ubuntu/.local/bin/typst compile --root /workspace /workspace/sets/S4-maquina-soplo/manual/manual.typ /workspace/sets/S4-maquina-soplo/manual/manual.pdf",
+          "exit": 0
+        }
+      ]
+    },
+    {
+      "carpeta": "S5-puente-equilibrio",
+      "piezas": 14,
+      "auditoria": true,
+      "pdf": true,
+      "typst": [
+        {
+          "comando": "/home/ubuntu/.local/bin/typst compile --root /workspace /workspace/sets/S5-puente-equilibrio/manual/manual.typ /workspace/sets/S5-puente-equilibrio/manual/manual.pdf",
+          "exit": 0
+        }
+      ]
+    },
+    {
+      "carpeta": "S6-jardin",
+      "piezas": 14,
+      "auditoria": true,
+      "pdf": true,
+      "typst": [
+        {
+          "comando": "/home/ubuntu/.local/bin/typst compile --root /workspace /workspace/sets/S6-jardin/manual/manual.typ /workspace/sets/S6-jardin/manual/manual.pdf",
+          "exit": 0
+        }
+      ]
+    }
+  ]
+}

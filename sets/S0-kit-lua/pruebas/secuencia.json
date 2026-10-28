@@ -1,0 +1,369 @@
+{
+  "metodo": "La pieza que recibe va antes. La que entra baja con u = (0, 0, -1).",
+  "montaje": [
+    {
+      "orden": 1,
+      "id": "p1",
+      "codigo": "K-TRONCO-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        72.0,
+        64.0,
+        40.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "orden": 2,
+      "id": "p2",
+      "codigo": "K-LOMO-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        86.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        76.0,
+        33.4,
+        20.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "orden": 3,
+      "id": "p3",
+      "codigo": "K-PATA-DEL-G",
+      "cantidad": 2,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        176.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        48.0,
+        40.0,
+        45.4
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        36.0
+      ]
+    },
+    {
+      "orden": 4,
+      "id": "p4",
+      "codigo": "K-PATA-TRA-G",
+      "cantidad": 2,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        238.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        48.0,
+        40.0,
+        45.6
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        54.0
+      ]
+    },
+    {
+      "orden": 5,
+      "id": "p5",
+      "codigo": "K-COLA-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        300.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        88.0,
+        41.4,
+        18.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        72.0
+      ]
+    },
+    {
+      "orden": 6,
+      "id": "p6",
+      "codigo": "K-PATIN-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        402.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        63.6,
+        63.6,
+        14.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        90.0
+      ]
+    },
+    {
+      "orden": 7,
+      "id": "p7",
+      "codigo": "K-ZOCALO-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        479.6,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        136.8,
+        127.2,
+        19.2
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        108.0
+      ]
+    },
+    {
+      "orden": 8,
+      "id": "p8",
+      "codigo": "K-PLACA-INICIO",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        630.4,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        89.6,
+        54.0,
+        7.8
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        126.0
+      ]
+    },
+    {
+      "orden": 9,
+      "id": "p9",
+      "codigo": "K-PLACA-META",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        734.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        89.6,
+        54.0,
+        7.8
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        144.0
+      ]
+    },
+    {
+      "orden": 10,
+      "id": "p10",
+      "codigo": "K-PLACA-ESCUCHA",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        837.6,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        89.6,
+        54.0,
+        7.8
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        162.0
+      ]
+    },
+    {
+      "orden": 11,
+      "id": "p11",
+      "codigo": "K-PLACA-RECEPTOR",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        941.2,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        89.6,
+        54.0,
+        7.8
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        180.0
+      ]
+    },
+    {
+      "orden": 12,
+      "id": "p12",
+      "codigo": "K-PLACA-FRONTAL",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        1044.8,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        89.6,
+        54.0,
+        7.8
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        198.0
+      ]
+    },
+    {
+      "orden": 13,
+      "id": "p13",
+      "codigo": "K-PLACA-NIVEL",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        1148.4,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        89.6,
+        54.0,
+        7.8
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        216.0
+      ]
+    },
+    {
+      "orden": 14,
+      "id": "p14",
+      "codigo": "K-PLACA-JARDIN",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        1252.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        89.6,
+        54.0,
+        7.8
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        234.0
+      ]
+    }
+  ]
+}

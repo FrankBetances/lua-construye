@@ -1,0 +1,137 @@
+{
+  "nodos": [
+    "K-TRONCO-G",
+    "K-LOMO-G",
+    "K-PATA-DEL-G",
+    "K-PATA-TRA-G",
+    "K-COLA-G",
+    "K-PATIN-G",
+    "K-ZOCALO-G",
+    "K-PLACA-INICIO",
+    "K-PLACA-META",
+    "K-PLACA-ESCUCHA",
+    "K-PLACA-RECEPTOR",
+    "K-PLACA-FRONTAL",
+    "K-PLACA-NIVEL",
+    "K-PLACA-JARDIN"
+  ],
+  "aristas": [
+    {
+      "desde": "K-TRONCO-G",
+      "hasta": "K-LOMO-G",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "K-LOMO-G",
+      "hasta": "K-PATA-DEL-G",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "K-PATA-DEL-G",
+      "hasta": "K-PATA-TRA-G",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "K-PATA-TRA-G",
+      "hasta": "K-COLA-G",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "K-COLA-G",
+      "hasta": "K-PATIN-G",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "K-PATIN-G",
+      "hasta": "K-ZOCALO-G",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "K-ZOCALO-G",
+      "hasta": "K-PLACA-INICIO",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "K-PLACA-INICIO",
+      "hasta": "K-PLACA-META",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "K-PLACA-META",
+      "hasta": "K-PLACA-ESCUCHA",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "K-PLACA-ESCUCHA",
+      "hasta": "K-PLACA-RECEPTOR",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "K-PLACA-RECEPTOR",
+      "hasta": "K-PLACA-FRONTAL",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "K-PLACA-FRONTAL",
+      "hasta": "K-PLACA-NIVEL",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "K-PLACA-NIVEL",
+      "hasta": "K-PLACA-JARDIN",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    }
+  ]
+}

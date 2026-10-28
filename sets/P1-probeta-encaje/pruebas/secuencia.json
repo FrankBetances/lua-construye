@@ -1,0 +1,317 @@
+{
+  "metodo": "La pieza que recibe va antes. La que entra baja con u = (0, 0, -1).",
+  "montaje": [
+    {
+      "orden": 1,
+      "id": "p1",
+      "codigo": "P1-MAC-G-015",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        84.0,
+        55.4,
+        24.5
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "orden": 2,
+      "id": "p2",
+      "codigo": "P1-HEM-G-015",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        98.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        84.0,
+        55.4,
+        20.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "orden": 3,
+      "id": "p3",
+      "codigo": "P1-MAC-G-020",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        196.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        84.0,
+        55.4,
+        24.5
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        36.0
+      ]
+    },
+    {
+      "orden": 4,
+      "id": "p4",
+      "codigo": "P1-HEM-G-020",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        294.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        84.0,
+        55.4,
+        20.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        54.0
+      ]
+    },
+    {
+      "orden": 5,
+      "id": "p5",
+      "codigo": "P1-MAC-G-025",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        392.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        84.0,
+        55.4,
+        24.5
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        72.0
+      ]
+    },
+    {
+      "orden": 6,
+      "id": "p6",
+      "codigo": "P1-HEM-G-025",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        490.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        84.0,
+        55.4,
+        20.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        90.0
+      ]
+    },
+    {
+      "orden": 7,
+      "id": "p7",
+      "codigo": "P1-MAC-E-015",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        588.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        84.0,
+        55.4,
+        23.2
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        108.0
+      ]
+    },
+    {
+      "orden": 8,
+      "id": "p8",
+      "codigo": "P1-HEM-E-015",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        686.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        84.0,
+        55.4,
+        20.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        126.0
+      ]
+    },
+    {
+      "orden": 9,
+      "id": "p9",
+      "codigo": "P1-MAC-E-020",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        784.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        84.0,
+        55.4,
+        23.2
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        144.0
+      ]
+    },
+    {
+      "orden": 10,
+      "id": "p10",
+      "codigo": "P1-HEM-E-020",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        882.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        84.0,
+        55.4,
+        20.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        162.0
+      ]
+    },
+    {
+      "orden": 11,
+      "id": "p11",
+      "codigo": "P1-MAC-E-025",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        980.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        84.0,
+        55.4,
+        23.2
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        180.0
+      ]
+    },
+    {
+      "orden": 12,
+      "id": "p12",
+      "codigo": "P1-HEM-E-025",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        1078.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        84.0,
+        55.4,
+        20.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        198.0
+      ]
+    }
+  ]
+}

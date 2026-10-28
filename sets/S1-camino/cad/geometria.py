@@ -406,6 +406,29 @@ def icono_en(nombre: str, ancho: float, fondo: float, alto: float, segmentos: in
         base = caja(cx - 8, cy - 4, z, cx + 8, cy + 3, z + h)
         cabecero = caja(cx - 8, cy + 2, z, cx - 5, cy + 6, z + h)
         return base + cabecero
+    if nombre == "escucha":
+        return (
+            caja(cx - 8, cy - 1.2, z, cx - 2, cy + 1.2, z + h)
+            + caja(cx - 1, cy - 3.2, z, cx + 3, cy + 3.2, z + h)
+            + caja(cx + 4, cy - 5.2, z, cx + 8, cy + 5.2, z + h)
+        )
+    if nombre == "receptor":
+        return (
+            caja(cx - 8, cy - 5, z, cx - 4, cy + 5, z + h)
+            + caja(cx - 8, cy - 5, z, cx + 8, cy - 1.5, z + h)
+            + caja(cx + 4, cy - 5, z, cx + 8, cy + 5, z + h)
+        )
+    if nombre == "frontal":
+        n = max(16, segmentos // 2)
+        return Manifold.cylinder(h, 5.5, 5.5, n).translate((cx, cy, z)) + caja(cx - 1.6, cy - 8, z, cx + 1.6, cy + 8, z + h)
+    if nombre == "nivel":
+        return caja(cx - 9, cy - 1.4, z, cx + 9, cy + 1.4, z + h) + caja(cx - 2.2, cy - 6, z, cx + 2.2, cy - 1, z + h)
+    if nombre == "jardin":
+        return (
+            caja(cx - 1.4, cy - 7, z, cx + 1.4, cy + 2, z + h)
+            + caja(cx - 7, cy - 1, z, cx - 1, cy + 2.2, z + h)
+            + caja(cx + 1, cy + 1, z, cx + 7, cy + 4.2, z + h)
+        )
     raise KeyError(nombre)
 
 

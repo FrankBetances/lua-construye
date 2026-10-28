@@ -1,0 +1,395 @@
+{
+  "metodo": "La pieza que recibe va antes. La que entra baja con u = (0, 0, -1).",
+  "montaje": [
+    {
+      "orden": 1,
+      "id": "p1",
+      "codigo": "S3-BIS-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        72.0,
+        96.0,
+        50.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "orden": 2,
+      "id": "p2",
+      "codigo": "S3-RAM-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        86.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        153.6,
+        100.0,
+        24.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "orden": 3,
+      "id": "p3",
+      "codigo": "S3-PIL-1-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        253.6,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        44.0,
+        47.2,
+        25.2
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        36.0
+      ]
+    },
+    {
+      "orden": 4,
+      "id": "p4",
+      "codigo": "S3-PIL-2-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        311.6,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        44.0,
+        47.2,
+        25.2
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        54.0
+      ]
+    },
+    {
+      "orden": 5,
+      "id": "p5",
+      "codigo": "S3-PIL-3-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        369.6,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        44.0,
+        47.2,
+        25.2
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        72.0
+      ]
+    },
+    {
+      "orden": 6,
+      "id": "p6",
+      "codigo": "S3-PIL-4-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        427.6,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        44.0,
+        47.2,
+        25.2
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        90.0
+      ]
+    },
+    {
+      "orden": 7,
+      "id": "p7",
+      "codigo": "S3-PIL-5-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        485.6,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        44.0,
+        47.2,
+        25.2
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        108.0
+      ]
+    },
+    {
+      "orden": 8,
+      "id": "p8",
+      "codigo": "S3-PIL-6-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        543.6,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        44.0,
+        47.2,
+        25.2
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        126.0
+      ]
+    },
+    {
+      "orden": 9,
+      "id": "p9",
+      "codigo": "S3-FRI-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        601.6,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        132.0,
+        64.0,
+        17.8
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        144.0
+      ]
+    },
+    {
+      "orden": 10,
+      "id": "p10",
+      "codigo": "S3-CUR-PER-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        747.6,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        150.0,
+        150.0,
+        26.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        162.0
+      ]
+    },
+    {
+      "orden": 11,
+      "id": "p11",
+      "codigo": "S3-REC-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        911.6,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        156.0,
+        80.0,
+        36.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        180.0
+      ]
+    },
+    {
+      "orden": 12,
+      "id": "p12",
+      "codigo": "K-ZOCALO-G",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        1081.6,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        136.8,
+        127.2,
+        19.2
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        198.0
+      ]
+    },
+    {
+      "orden": 13,
+      "id": "p13",
+      "codigo": "K-PLACA-RECEPTOR",
+      "cantidad": 1,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        1232.4,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        89.6,
+        54.0,
+        7.8
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        216.0
+      ]
+    },
+    {
+      "orden": 14,
+      "id": "p14",
+      "codigo": "S3-ESF-LIS-G",
+      "cantidad": 2,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        1336.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        45.0,
+        45.0,
+        45.0
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        234.0
+      ]
+    },
+    {
+      "orden": 15,
+      "id": "p15",
+      "codigo": "S3-ESF-RUG-G",
+      "cantidad": 2,
+      "u": [
+        0,
+        0,
+        -1
+      ],
+      "origen_mm": [
+        1395.0,
+        0.0,
+        0.0
+      ],
+      "tamano_mm": [
+        45.0,
+        45.0,
+        45.4
+      ],
+      "desfase_explosion_mm": [
+        0.0,
+        0.0,
+        252.0
+      ]
+    }
+  ]
+}

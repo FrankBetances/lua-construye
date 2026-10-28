@@ -1,0 +1,147 @@
+{
+  "nodos": [
+    "S3-BIS-G",
+    "S3-RAM-G",
+    "S3-PIL-1-G",
+    "S3-PIL-2-G",
+    "S3-PIL-3-G",
+    "S3-PIL-4-G",
+    "S3-PIL-5-G",
+    "S3-PIL-6-G",
+    "S3-FRI-G",
+    "S3-CUR-PER-G",
+    "S3-REC-G",
+    "K-ZOCALO-G",
+    "K-PLACA-RECEPTOR",
+    "S3-ESF-LIS-G",
+    "S3-ESF-RUG-G"
+  ],
+  "aristas": [
+    {
+      "desde": "S3-BIS-G",
+      "hasta": "S3-RAM-G",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S3-RAM-G",
+      "hasta": "S3-PIL-1-G",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S3-PIL-1-G",
+      "hasta": "S3-PIL-2-G",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S3-PIL-2-G",
+      "hasta": "S3-PIL-3-G",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S3-PIL-3-G",
+      "hasta": "S3-PIL-4-G",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S3-PIL-4-G",
+      "hasta": "S3-PIL-5-G",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S3-PIL-5-G",
+      "hasta": "S3-PIL-6-G",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S3-PIL-6-G",
+      "hasta": "S3-FRI-G",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S3-FRI-G",
+      "hasta": "S3-CUR-PER-G",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S3-CUR-PER-G",
+      "hasta": "S3-REC-G",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S3-REC-G",
+      "hasta": "K-ZOCALO-G",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "K-ZOCALO-G",
+      "hasta": "K-PLACA-RECEPTOR",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "K-PLACA-RECEPTOR",
+      "hasta": "S3-ESF-LIS-G",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S3-ESF-LIS-G",
+      "hasta": "S3-ESF-RUG-G",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    }
+  ]
+}

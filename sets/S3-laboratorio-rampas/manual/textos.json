@@ -1,0 +1,40 @@
+{
+  "audiencia": "adulto que media",
+  "titulo": "El Laboratorio de Rampas y Gravedad",
+  "fase": "Fase 5 del plan de impresión",
+  "regla_pantalla": {
+    "es": "El niño mueve los bloques. El adulto sostiene la tableta. La criatura no toca la pantalla.",
+    "gl": "O neno move os bloques. O adulto sostén a tableta. A criatura non toca a pantalla."
+  },
+  "premio": {
+    "es": "El reconocimiento es para el adulto que acompaña, no para el niño.",
+    "gl": "O recoñecemento é para o adulto que acompaña, non para o neno."
+  },
+  "orientacion": "Lúa queda detrás del receptor y no recibe el golpe de la esfera.",
+  "escena": {
+    "es": "La rampa se apoya en la torre. La esfera se detiene en la lengüeta, antes de Lúa.",
+    "gl": "A rampa apóiase na torre. A esfera detense na lingüeta, antes de Lúa."
+  },
+  "pasos": [
+    {
+      "es": "Coloca el bloque bisagra y baja el eje de la rampa a la boca en C.",
+      "gl": "Coloca o bloque bisagra e baixa o eixe da rampa á boca en C."
+    },
+    {
+      "es": "Apila los pilares bajo el extremo alto. Dos pilares dejan la rampa baja; cuatro, la pronunciada.",
+      "gl": "Apila os piares baixo o extremo alto. Dous piares deixan a rampa baixa; catro, a pronunciada."
+    },
+    {
+      "es": "Encadena el tramo de fricción y, si el reto lo pide, la curva peraltada.",
+      "gl": "Encadea o tramo de fricción e, se o reto o pide, a curva peraltada."
+    },
+    {
+      "es": "Cierra con el receptor. La lengüeta mira hacia la rampa.",
+      "gl": "Pecha co receptor. A lingüeta mira cara á rampa."
+    },
+    {
+      "es": "La placa Receptor baja al zócalo, detrás del receptor.",
+      "gl": "A placa Receptor baixa ao zócalo, detrás do receptor."
+    }
+  ]
+}

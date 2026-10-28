@@ -1,0 +1,97 @@
+{
+  "nodos": [
+    "S4-CAN-E",
+    "S4-COD-E",
+    "S4-ROT-JAULA-E",
+    "S4-ROT-ASPAS-E",
+    "S4-COM-LIG-E",
+    "S4-COM-PES-E",
+    "S4-MOL-JAULA-G",
+    "S4-MOL-ASPAS-G",
+    "K-ZOCALO-G",
+    "K-PLACA-FRONTAL"
+  ],
+  "aristas": [
+    {
+      "desde": "S4-CAN-E",
+      "hasta": "S4-COD-E",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S4-COD-E",
+      "hasta": "S4-ROT-JAULA-E",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S4-ROT-JAULA-E",
+      "hasta": "S4-ROT-ASPAS-E",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S4-ROT-ASPAS-E",
+      "hasta": "S4-COM-LIG-E",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S4-COM-LIG-E",
+      "hasta": "S4-COM-PES-E",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S4-COM-PES-E",
+      "hasta": "S4-MOL-JAULA-G",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S4-MOL-JAULA-G",
+      "hasta": "S4-MOL-ASPAS-G",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S4-MOL-ASPAS-G",
+      "hasta": "K-ZOCALO-G",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "K-ZOCALO-G",
+      "hasta": "K-PLACA-FRONTAL",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    }
+  ]
+}

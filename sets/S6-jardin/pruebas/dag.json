@@ -1,0 +1,137 @@
+{
+  "nodos": [
+    "S6-TIE-G",
+    "S6-SEM-G",
+    "S6-TAL-G",
+    "S6-FLO-G",
+    "S6-COP-G",
+    "S6-FRU-MAN",
+    "S6-FRU-NAR",
+    "S6-FRU-MANZ",
+    "S6-PRI-AZU",
+    "S6-PRI-AMA",
+    "S6-SIL-ARB",
+    "S6-SIL-LUN",
+    "K-ZOCALO-G",
+    "K-PLACA-JARDIN"
+  ],
+  "aristas": [
+    {
+      "desde": "S6-TIE-G",
+      "hasta": "S6-SEM-G",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S6-SEM-G",
+      "hasta": "S6-TAL-G",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S6-TAL-G",
+      "hasta": "S6-FLO-G",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S6-FLO-G",
+      "hasta": "S6-COP-G",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S6-COP-G",
+      "hasta": "S6-FRU-MAN",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S6-FRU-MAN",
+      "hasta": "S6-FRU-NAR",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S6-FRU-NAR",
+      "hasta": "S6-FRU-MANZ",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S6-FRU-MANZ",
+      "hasta": "S6-PRI-AZU",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S6-PRI-AZU",
+      "hasta": "S6-PRI-AMA",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S6-PRI-AMA",
+      "hasta": "S6-SIL-ARB",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S6-SIL-ARB",
+      "hasta": "S6-SIL-LUN",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "S6-SIL-LUN",
+      "hasta": "K-ZOCALO-G",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "desde": "K-ZOCALO-G",
+      "hasta": "K-PLACA-JARDIN",
+      "u": [
+        0,
+        0,
+        -1
+      ]
+    }
+  ]
+}

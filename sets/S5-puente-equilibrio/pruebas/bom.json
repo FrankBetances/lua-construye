@@ -1,0 +1,122 @@
+{
+  "carpeta": "S5-puente-equilibrio",
+  "titulo": "El Puente de Equilibrio y Fuerza",
+  "fase": "Fase 4 del plan de impresión",
+  "hipotesis": [
+    "Módulo de planta 31,80 mm y altura de bloque 19,20 mm, como en el Set 1. D1 sigue abierta.",
+    "Cuerpo de Lúa: 72 × 64 × 40 mm. SETS no da el milímetro del tronco.",
+    "Tetón de la probeta G: diámetro 9,40 mm y alto 4,50 mm. Tetón E: diámetro 6,40 mm y alto 3,20 mm.",
+    "Holgura de la probeta, radial: 0,15, 0,20 y 0,25 mm, en la hembra.",
+    "Rampa: H = 19,20 mm y L = 153,60 mm. Con H = 31,80 mm, L = 254,40 mm y no cabe en la cama de 220 mm.",
+    "Viga: 186 × 48 × 18 mm. Diez módulos de 31,80 mm miden 318 mm.",
+    "Resonadores: pared de 8 mm y cavidad distinta. La pared de 1,5 mm queda fuera.",
+    "Rosca del jardín: paso 8 mm, diente 3,60 mm, tres vueltas, impresa en vertical.",
+    "Masas: volumen de PLA a 1,24 g/cm³ como objetivo de 20, 40 y 60 g. Sin báscula.",
+    "Esfera G: diámetro 45 mm. La de 38 mm, marcada por verificar para menores de 36 meses, no se genera."
+  ],
+  "excluidas": [
+    "La viga de 10 × 31,80 mm mediría 318 mm y no cabe en la cama. Esta viga mide 186 mm.",
+    "S5-PAS-G es un clip en U. Un pasador pequeño entraría en el cilindro de piezas pequeñas.",
+    "20, 40 y 60 g son un objetivo a 1,24 g/cm³. No hay báscula en esta máquina y la tolerancia de ±0,5 g no está verificada."
+  ],
+  "maestros": [
+    {
+      "codigo": "S5-FUL-G",
+      "nombre": "Fulcro de arista redondeada",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "La arista es un cilindro de 5 mm. El desgaste de PETG no se ha ensayado."
+    },
+    {
+      "codigo": "S5-VIG-G",
+      "nombre": "Viga balancín",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "186 mm. Diez módulos de 31,80 mm miden 318 mm y no caben en la cama."
+    },
+    {
+      "codigo": "S5-MAS-20",
+      "nombre": "Masa de referencia 20 g",
+      "cantidad": 2,
+      "union": "espiga",
+      "nota": "Objetivo a 1,24 g/cm³. No pesada. Relieve de nube."
+    },
+    {
+      "codigo": "S5-MAS-40",
+      "nombre": "Masa de referencia 40 g",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "Objetivo a 1,24 g/cm³. No pesada. Relieve de hoja."
+    },
+    {
+      "codigo": "S5-MAS-60",
+      "nombre": "Masa de referencia 60 g",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "Objetivo a 1,24 g/cm³. No pesada. Chaflán facetado."
+    },
+    {
+      "codigo": "S5-PAS-G",
+      "nombre": "Clip de puente",
+      "cantidad": 4,
+      "union": "snap",
+      "nota": "Sustituye al pasador pequeño, que entraría en el cilindro de piezas pequeñas."
+    },
+    {
+      "codigo": "S3-PIL-1-G",
+      "nombre": "Pilar con marca táctil 1",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "Altura H = 19,20 mm. El 8 × 31,80 mm de la rampa no cabe en la cama."
+    },
+    {
+      "codigo": "S3-PIL-2-G",
+      "nombre": "Pilar con marca táctil 2",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "Altura H = 19,20 mm. El 8 × 31,80 mm de la rampa no cabe en la cama."
+    },
+    {
+      "codigo": "S3-PIL-3-G",
+      "nombre": "Pilar con marca táctil 3",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "Altura H = 19,20 mm. El 8 × 31,80 mm de la rampa no cabe en la cama."
+    },
+    {
+      "codigo": "S3-PIL-4-G",
+      "nombre": "Pilar con marca táctil 4",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "Altura H = 19,20 mm. El 8 × 31,80 mm de la rampa no cabe en la cama."
+    },
+    {
+      "codigo": "S3-PIL-5-G",
+      "nombre": "Pilar con marca táctil 5",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "Altura H = 19,20 mm. El 8 × 31,80 mm de la rampa no cabe en la cama."
+    },
+    {
+      "codigo": "S3-PIL-6-G",
+      "nombre": "Pilar con marca táctil 6",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "Altura H = 19,20 mm. El 8 × 31,80 mm de la rampa no cabe en la cama."
+    },
+    {
+      "codigo": "K-ZOCALO-G",
+      "nombre": "Zócalo universal",
+      "cantidad": 1,
+      "union": "espiga",
+      "nota": "Mismo sólido que el Set 1."
+    },
+    {
+      "codigo": "K-PLACA-NIVEL",
+      "nombre": "Placa Nivel",
+      "cantidad": 1,
+      "union": "snap",
+      "nota": ""
+    }
+  ]
+}

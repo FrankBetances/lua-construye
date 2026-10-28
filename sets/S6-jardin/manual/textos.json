@@ -1,0 +1,44 @@
+{
+  "audiencia": "adulto que media",
+  "titulo": "El Jardín del Sol, la Sombra y la Semilla",
+  "fase": "Fase 6 del plan de impresión",
+  "regla_pantalla": {
+    "es": "El niño mueve los bloques. El adulto sostiene la tableta. La criatura no toca la pantalla.",
+    "gl": "O neno move os bloques. O adulto sostén a tableta. A criatura non toca a pantalla."
+  },
+  "premio": {
+    "es": "El reconocimiento es para el adulto que acompaña, no para el niño.",
+    "gl": "O recoñecemento é para o adulto que acompaña, non para o neno."
+  },
+  "orientacion": "El niño ve a Lúa desde atrás. La linterna no la usa el niño.",
+  "escena": {
+    "es": "La semilla entra en la tierra. Los tallos se enroscan. La flor y la copa comparten la misma rosca.",
+    "gl": "A semente entra na terra. Os talos enróscanse. A flor e a copa comparten a mesma rosca."
+  },
+  "pasos": [
+    {
+      "es": "Baja la placa Jardín al zócalo y ponlo junto a la base, del lado en que el niño ve a Lúa desde atrás.",
+      "gl": "Baixa a placa Xardín ao zócalo e pono xunto á base, do lado en que o neno ve a Lúa desde atrás."
+    },
+    {
+      "es": "Mete la semilla en el alvéolo, a ras.",
+      "gl": "Mete a semente no alvéolo, a ras."
+    },
+    {
+      "es": "Enrosca un tallo en la semilla y el siguiente tallo en el anterior.",
+      "gl": "Enrosca un talo na semente e o seguinte talo no anterior."
+    },
+    {
+      "es": "Corona con la flor o con la copa. Los frutos bajan a los pozos de la copa.",
+      "gl": "Coroa coa flor ou coa copa. Os froitos baixan aos pozos da copa."
+    },
+    {
+      "es": "El prisma azul va al pozo del agua y el amarillo al del sol. La linterna la sostiene el adulto.",
+      "gl": "O prisma azul vai ao pozo da auga e o amarelo ao do sol. A lanterna sostena o adulto."
+    },
+    {
+      "es": "La pantalla de la luna entra en la ranura de noche.",
+      "gl": "A pantalla da lúa entra na rañura de noite."
+    }
+  ]
+}

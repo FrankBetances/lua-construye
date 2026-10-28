@@ -1,0 +1,36 @@
+{
+  "audiencia": "adulto que media",
+  "titulo": "Kit Lúa",
+  "fase": "Fase 2 del plan de impresión",
+  "regla_pantalla": {
+    "es": "El niño mueve los bloques. El adulto sostiene la tableta. La criatura no toca la pantalla.",
+    "gl": "O neno move os bloques. O adulto sostén a tableta. A criatura non toca a pantalla."
+  },
+  "premio": {
+    "es": "El reconocimiento es para el adulto que acompaña, no para el niño.",
+    "gl": "O recoñecemento é para o adulto que acompaña, non para o neno."
+  },
+  "orientacion": "La izquierda y la derecha son las de Lúa. En los sets 1, 5 y 6 el niño la mira desde atrás.",
+  "escena": {
+    "es": "El tronco recibe las patas, el lomo y la cola. La placa se elige según el mundo y baja al zócalo.",
+    "gl": "O tronco recibe as patas, o lombo e a cola. A placa elíxese segundo o mundo e baixa ao zócalo."
+  },
+  "pasos": [
+    {
+      "es": "Encaja primero las patas traseras, de espiga redonda.",
+      "gl": "Encaixa primeiro as patas traseiras, de espiga redonda."
+    },
+    {
+      "es": "Encaja después las delanteras. La llave no entra en el pozo redondo.",
+      "gl": "Encaixa despois as dianteiras. A chave non entra no pozo redondo."
+    },
+    {
+      "es": "Coloca el lomo y la cola en la cara de atrás.",
+      "gl": "Coloca o lombo e a cola na cara de atrás."
+    },
+    {
+      "es": "Elige una placa y bájala al zócalo hasta oír el snap.",
+      "gl": "Elixe unha placa e báixaa ao zócalo ata oír o snap."
+    }
+  ]
+}

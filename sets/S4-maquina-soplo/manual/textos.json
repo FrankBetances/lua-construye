@@ -1,0 +1,40 @@
+{
+  "audiencia": "adulto que media",
+  "titulo": "La Máquina de Soplo y Viento",
+  "fase": "Fase 8 del plan de impresión",
+  "regla_pantalla": {
+    "es": "El niño mueve los bloques. El adulto sostiene la tableta. La criatura no toca la pantalla.",
+    "gl": "O neno move os bloques. O adulto sostén a tableta. A criatura non toca a pantalla."
+  },
+  "premio": {
+    "es": "El reconocimiento es para el adulto que acompaña, no para el niño.",
+    "gl": "O recoñecemento é para o adulto que acompaña, non para o neno."
+  },
+  "orientacion": "Lúa está de frente. Cada niño usa su embocadura, que no está en esta carpeta.",
+  "escena": {
+    "es": "Juego de soplo y de causa-efecto. No es un ejercicio de habla ni un tratamiento del velo.",
+    "gl": "Xogo de sopro e de causa-efecto. Non é un exercicio de fala nin un tratamento do veo."
+  },
+  "pasos": [
+    {
+      "es": "Baja la placa Frontal al zócalo. Lúa mira al niño. Las luces quedan apagadas.",
+      "gl": "Baixa a placa Frontal ao zócalo. Lúa mira ao neno. As luces quedan apagadas."
+    },
+    {
+      "es": "Acopla el canal y, si el reto dobla el aire, el codo.",
+      "gl": "Acopla a canle e, se o reto dobra o aire, o cóbado."
+    },
+    {
+      "es": "Mete el rotor en la jaula por el cojinete. Las aspas no salen de la jaula.",
+      "gl": "Mete o rotor na gaiola polo rodamento. As aspas non saen da gaiola."
+    },
+    {
+      "es": "Clava la compuerta ligera o la pesada en el pozo del canal.",
+      "gl": "Crava a comporta lixeira ou a pesada no pozo da canle."
+    },
+    {
+      "es": "Con menores de 3 años solo se usa el molinete, y sopla el adulto.",
+      "gl": "Con menores de 3 años só se usa o muiño, e sopra o adulto."
+    }
+  ]
+}
