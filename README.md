@@ -1,390 +1,184 @@
-# 🧱 Lúa Construye
+# Construye con Lúa
 
-> **Sistema modular tangible de construcción y robótica manipulativa educativa-clínica.**  
-> Basado en el estándar mecánico Duplo (paso de 31,80 mm), modelado proceduralmente en Blender (*Python `bpy`*) para impresión 3D FDM/resina y sincronizado con software pedagógico offline (*Descubre con Lúa*) y terapéutico (*Ecosistema Valeria*).
+Bloques pedagógicos que forman mundos de juguete STEAM. El niño construye y manipula, la tableta del adulto detecta el resultado físico, la app decide y Lúa reacciona en su pantalla.
 
----
+> **La app decide. Lúa reacciona. Los bloques los mueve el niño. El adulto media siempre.**
 
-## 🧭 Visión y Arquitectura del Ecosistema
-
-**Lúa Construye** unifica la manipulación física tangible con el pensamiento computacional y la estimulación neurofuncional en la primera infancia (0 a 6 años). El sistema establece una frontera estricta entre dos mundos:
-
-1. **Entorno 3D Físico (Blender Headless / Python `bpy`):** Generación algorítmica de geometría poligonal, tolerancias mecánicas milimétricas y exportación directa a STL/3MF sin dependencia de suites CAD privativas.
-2. **Entorno de Software (Flutter en *Descubre con Lúa*):** Catálogo declarativo estructurado en JSON, trazado vectorial directo en `CustomPainter` (cero emojis, cero fuentes externas), audio TPR pregrabado en inglés con verificación criptográfica SHA-256 y arquitectura **Zero-Network / Zero-PHI**.
-
-```
-                   ESTÁNDAR MECÁNICO DUPLO (31,80 mm)
- ┌───────────────────────────────────────────────────────────────────┐
- │        Piezas Núcleo (Core): Placas 8x8, bloques 2x2, 2x4,        │
- │         rampas continuas 15°/30° y ejes de giro modular           │
- └─────────────────────────────────┬─────────────────────────────────┘
-                                   │
-         ┌─────────────────────────┴─────────────────────────┐
-         ▼                                                   ▼
- GAMA «DESCUBRE CON LÚA»                               GAMA «VALERIA»
- (Escuela / LOMLOE / STEAM)                      (Hogar / Clínica / Estimulación)
-┌─────────────────────────────────┐                 ┌─────────────────────────────────┐
-│ • Baldosas de dirección plana   │                 │ • Relieves hápticos/sensoriales │
-│ • Ranuras de guiado de esferas  │ ◄─ Intercambio ─► │ • Cilindros de prensión gradual │
-│ • Bloques huecos resonadores    │      mecánico   │ • Canales para praxias de soplo │
-│ • Fichas algorítmicas de giro   │   (31,8 mm)     │ • Pesos calibrados propiocepción│
-└────────────────┬────────────────┘                 └────────────────┬────────────────┘
-                 │                                                   │
-                 ▼                                                   ▼
-       App Descubre con Lúa                                 Ecosistema Valeria
-┌─────────────────────────────────┐                 ┌─────────────────────────────────┐
-│ • assets/content/steam/*.json   │                 │ • Plataforma clínica / web      │
-│ • CustomPainter (cero emojis)   │                 │ • Registro longitudinal de hitos│
-│ • TPR English (SHA pregrabado)  │                 │ • Cribado neurodesarrollo       │
-│ • Zero Network / Zero PHI       │                 │ • Cumplimiento MDR / RGPD salud │
-└─────────────────────────────────┘                 └─────────────────────────────────┘
-```
+Estado: diseño activo · versión de prueba V5 · octubre 2026.
+Especificación detallada de los seis mundos: [`docs/SETS.md`](docs/SETS.md).
 
 ---
 
-## 📐 1. Especificación Mecánica en Blender (Métrica Real)
+## 1. Qué es
 
-Toda la matriz física se diseña en milímetros reales. En Blender la escena se configura con escala métrica estricta:
-```python
-scene.unit_settings.system = 'METRIC'
-scene.unit_settings.length_unit = 'MILLIMETERS'
-scene.unit_settings.scale_length = 0.001
+Construye con Lúa es un sistema modular de bloques físicos para niños de 0 a 6 años. Con los bloques se montan seis mundos (caminos, estaciones, laboratorios y máquinas simples) donde ocurre un fenómeno observable que el niño provoca con las manos o con la boca. Ese fenómeno manda: después se le asignan objetivos de lenguaje, de inglés L2 mediante TPR y, cuando corresponde, de práctica de rehabilitación.
+
+Hay dos puertas de entrada al mismo sistema de bloques, ambas offline:
+
+| Puerta | Contexto | Quién opera la tableta |
+|---|---|---|
+| **Valeria+** | Hogar y sesión, participación familiar | Familia o profesional |
+| **Descubre con Lúa** | Escuela infantil 0–6, inglés L2 y STEAM | Docente |
+
+Valeria+ es una aplicación educativa y Descubre con Lúa un recurso escolar. Ninguno diagnostica ni trata.
+
+## 2. Qué hace Lúa y qué no hace
+
+Esta tabla corrige la versión anterior de este README, que atribuía a Lúa avanzar, hablar y sonar. Eso no es posible en ninguna versión del hardware.
+
+| Lúa **sí** | Lúa **no** |
+|---|---|
+| Muestra expresiones, pictogramas, insignias y niveles en una pantalla circular de 240×240 px | Habla, suena ni escucha: no tiene altavoz ni micrófono |
+| Enciende cuatro luces direccionales en el bloque-cuello (propuesta V5) | Se mueve sola: no tiene motores. **El niño la desplaza** |
+| Ejecuta índices de catálogos flasheados que le envía la app por BLE | Mide, puntúa, decide ni guarda nada |
+
+La voz está **solo** en la tableta del adulto. La vibración, si se aprueba, está **solo** en el bloque independiente Ronroneo (≥ 3 años, nunca en VIA+).
+
+## 3. Arquitectura
+
+```
+  NIÑO ── mueve ──► BLOQUES PASIVOS (cuerpo de Lúa + mundos)
+                          │  la cámara de la tableta ve el resultado físico
+                          ▼
+  TABLETA DEL ADULTO: sensor ciego local (ARCore + MediaPipe) ─► APP decide
+                          │                                   │
+             BLE: índice de catálogo                    voz y sugerencias
+                          ▼                                   ▼ al adulto
+  LÚA (cabeza V4 + placa V1 + cuello sellado)        ADULTO media y amplía
+  pantalla · 4 luces direccionales (propuesta)
+                          │
+  RONRONEO (opcional, ≥3 años): bloque háptico independiente, BLE propio
 ```
 
-### Cotas Críticas del Estándar
+Topología BLE en estrella: la app es el único central. Lúa y Ronroneo no se hablan entre sí. Cero vídeo, cero red, cero datos de los niños.
+
+## 4. El contrato de interacción
+
+Todo set se especifica con la misma cadena de cinco eslabones. Es la frontera entre el equipo de bloques (STL), el de RA y el de la app:
 
 ```
-          ┌─── 9.40 mm ───┐
-          │    (Tetón)    │  ▲ 4.50 mm
-     ─────┴───────────────┴─────
-    │                          │  ▲ 19.20 mm (altura base del bloque)
-    │                          │  │
-    └──────────────────────────┘  ▼
-    ◄──────── 31.80 mm ────────► (Paso modular entre centros de tetón)
+1. EVENTO FÍSICO      el niño coloca, desliza, sopla, golpea, equilibra, enrosca
+2. DETECCIÓN          RA de la tableta (marcador, mano, cara, objeto)  ó  toque del adulto
+3. DECISIÓN           la app compara con el objetivo del reto
+4. REACCIÓN           Lúa (opcode) · luz (opcional) · Ronroneo (opcional)
+5. PALABRA            voz de la tableta o frase sugerida al adulto
 ```
 
-| Parámetro Mecánico | Valor Nominal | Tolerancia / Observación |
-| :--- | :--- | :--- |
-| **Paso modular (*stud pitch*)** | `31,80 mm` | Distancia entre centros de tetones contiguos en ejes X e Y. |
-| **Diámetro del tetón (*stud*)** | `9,40 mm` | Cilindro superior de inserción por fricción. |
-| **Altura del tetón (*stud height*)** | `4,50 mm` | Altura efectiva del conector superior. |
-| **Altura base del bloque** | `19,20 mm` | Altura estándar de bloque (sin incluir tetón superior). |
-| **Grosor de pared exterior** | `1,50 - 1,60 mm` | Rigidez estructural y ajuste por fricción sin riesgo de fractura. |
-| **Tubo interior de retención** | `Øext 13,20 mm` | Cilindros huecos interiores (*clutch power*) para bloques 2×2 y 2×4. |
-| **Offset de encaje (Impresión 3D)** | `Δ = 0,15 - 0,20 mm` | Compensación diametral radial según contracción térmica de PLA/PETG. |
-| **Seguridad Infantil (EN 71-1)** | `> 31,75 mm` | Todas las piezas superan el cilindro de partes pequeñas para < 36 meses. |
+Reglas del contrato (**propuesta**, pendientes de la puerta clínica B3):
+
+1. **Ningún evento depende solo de la RA.** El adulto siempre puede confirmar con un toque. La RA facilita, no condiciona la sesión.
+2. **El orden importa:** primero el fenómeno físico, luego una pausa breve, después Lúa y al final la palabra. La voz nunca tapa el sonido o el movimiento que el niño acaba de provocar.
+3. **Turno verbal frente a turno motor.** Durante el turno verbal (el niño debe contestar o vocalizar) todo queda quieto: Lúa estática, luces apagadas, sin vibración. Durante el turno motor, Lúa puede reaccionar al *resultado* con animaciones suaves. Esta distinción es nueva y necesita aprobación clínica.
+4. **Error neutro:** el mundo muestra su consecuencia natural y Lúa queda serena, atenta o de aliento. Nunca expresión de reproche, nunca luz ni vibración como señal de error.
+5. **La RA explica, no distrae.** Las capas visibles de RA en la tableta solo aparecen en la fase de ampliación, después de la acción. Durante la acción, la mirada del niño va a sus manos y a Lúa.
+6. **Diseño universal (UDL):** ningún reto exige hablar para que Lúa reaccione. Señalar, gestos o pictogramas de CAA cuentan como respuesta.
+
+## 5. Los seis mundos
+
+| Set | Fenómeno (manda) | Gesto principal | Evento clave detectado | Reacción de Lúa | Tamaños |
+|---|---|---|---|---|---|
+| 1 · El Camino de Lúa | Orientación espacial, algoritmo tangible | Colocar baldosas, deslizar a Lúa | Camino continuo / interrumpido, llegada a meta | Atención, ánimo, luz del giro, celebración | Grande y estándar |
+| 2 · Estación de Sonido y Eco | El sonido es vibración | Percutir, raspar | Golpe fuerte/débil, duración del raspado, ritmo | Calma o alegría tras el sonido, metrónomo visual | Estándar (≥ 3) |
+| 3 · Laboratorio de Rampas y Gravedad | Gravedad y fricción | Esperar y soltar | Salida, llegada, tiempo de recorrido | Espera expectante, «rápido» o «caracol» | Grande y estándar |
+| 4 · Máquina de Soplo y Viento | Flujo de aire | Soplar | Giro del rotor, compuerta abatida, soplo sostenido | Remolino, insignia, aro de progreso en pantalla | Estándar (≥ 3) |
+| 5 · Puente de Equilibrio y Fuerza | Palanca y centro de gravedad | Colocar masas | Ángulo de la viga, equilibrio | Sorpresa, alivio, luz del lado que baja | Grande y estándar |
+| 6 · Jardín del Sol, la Sombra y la Semilla | Crecimiento vegetal, luz y sombra | Sembrar, enroscar, interponer | Semilla, agua, sol, altura, noche | Ternura, esperanza, celebración, descanso | Grande y estándar |
+
+Además hay un **Kit Lúa (Set 0)**, común a todos: cuerpo de bloques, bloque dorsal con marcador y zócalo universal. Define la geometría que heredan los demás.
+
+## 6. Sistema de encaje y tamaños
+
+Hay dos escalas con relación 2:1 y encaje cruzado sin adaptadores:
+
+| Escala | Edad | Paso modular | Uso |
+|---|---|---|---|
+| Bloque grande (G) | 0–3 años | 2P | Todo lo que vaya a manos de menores de 36 meses |
+| Bloque estándar (E) | 3–6 años | P | Piezas de precisión, masas pequeñas, canales de soplo |
+
+El valor de P está pendiente de la decisión **D1** (ver §12). Hasta entonces, todo STL se modela **paramétrico en P** y nunca en milímetros fijos. La nomenclatura pública describe los bloques por su módulo de encaje y nunca por marcas de terceros (B4).
+
+## 7. Seguridad: lo afirmado y lo pendiente
+
+**Criterio de diseño:** las piezas de escala G no caben en el cilindro de piezas pequeñas de EN 71-1, tienen paredes estructurales ≥ 3,2 mm y carecen de imanes, adhesivos o subpiezas desprendibles. Ninguna pieza tiene electrónica salvo la unidad sellada de Lúa y Ronroneo.
+
+**No se declara ninguna conformidad hasta disponer de ensayo de laboratorio.** Faltan por verificar, como mínimo: EN 71-1/2/3; EN 62115 para la unidad de Lúa y Ronroneo; la Directiva de equipos radioeléctricos y sus actos delegados de ciberseguridad y privacidad; el calendario del nuevo Reglamento europeo de seguridad de juguetes; y la extraibilidad de baterías del Reglamento (UE) 2023/1542, que puede chocar con una batería sellada.
+
+Alertas abiertas por el diseño de los sets, desarrolladas en [`docs/SETS.md`](docs/SETS.md):
+
+- La esfera de Ø 38 mm (Set 3) supera el cilindro de piezas pequeñas, pero las esferas tienen requisitos propios para menores de 3 años. **Por verificar** antes de usarla en ese tramo.
+- La pared de 1,5 mm del resonador rojo (Set 2) incumple el mínimo de 3,2 mm.
+- Las embocaduras de soplo (Set 4) entran en la boca. No deben imprimirse en PLA por FDM, y cada niño debe tener la suya, también en el aula.
+- Las masas lastradas (Set 5) y los frutos (Set 6) pueden liberar piezas pequeñas si se rompen.
+- Las piezas de escala E acabarán en hogares con hermanos menores de 3 años. Hay que definir su etiquetado y su guía para familias.
+
+## 8. Qué dice la evidencia y qué no
+
+| Afirmación | Respaldo disponible | Cómo usarla |
+|---|---|---|
+| El juego de bloques guiado por un adulto aumenta el lenguaje espacial | BrickSmart (CHI 2025): 24 díadas, niños de 6–8 años, una sesión | Justifica que la app sugiera vocabulario espacial **al adulto**. No extrapolar resultados a 0–5 años |
+| Construir copiando un modelo se asocia con la numeración | Gilligan-Lee *et al.* 2023: 116 niños de 4 años, explica ~5 % de la varianza (14,5 % en familias de menor renta) | Es asociación, no causalidad. Justifica incluir **tarjetas de modelo** en cada set |
+| La terapia basada en bloques mejora la interacción social en TEA | Narzisi *et al.* 2021: 19 estudios, un solo ECA, calidad global baja | Los roles cooperativos (ingeniero/proveedor/constructor) son una inspiración, no un tratamiento validado |
+| STEAM inclusivo con UDL en 0–8 años | Wade *et al.* 2023: artículo conceptual, sin datos | Marco de diseño (representación, implicación, expresión), no evidencia de eficacia |
+| Los ejercicios de soplo mejoran el habla o el cierre velofaríngeo | **No respaldado** por la literatura de ejercicios oromotores no verbales | El Set 4 se presenta como juego de control respiratorio y causa-efecto, **no** como tratamiento del escape nasal ni de las dislalias |
+
+Las hipótesis clínicas (Ronroneo como metrónomo táctil en hipoacusia o implante coclear, desensibilización táctil en TEA) se tratan como hipótesis por validar y nunca como beneficios.
+
+## 9. Estructura del repositorio (propuesta)
+
+```
+construye-con-lua/
+├── README.md                  este documento
+├── docs/
+│   ├── SETS.md                especificación de los seis mundos + Kit Lúa
+│   ├── CONTRATO-EVENTOS.md    catálogo único de eventos y reacciones (a extraer de SETS.md)
+│   ├── ENCAJE.md              parámetros del sistema modular, tolerancias, probetas
+│   └── SEGURIDAD.md           matriz de requisitos y ensayos pendientes
+├── sets/
+│   └── S1-camino/             (igual para S0…S6)
+│       ├── cad/               fuentes paramétricas (Blender bpy / CAD)
+│       ├── stl/               masters de fabricación, uno por código de pieza
+│       ├── ar/                mallas simplificadas para Filament (< 100 KB) + marcadores
+│       ├── tarjetas/          tarjetas de modelo y de reto (impresión en papel)
+│       └── pruebas/           informes de impresión, ajuste y detección
+└── catalogos/                 índices de expresiones, pictogramas y patrones de luz
+```
+
+Regla de nombres: **un código de pieza = un STL = una malla RA = un marcador**. Ejemplo: `S1-REC-RUG-G` es la baldosa recta rugosa de escala grande.
+
+## 10. De la idea al prototipo: las puertas de cada set
+
+| Fase | Producto | Puerta para avanzar |
+|---|---|---|
+| 1. Experiencia | Ficha del set en `SETS.md` | Un adulto la entiende en menos de dos minutos |
+| 2. Contrato | Tabla evento → detección → reacción cerrada | Cada evento tiene alternativa por toque del adulto |
+| 3. Geometría | CAD paramétrico + STL de prueba | Probeta de encaje validada con masque3d |
+| 4. Impresión | Piezas físicas | Revisión de seguridad de diseño (§7) |
+| 5. Detección | Prueba de RA con piezas reales | Tasa de detección aceptable con la luz de un aula real (umbral por definir) |
+| 6. Integración | App + Lúa + piezas | Latencia y orden de reacción conformes al contrato |
+| 7. Puerta clínica | Revisión de opcodes, luz y vibración (B3) | Aprobación |
+| 8. Piloto | Sesiones con familias o aula | Comprensión del adulto, implicación, incidencias |
+
+## 11. Orden de desarrollo recomendado
+
+**Empezar por el Set 1.** Tiene la geometría más simple, obliga a cerrar el sistema de encaje, el zócalo universal y el marcador del lomo de Lúa, y su detección es discreta (está o no está la baldosa), la más fácil de validar. Además usa las cuatro luces direccionales con un significado inequívoco. Todo lo que se aprenda ahí lo heredan los demás sets.
+
+Orden propuesto: **S0 + S1 → S5 → S3 → S6 → S2 → S4.** El Set 5 reutiliza los pilares y valida la detección de ángulos. El Set 3 añade el seguimiento de objetos en movimiento. El Set 6 introduce la rosca y la óptica. El Set 2 exige resolver la acústica del material impreso. El Set 4 va el último porque concentra los problemas de higiene, la detección facial y el ajuste de su planteamiento clínico.
+
+## 12. Decisiones abiertas
+
+Heredadas del README de Lúa: **B1** (ubicación de la batería), **B2** (integración electrónica de Ronroneo), **B3** (aprobación clínica de luz, vibración y opcodes), **B4** (denominación pública), **B5** (pin libre para el anillo de luz).
+
+Nuevas, que surgen de este diseño:
+
+| Código | Decisión | Recomendación |
+|---|---|---|
+| **D1** | Valor del paso P: compatible de hecho con los bloques que las familias ya tienen, o propio e incompatible | Compatible de hecho (P = 8 mm en E, 16 mm en G), con revisión previa de propiedad industrial. Sin nombrar marcas |
+| **D2** | Tipo de marcador RA: imagen texturada (imágenes aumentadas de ARCore) o fiduciales en relieve/impresos | Probar ambos en el Set 1 con piezas reales antes de fijarlo para el resto |
+| **D3** | Distinción entre turno verbal y turno motor (contrato, regla 3) | Llevarla a la puerta clínica junto con B3 |
+| **D4** | Cámara trasera (bloques) y frontal (cara) en el Set 4: uso simultáneo o por fases | Por fases. El análisis facial solo en un modo de praxias de Valeria+ |
+| **D5** | Material de embocaduras y de piezas en contacto con la boca | Pieza extraíble de material apto para contacto bucal y desinfectable, de un proveedor distinto a la impresión FDM |
+| **D6** | Lastre de las masas del Set 5 | Inserto metálico único encapsulado, con ensayo de caída. Nunca perdigones ni granalla |
 
 ---
 
-## ⚙️ 2. Automatización Procedural: Script Headless (`tools/blender/generar_sets.py`)
-
-Para garantizar reproducibilidad absoluta sin depender de ajustes manuales en interfaz gráfica, las piezas base se generan desde terminal ejecutando Blender en segundo plano:
-
-```bash
-blender -b -P tools/blender/generar_sets.py -- --tipo lua_caminos --offset 0.15
-```
-
-### Código Fuente de Generación Paramétrica
-
-```python
-"""
-Generador procedural de bloques compatibles Duplo para Blender 4.x.
-Ejecución:
-    blender -b -P tools/blender/generar_sets.py -- --tipo lua_caminos
-"""
-
-import math
-import sys
-import bpy
-
-# Constantes estándar Duplo (metros en Blender con scale_length = 0.001)
-UNIT_MM = 0.001
-STUD_PITCH = 31.8 * UNIT_MM
-STUD_DIAMETER = 9.4 * UNIT_MM
-STUD_HEIGHT = 4.5 * UNIT_MM
-BLOCK_HEIGHT = 19.2 * UNIT_MM
-WALL_THICKNESS = 1.5 * UNIT_MM
-
-
-def limpiar_escena():
-    """Limpia todos los objetos y colecciones de la escena."""
-    bpy.ops.wm.read_factory_settings(use_empty=True)
-
-
-def crear_bloque_base(nombre: str, studs_x: int, studs_y: int):
-    """Genera un bloque sólido con tetones superiores estandarizados."""
-    ancho = studs_x * STUD_PITCH
-    largo = studs_y * STUD_PITCH
-
-    # Cuerpo principal
-    bpy.ops.mesh.primitive_cube_add(
-        size=1.0,
-        location=(ancho / 2, largo / 2, BLOCK_HEIGHT / 2)
-    )
-    bloque = bpy.context.active_object
-    bloque.name = nombre
-    bloque.scale = (ancho, largo, BLOCK_HEIGHT)
-    bpy.ops.object.transform_apply(scale=True)
-
-    # Generación paramétrica de studs superiores
-    for ix in range(studs_x):
-        for iy in range(studs_y):
-            cx = (ix + 0.5) * STUD_PITCH
-            cy = (iy + 0.5) * STUD_PITCH
-            cz = BLOCK_HEIGHT + (STUD_HEIGHT / 2)
-
-            bpy.ops.mesh.primitive_cylinder_add(
-                radius=STUD_DIAMETER / 2,
-                depth=STUD_HEIGHT,
-                location=(cx, cy, cz)
-            )
-            stud = bpy.context.active_object
-
-            # Unión booleana
-            mod = bloque.modifiers.new(type="BOOLEAN", name=f"stud_{ix}_{iy}")
-            mod.operation = "UNION"
-            mod.object = stud
-            bpy.context.view_layer.objects.active = bloque
-            bpy.ops.object.modifier_apply(modifier=mod.name)
-            bpy.data.objects.remove(stud, do_unlink=True)
-
-    return bloque
-
-
-def aplicar_ranura_camino(bloque, tipo="recta"):
-    """Añade ranura algorítmica para Lúa Camiños (ancho 12 mm, profundidad 4 mm)."""
-    ancho_ranura = 12.0 * UNIT_MM
-    profundidad = 4.0 * UNIT_MM
-
-    if tipo == "recta":
-        bpy.ops.mesh.primitive_cube_add(
-            size=1.0,
-            location=(
-                bloque.dimensions.x / 2,
-                bloque.dimensions.y / 2,
-                BLOCK_HEIGHT - (profundidad / 2),
-            ),
-        )
-        cortador = bpy.context.active_object
-        cortador.scale = (ancho_ranura, bloque.dimensions.y + 0.002, profundidad)
-        bpy.ops.object.transform_apply(scale=True)
-
-        mod = bloque.modifiers.new(type="BOOLEAN", name="corte_camino")
-        mod.operation = "DIFFERENCE"
-        mod.object = cortador
-        bpy.context.view_layer.objects.active = bloque
-        bpy.ops.object.modifier_apply(modifier=mod.name)
-        bpy.data.objects.remove(cortador, do_unlink=True)
-
-
-def exportar_stl(objeto, filepath: str):
-    """Exporta el objeto seleccionado a STL con escala y triangulación validada."""
-    bpy.ops.object.select_all(action="DESELECT")
-    objeto.select_set(True)
-    bpy.ops.wm.stl_export(filepath=filepath)
-
-
-if __name__ == "__main__":
-    limpiar_escena()
-    # Generación de baldosa 2x2 para Lúa Camiños
-    pieza = crear_bloque_base("lua_baldosa_recta_2x2", 2, 2)
-    aplicar_ranura_camino(pieza, "recta")
-    exportar_stl(pieza, "build/stl/lua_baldosa_recta.stl")
-```
-
----
-
-## 🔀 3. Matriz de Compatibilidad: Gama Lúa vs. Gama Valeria
-
-Ambas familias comparten el plano de anclaje inferior y superior (100% interoperables mecánicamente). Difieren en su **cara funcional superior**:
-
-| Gama | Pieza en Blender | Característica Física | Uso Pedagógico / Clínico |
-| :--- | :--- | :--- | :--- |
-| **Lúa** | `lua_camino_recta_2x2` | Ranura plana de paso de 12 mm continuo. | Algoritmos tangibles, secuenciación espacial. |
-| **Lúa** | `lua_camino_curva_2x2` | Arco cuadrante con radio de curvatura de 31,8 mm. | Cambio de dirección ortogonal, lateralidad. |
-| **Lúa** | `lua_marcador_gata` | Zócalo con el perfil de la gata Lúa en relieve 2 mm. | Objeto agente tangible (posición inicial/objetivo). |
-| **Valeria** | `val_textura_estriada` | Modificador `Displace` con patrón de estrías ±1,5 mm. | Estimulación táctil, propiocepción palmar. |
-| **Valeria** | `val_cilindro_presion` | Cilindro de inserción con pestaña de resistencia calibrada. | Fuerza de prensión bimanual, pinza digital. |
-| **Valeria** | `val_resonador_acustico` | Cavidad interna resonante amortiguada (bloque hueco). | Discriminación acústica manual (percusión sorda/aguda). |
-
----
-
-## 📱 4. Arquitectura de Software en Flutter (*Descubre con Lúa*)
-
-La app de soporte opera bajo **principios de máxima austeridad técnica**:
-* 🚫 Cero paquetes externos en `pubspec.yaml` para renderizado.
-* 🚫 Cero llamadas de red / telemetría (**Zero-Network**).
-* 🚫 Cero emojis o tipografías de iconos volátiles.
-* 🚫 Cero inferencia de IA en el dispositivo (**Zero-PHI**).
-
-### Estructura de Archivos
-
-```
-assets/content/steam/
-  └── sets_construccion.json       <-- Datos de retos e inventario (bilingüe gl/es)
-lib/data/models/
-  └── steam_set.dart               <-- Modelo inmutable y tipado confromJson
-lib/features/juega/
-  └── steam_silueta_painter.dart   <-- Trazado vectorial de piezas en Canvas
-tools/
-  └── check_steam_sets.py          <-- Gate que valida hashes SHA-256 de audios TPR
-```
-
-### Esquema de Datos Declarativo (`assets/content/steam/sets_construccion.json`)
-
-```json
-{
-  "sets": [
-    {
-      "id": "lua_caminos_algoritmos",
-      "curso": "3-4",
-      "titulo": {
-        "gl": "Lúa Camiños: Algoritmos na alfombra",
-        "es": "Lúa Caminos: Algoritmos en la alfombra"
-      },
-      "obxectivo": {
-        "gl": "Descubrir que as ordes van paso a paso e que un xiro cambia a dirección.",
-        "es": "Descubrir que las órdenes van paso a paso y que un giro cambia la dirección."
-      },
-      "aviso_seguridade": {
-        "gl": "Supervisión continuada da persoa adulta. Pezas maiores de 31 mm.",
-        "es": "Supervisión continuada de la persona adulta. Piezas mayores de 31 mm."
-      },
-      "inventario": [
-        { "id": "lua_recta", "cantidade": 4, "silueta": "ranura_recta" },
-        { "id": "lua_curva", "cantidade": 4, "silueta": "ranura_curva" },
-        { "id": "val_textura", "cantidade": 2, "silueta": "relieve_ondas", "orixe": "valeria" }
-      ],
-      "retos": [
-        {
-          "fase": 1,
-          "consigna": {
-            "gl": "Colocade dúas pezas rectas e pasade a gata con dous pasos.",
-            "es": "Colocad dos piezas rectas y pasad a la gata con dos pasos."
-          },
-          "tpr": {
-            "texto": "Step forward",
-            "audio_sha": "sha256_b2938a192847cdef482910482910482910482910482910482910482910482910"
-          }
-        }
-      ]
-    }
-  ]
-}
-```
-
-### Renderizado Vectorial Autónomo (`lib/features/juega/steam_silueta_painter.dart`)
-
-Cada pieza del inventario se dibuja vectorialmente mediante primitivas matemáticas de Flutter Canvas:
-
-```dart
-import 'package:flutter/material.dart';
-
-/// Dibuja vectorialmente las siluetas del inventario sin fuentes ni imágenes externas.
-class SteamSiluetaPainter extends CustomPainter {
-  final String silueta;
-  final Color color;
-
-  const SteamSiluetaPainter({
-    required this.silueta,
-    required this.color,
-  });
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    final paint = Paint()
-      ..color = color
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 2.0
-      ..strokeCap = StrokeCap.round;
-
-    final w = size.width;
-    final h = size.height;
-
-    switch (silueta) {
-      case 'ranura_recta':
-        // Bloque con canal central recto
-        canvas.drawRect(Rect.fromLTWH(0, 0, w, h), paint);
-        paint.strokeWidth = 3.0;
-        canvas.drawLine(Offset(w / 2, 0), Offset(w / 2, h), paint);
-        break;
-
-      case 'ranura_curva':
-        // Bloque con canal en arco cuadrante
-        canvas.drawRect(Rect.fromLTWH(0, 0, w, h), paint);
-        final path = Path()
-          ..moveTo(0, h / 2)
-          ..quadraticBezierTo(w / 2, h / 2, w / 2, h);
-        canvas.drawPath(path, paint);
-        break;
-
-      case 'relieve_ondas':
-        // Pieza sensorial tipo Valeria: estrías táctiles
-        canvas.drawRect(Rect.fromLTWH(0, 0, w, h), paint);
-        for (var i = 1; i <= 3; i++) {
-          final y = h * (i / 4.0);
-          canvas.drawLine(Offset(w * 0.2, y), Offset(w * 0.8, y), paint);
-        }
-        break;
-
-      default:
-        // Contenedor modular neutro
-        canvas.drawRect(Rect.fromLTWH(0, 0, w, h), paint);
-    }
-  }
-
-  @override
-  bool shouldRepaint(covariant SteamSiluetaPainter oldDelegate) {
-    return oldDelegate.silueta != silueta || oldDelegate.color != color;
-  }
-}
-```
-
----
-
-## 🗓️ 5. Plan de Trabajo Técnico (4 Hitos / 8 Semanas)
-
-```
-Semanas:  [1 - 2]            [3 - 4]            [5 - 6]            [7 - 8]
-        ┌───────────┐      ┌───────────┐      ┌───────────┐      ┌───────────┐
-        │  HITO 1   │ ───► │  HITO 2   │ ───► │  HITO 3   │ ───► │  HITO 4   │
-        └───────────┘      └───────────┘      └───────────┘      └───────────┘
-         Pipeline 3D        Datos JSON         UI Canvas &         Testing,
-          en Blender       Sets & Modelos       Voces TPR         CI (21 Gates)
-```
-
-- **Hito 1: Pipeline de Modelado en Blender (Semanas 1–2)**
-  - Script `tools/blender/generar_sets.py` con generación paramétrica de bloques 2×2, 2×4 y bases 8×8.
-  - Modelos de la Gama Lúa: `lua_recta.blend`, `lua_curva.blend`, `lua_interseccion.blend`.
-  - Modelos de la Gama Valeria: `val_ondas.blend`, `val_puntos.blend`, `val_cilindro.blend`.
-  - Exportación de STLs de prueba con offset de encaje de 0,15 mm para calibración en impresora 3D.
-- **Hito 2: Integración de Datos en Flutter (Semanas 3–4)**
-  - `assets/content/steam/sets_construccion.json` con los 5 sets curriculares.
-  - `lib/data/models/steam_set.dart` con deserialización inmutable y tipada.
-  - Validador `tools/check_steam_sets.py` integrado en `tools/gates.sh` para comprobar bilingüismo estricto (gl/es) y campos de seguridad.
-- **Hito 3: UI, Trazado Vectorial y Cobertura de Voz (Semanas 5–6)**
-  - Implementación de `SteamSiluetaPainter` para visualización limpia del inventario sin emojis.
-  - Extracción de consignas y órdenes TPR en inglés hacia el corpus vocal.
-  - Síntesis neuronal de locuciones pregrabadas (`export_voice_corpus.py` → `generate_voice_assets.py`).
-  - Verificación de renderizado de audio condicionado a la existencia física del hash SHA en `assets/voice/`.
-- **Hito 4: Verificación, Golden Tests y CI (Semanas 7–8)**
-  - `test/features/steam_sets_test.dart`: comprobación offline del flujo de asamblea y ausencia total de sockets o peticiones de red.
-  - `test/capturas_test.dart`: regeneración de capturas automáticas para el manual técnico.
-  - Validación completa con los **21 gates en verde** en `tools/gates.sh`.
-
----
-
-## ⚖️ 6. Evaluación de Viabilidad y Veredicto Arquitectónico
-
-| Componente Evaluado | Descripción Técnica | Desafío Real Identificado | Veredicto |
-| :--- | :--- | :--- | :---: |
-| **Generación procedural en Blender headless vía Python (`bpy`)** | Modelar todo el sistema de bloques con scripts de terminal para exportar STLs idénticos y repetibles. | Curva de ajuste fino de tolerancias: cada impresora y filamento encoge diferente; exige calibrar el offset radial (0,15 mm vs 0,20 mm) en la primera tirada. | **APLICABLE YA** |
-| **Renderizado de siluetas de piezas en Flutter con `CustomPainter`** | Dibujo procedural en canvas nativo dentro de la app para no inflar el bundle ni usar paquetes externos. | Mantenimiento manual del trazado si se añaden decenas de piezas complejas al catálogo. | **APLICABLE YA** |
-| **Visor interactivo 3D embebido en la app para la docente** | Incorporar un renderizador WebGL/OpenGL en Flutter para ver e interactuar con los modelos 3D en tiempo real. | Requiere dependencias pesadas en `pubspec.yaml`, viola la directriz de cero librerías externas y distrae a la docente en una asamblea de 5 minutos donde solo necesita el inventario 2D. | **ESPECULATIVA (RECHAZADA)** |
-
----
-
-## 🔒 Licencia y Cumplimiento Normativo
-
-- **Seguridad en Juguetes:** Geometría conforme a la Directiva Europea 2009/48/CE y norma EN 71-1 (dimensiones mínimas superiores a 31,75 mm para prevención de asfixia en menores de 36 meses).
-- **Protección de Datos:** Arquitectura conforme a RGPD y Directiva MDR (UE) 2017/745 para piezas de la Gama Valeria (cero recopilación de identificadores de salud infantil en el dispositivo).
+*Todo el apoyo digital es offline. No hay red ni datos de los niños.*
