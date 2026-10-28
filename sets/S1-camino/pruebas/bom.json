@@ -1,0 +1,122 @@
+{
+  "set": "S1",
+  "nombre": "El Camino de Lúa",
+  "plan": "README §11: empezar por el Set 1. SETS §8 fase 3: imprimir el Set 1 completo. Este ejemplo modela los maestros G de esa tabla y las piezas del Set 0 que la escena nombra (zócalo, placas INICIO y META, patín).",
+  "fuentes": {
+    "docs/SETS.md": "leido",
+    "README.md": "leido",
+    "CCLREADME.md": "ausente",
+    "LCREADME.md": "ausente"
+  },
+  "hipotesis": "Planta de baldosa y zócalo: 4 × 31,80 mm. SETS no da milímetros del cuerpo de Lúa; ancho = 2 módulos de cuerpo + 2 módulos.",
+  "excluidos": [
+    {
+      "codigo": "S1-CMD-*-E",
+      "motivo": "El punto abierto del Set 1 recomienda no meter las fichas de escala E en el kit de 0 a 3 años. No se genera ese STL."
+    },
+    {
+      "codigo": "K-CUELLO",
+      "motivo": "SET 0: lo imprime e integra el fabricante. Fuera de este ejemplo."
+    }
+  ],
+  "maestros": [
+    {
+      "codigo": "S1-REC-LIS-G",
+      "nombre": "Baldosa recta lisa (ondas suaves)",
+      "cantidad": 3,
+      "escala": "G",
+      "origen": "tabla SET 1"
+    },
+    {
+      "codigo": "S1-REC-RUG-G",
+      "nombre": "Baldosa recta rugosa (estriada)",
+      "cantidad": 3,
+      "escala": "G",
+      "origen": "tabla SET 1"
+    },
+    {
+      "codigo": "S1-CUR-G",
+      "nombre": "Curva de 90°",
+      "cantidad": 4,
+      "escala": "G",
+      "origen": "tabla SET 1"
+    },
+    {
+      "codigo": "S1-TEE-G",
+      "nombre": "Intersección en T",
+      "cantidad": 2,
+      "escala": "G",
+      "origen": "tabla SET 1"
+    },
+    {
+      "codigo": "S1-CMD-AVA-G",
+      "nombre": "Ficha de comando avanza",
+      "cantidad": 1,
+      "escala": "G",
+      "origen": "tabla SET 1, grupo S1-CMD-AVA/PAR/GIR/SAL, versión G"
+    },
+    {
+      "codigo": "S1-CMD-PAR-G",
+      "nombre": "Ficha de comando para",
+      "cantidad": 1,
+      "escala": "G",
+      "origen": "tabla SET 1, grupo S1-CMD-AVA/PAR/GIR/SAL, versión G"
+    },
+    {
+      "codigo": "S1-CMD-GIR-G",
+      "nombre": "Ficha de comando gira",
+      "cantidad": 1,
+      "escala": "G",
+      "origen": "tabla SET 1, grupo S1-CMD-AVA/PAR/GIR/SAL, versión G"
+    },
+    {
+      "codigo": "S1-CMD-SAL-G",
+      "nombre": "Ficha de comando salta",
+      "cantidad": 1,
+      "escala": "G",
+      "origen": "tabla SET 1, grupo S1-CMD-AVA/PAR/GIR/SAL, versión G"
+    },
+    {
+      "codigo": "S1-DEST-PARQUE",
+      "nombre": "Placa de destino parque",
+      "cantidad": 1,
+      "escala": "G",
+      "origen": "tabla SET 1, S1-DEST-*"
+    },
+    {
+      "codigo": "S1-DEST-CAMA",
+      "nombre": "Placa de destino cama",
+      "cantidad": 1,
+      "escala": "G",
+      "origen": "tabla SET 1 y reto 4"
+    },
+    {
+      "codigo": "K-ZOCALO-G",
+      "nombre": "Zócalo universal",
+      "cantidad": 1,
+      "escala": "G",
+      "origen": "tabla SET 0; un STL, varias instancias en la escena"
+    },
+    {
+      "codigo": "K-PLACA-INICIO",
+      "nombre": "Placa de identidad INICIO",
+      "cantidad": 1,
+      "escala": "G",
+      "origen": "tabla SET 0, K-PLACA-*"
+    },
+    {
+      "codigo": "K-PLACA-META",
+      "nombre": "Placa de identidad META",
+      "cantidad": 1,
+      "escala": "G",
+      "origen": "tabla SET 0, K-PLACA-*"
+    },
+    {
+      "codigo": "K-PATIN-G",
+      "nombre": "Patín guía",
+      "cantidad": 1,
+      "escala": "G",
+      "origen": "tabla SET 0; corre por la ranura de 12 mm del Set 1"
+    }
+  ]
+}

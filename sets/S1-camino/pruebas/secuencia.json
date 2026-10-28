@@ -1,0 +1,506 @@
+{
+  "metodo": "Desensamblaje inverso del árbol de encajes. En cada paso se retira una hoja: una pieza que ya no tiene otra encajada en ella. Si hay varias, sale primero la que tapa a su soporte (placa o patín) y, a igualdad, la de mayor X. El montaje es el reverso. La cola de milano no tapa el desmontaje del vecino; la placa y el patín sí.",
+  "tarjetas": {
+    "recta": {
+      "titulo": "Recorrido recto",
+      "retiro": [
+        "pM",
+        "pat",
+        "pI",
+        "zM",
+        "b3",
+        "b2",
+        "b1",
+        "z0"
+      ],
+      "montaje": [
+        {
+          "orden": 1,
+          "id": "z0",
+          "codigo": "K-ZOCALO-G",
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "origen_mm": [
+            0,
+            0,
+            0
+          ],
+          "rot_z_grados": 0,
+          "desplazamiento_despiece_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bloquea_al_padre": false,
+          "rol": "ancla"
+        },
+        {
+          "orden": 2,
+          "id": "b1",
+          "codigo": "S1-REC-LIS-G",
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "origen_mm": [
+            127.2,
+            0,
+            0
+          ],
+          "rot_z_grados": 0,
+          "desplazamiento_despiece_mm": [
+            16.0,
+            0.0,
+            28.0
+          ],
+          "bloquea_al_padre": false,
+          "rol": "baldosa"
+        },
+        {
+          "orden": 3,
+          "id": "b2",
+          "codigo": "S1-REC-LIS-G",
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "origen_mm": [
+            254.4,
+            0,
+            0
+          ],
+          "rot_z_grados": 0,
+          "desplazamiento_despiece_mm": [
+            32.0,
+            0.0,
+            56.0
+          ],
+          "bloquea_al_padre": false,
+          "rol": "baldosa"
+        },
+        {
+          "orden": 4,
+          "id": "b3",
+          "codigo": "S1-REC-LIS-G",
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "origen_mm": [
+            381.6,
+            0,
+            0
+          ],
+          "rot_z_grados": 0,
+          "desplazamiento_despiece_mm": [
+            48.0,
+            0.0,
+            84.0
+          ],
+          "bloquea_al_padre": false,
+          "rol": "baldosa"
+        },
+        {
+          "orden": 5,
+          "id": "zM",
+          "codigo": "K-ZOCALO-G",
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "origen_mm": [
+            508.8,
+            0,
+            0
+          ],
+          "rot_z_grados": 0,
+          "desplazamiento_despiece_mm": [
+            64.0,
+            0.0,
+            112.0
+          ],
+          "bloquea_al_padre": false,
+          "rol": "ancla"
+        },
+        {
+          "orden": 6,
+          "id": "pI",
+          "codigo": "K-PLACA-INICIO",
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "origen_mm": [
+            16.2,
+            8.2,
+            15.2
+          ],
+          "rot_z_grados": 0,
+          "desplazamiento_despiece_mm": [
+            80.0,
+            0.0,
+            140.0
+          ],
+          "bloquea_al_padre": true,
+          "rol": "placa"
+        },
+        {
+          "orden": 7,
+          "id": "pat",
+          "codigo": "K-PATIN-G",
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "origen_mm": [
+            286.2,
+            31.8,
+            19.2
+          ],
+          "rot_z_grados": 0,
+          "desplazamiento_despiece_mm": [
+            96.0,
+            0.0,
+            168.0
+          ],
+          "bloquea_al_padre": true,
+          "rol": "patin"
+        },
+        {
+          "orden": 8,
+          "id": "pM",
+          "codigo": "K-PLACA-META",
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "origen_mm": [
+            525.0,
+            8.2,
+            15.2
+          ],
+          "rot_z_grados": 0,
+          "desplazamiento_despiece_mm": [
+            112.0,
+            0.0,
+            196.0
+          ],
+          "bloquea_al_padre": true,
+          "rol": "placa"
+        }
+      ]
+    },
+    "curva": {
+      "titulo": "Una curva",
+      "retiro": [
+        "pM",
+        "pI",
+        "zM",
+        "c1",
+        "z0"
+      ],
+      "montaje": [
+        {
+          "orden": 1,
+          "id": "z0",
+          "codigo": "K-ZOCALO-G",
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "origen_mm": [
+            0,
+            0,
+            0
+          ],
+          "rot_z_grados": 0,
+          "desplazamiento_despiece_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bloquea_al_padre": false,
+          "rol": "ancla"
+        },
+        {
+          "orden": 2,
+          "id": "c1",
+          "codigo": "S1-CUR-G",
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "origen_mm": [
+            127.2,
+            0,
+            0
+          ],
+          "rot_z_grados": 0,
+          "desplazamiento_despiece_mm": [
+            16.0,
+            0.0,
+            28.0
+          ],
+          "bloquea_al_padre": false,
+          "rol": "baldosa"
+        },
+        {
+          "orden": 3,
+          "id": "zM",
+          "codigo": "K-ZOCALO-G",
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "origen_mm": [
+            127.2,
+            127.2,
+            0
+          ],
+          "rot_z_grados": 90,
+          "desplazamiento_despiece_mm": [
+            32.0,
+            0.0,
+            56.0
+          ],
+          "bloquea_al_padre": false,
+          "rol": "ancla"
+        },
+        {
+          "orden": 4,
+          "id": "pI",
+          "codigo": "K-PLACA-INICIO",
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "origen_mm": [
+            16.2,
+            8.2,
+            15.2
+          ],
+          "rot_z_grados": 0,
+          "desplazamiento_despiece_mm": [
+            48.0,
+            0.0,
+            84.0
+          ],
+          "bloquea_al_padre": true,
+          "rol": "placa"
+        },
+        {
+          "orden": 5,
+          "id": "pM",
+          "codigo": "K-PLACA-META",
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "origen_mm": [
+            143.4,
+            135.4,
+            15.2
+          ],
+          "rot_z_grados": 0,
+          "desplazamiento_despiece_mm": [
+            64.0,
+            0.0,
+            112.0
+          ],
+          "bloquea_al_padre": true,
+          "rol": "placa"
+        }
+      ]
+    },
+    "te": {
+      "titulo": "Una T",
+      "retiro": [
+        "pP",
+        "pC",
+        "pI",
+        "zR",
+        "zB",
+        "t1",
+        "z0"
+      ],
+      "montaje": [
+        {
+          "orden": 1,
+          "id": "z0",
+          "codigo": "K-ZOCALO-G",
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "origen_mm": [
+            0,
+            0,
+            0
+          ],
+          "rot_z_grados": 0,
+          "desplazamiento_despiece_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bloquea_al_padre": false,
+          "rol": "ancla"
+        },
+        {
+          "orden": 2,
+          "id": "t1",
+          "codigo": "S1-TEE-G",
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "origen_mm": [
+            127.2,
+            0,
+            0
+          ],
+          "rot_z_grados": 0,
+          "desplazamiento_despiece_mm": [
+            16.0,
+            0.0,
+            28.0
+          ],
+          "bloquea_al_padre": false,
+          "rol": "baldosa"
+        },
+        {
+          "orden": 3,
+          "id": "zB",
+          "codigo": "K-ZOCALO-G",
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "origen_mm": [
+            127.2,
+            127.2,
+            0
+          ],
+          "rot_z_grados": 90,
+          "desplazamiento_despiece_mm": [
+            32.0,
+            0.0,
+            56.0
+          ],
+          "bloquea_al_padre": false,
+          "rol": "ancla"
+        },
+        {
+          "orden": 4,
+          "id": "zR",
+          "codigo": "K-ZOCALO-G",
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "origen_mm": [
+            254.4,
+            0,
+            0
+          ],
+          "rot_z_grados": 0,
+          "desplazamiento_despiece_mm": [
+            48.0,
+            0.0,
+            84.0
+          ],
+          "bloquea_al_padre": false,
+          "rol": "ancla"
+        },
+        {
+          "orden": 5,
+          "id": "pI",
+          "codigo": "K-PLACA-INICIO",
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "origen_mm": [
+            16.2,
+            8.2,
+            15.2
+          ],
+          "rot_z_grados": 0,
+          "desplazamiento_despiece_mm": [
+            64.0,
+            0.0,
+            112.0
+          ],
+          "bloquea_al_padre": true,
+          "rol": "placa"
+        },
+        {
+          "orden": 6,
+          "id": "pC",
+          "codigo": "S1-DEST-CAMA",
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "origen_mm": [
+            143.4,
+            135.4,
+            15.2
+          ],
+          "rot_z_grados": 0,
+          "desplazamiento_despiece_mm": [
+            80.0,
+            0.0,
+            140.0
+          ],
+          "bloquea_al_padre": true,
+          "rol": "placa"
+        },
+        {
+          "orden": 7,
+          "id": "pP",
+          "codigo": "S1-DEST-PARQUE",
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "origen_mm": [
+            270.6,
+            8.2,
+            15.2
+          ],
+          "rot_z_grados": 0,
+          "desplazamiento_despiece_mm": [
+            96.0,
+            0.0,
+            168.0
+          ],
+          "bloquea_al_padre": true,
+          "rol": "placa"
+        }
+      ]
+    }
+  }
+}

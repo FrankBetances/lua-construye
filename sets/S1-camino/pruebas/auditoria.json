@@ -1,0 +1,354 @@
+{
+  "norma": "EN 71-1, criterio de diseño del README §7. No es ensayo de laboratorio.",
+  "cilindro_mm": {
+    "diametro": 31.75,
+    "profundidad": 57.1
+  },
+  "pared_min_mm": 3.2,
+  "esfera_g_min_mm": 44.5,
+  "cama_mm": [
+    220.0,
+    220.0,
+    270.0
+  ],
+  "apto": true,
+  "rechazados": [],
+  "piezas": [
+    {
+      "codigo": "S1-REC-LIS-G",
+      "union": "espiga",
+      "dims_mm": [
+        136.8,
+        127.2,
+        19.2
+      ],
+      "nucleo_mm3": 217143.5,
+      "esfera": "no aplica",
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S1-REC-RUG-G",
+      "union": "espiga",
+      "dims_mm": [
+        136.8,
+        127.2,
+        20.7
+      ],
+      "nucleo_mm3": 213792.0,
+      "esfera": "no aplica",
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S1-CUR-G",
+      "union": "espiga",
+      "dims_mm": [
+        127.2,
+        136.8,
+        19.2
+      ],
+      "nucleo_mm3": 220479.7,
+      "esfera": "no aplica",
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S1-TEE-G",
+      "union": "espiga",
+      "dims_mm": [
+        136.8,
+        136.8,
+        19.2
+      ],
+      "nucleo_mm3": 214159.7,
+      "esfera": "no aplica",
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S1-CMD-AVA-G",
+      "union": "snap",
+      "dims_mm": [
+        57.6,
+        36.0,
+        9.4
+      ],
+      "nucleo_mm3": 6393.6,
+      "esfera": "no aplica",
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S1-CMD-PAR-G",
+      "union": "snap",
+      "dims_mm": [
+        57.6,
+        36.0,
+        9.4
+      ],
+      "nucleo_mm3": 6393.6,
+      "esfera": "no aplica",
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S1-CMD-GIR-G",
+      "union": "snap",
+      "dims_mm": [
+        57.6,
+        36.0,
+        9.4
+      ],
+      "nucleo_mm3": 6393.6,
+      "esfera": "no aplica",
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S1-CMD-SAL-G",
+      "union": "snap",
+      "dims_mm": [
+        57.6,
+        36.0,
+        9.4
+      ],
+      "nucleo_mm3": 6393.6,
+      "esfera": "no aplica",
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S1-DEST-PARQUE",
+      "union": "snap",
+      "dims_mm": [
+        89.6,
+        54.0,
+        7.8
+      ],
+      "nucleo_mm3": 9648.0,
+      "esfera": "no aplica",
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "S1-DEST-CAMA",
+      "union": "snap",
+      "dims_mm": [
+        89.6,
+        54.0,
+        7.8
+      ],
+      "nucleo_mm3": 9648.0,
+      "esfera": "no aplica",
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "K-ZOCALO-G",
+      "union": "espiga",
+      "dims_mm": [
+        136.8,
+        127.2,
+        19.2
+      ],
+      "nucleo_mm3": 210096.2,
+      "esfera": "no aplica",
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "K-PLACA-INICIO",
+      "union": "snap",
+      "dims_mm": [
+        89.6,
+        54.0,
+        7.8
+      ],
+      "nucleo_mm3": 9648.0,
+      "esfera": "no aplica",
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "K-PLACA-META",
+      "union": "snap",
+      "dims_mm": [
+        89.6,
+        54.0,
+        7.8
+      ],
+      "nucleo_mm3": 9648.0,
+      "esfera": "no aplica",
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    },
+    {
+      "codigo": "K-PATIN-G",
+      "union": "espiga",
+      "dims_mm": [
+        63.6,
+        63.6,
+        14.0
+      ],
+      "nucleo_mm3": 14734.5,
+      "esfera": "no aplica",
+      "comprobaciones": {
+        "stl_hermetico": true,
+        "volumen_coincide": true,
+        "no_entra_en_el_cilindro": true,
+        "dos_ejes_mayores_que_el_cilindro": true,
+        "cabe_en_la_cama": true,
+        "union_mecanica": true,
+        "rosca": true,
+        "nucleo_tras_erocion_1_60mm": true,
+        "esfera_g": true,
+        "pared_declarada": true
+      },
+      "apto": true
+    }
+  ]
+}

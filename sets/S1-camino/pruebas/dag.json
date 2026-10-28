@@ -1,0 +1,388 @@
+{
+  "paso_mm": 127.2,
+  "u_comun": [
+    0,
+    0,
+    -1
+  ],
+  "nota": "La espiga es una cola de milano vertical: la pieza baja (u = −Z). La placa y el patín sí tapan el desmontaje de su soporte; la cola de milano no, porque sale hacia arriba.",
+  "tarjetas": {
+    "recta": {
+      "titulo": "Recorrido recto",
+      "nodos": [
+        {
+          "id": "z0",
+          "codigo": "K-ZOCALO-G",
+          "origen_mm": [
+            0,
+            0,
+            0
+          ],
+          "rot_z_grados": 0,
+          "requiere": null,
+          "bloquea_al_padre": false,
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "rol": "ancla"
+        },
+        {
+          "id": "b1",
+          "codigo": "S1-REC-LIS-G",
+          "origen_mm": [
+            127.2,
+            0,
+            0
+          ],
+          "rot_z_grados": 0,
+          "requiere": "z0",
+          "bloquea_al_padre": false,
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "rol": "baldosa"
+        },
+        {
+          "id": "b2",
+          "codigo": "S1-REC-LIS-G",
+          "origen_mm": [
+            254.4,
+            0,
+            0
+          ],
+          "rot_z_grados": 0,
+          "requiere": "b1",
+          "bloquea_al_padre": false,
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "rol": "baldosa"
+        },
+        {
+          "id": "b3",
+          "codigo": "S1-REC-LIS-G",
+          "origen_mm": [
+            381.6,
+            0,
+            0
+          ],
+          "rot_z_grados": 0,
+          "requiere": "b2",
+          "bloquea_al_padre": false,
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "rol": "baldosa"
+        },
+        {
+          "id": "zM",
+          "codigo": "K-ZOCALO-G",
+          "origen_mm": [
+            508.8,
+            0,
+            0
+          ],
+          "rot_z_grados": 0,
+          "requiere": "b3",
+          "bloquea_al_padre": false,
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "rol": "ancla"
+        },
+        {
+          "id": "pI",
+          "codigo": "K-PLACA-INICIO",
+          "origen_mm": [
+            16.2,
+            8.2,
+            15.2
+          ],
+          "rot_z_grados": 0,
+          "requiere": "z0",
+          "bloquea_al_padre": true,
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "rol": "placa"
+        },
+        {
+          "id": "pM",
+          "codigo": "K-PLACA-META",
+          "origen_mm": [
+            525.0,
+            8.2,
+            15.2
+          ],
+          "rot_z_grados": 0,
+          "requiere": "zM",
+          "bloquea_al_padre": true,
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "rol": "placa"
+        },
+        {
+          "id": "pat",
+          "codigo": "K-PATIN-G",
+          "origen_mm": [
+            286.2,
+            31.8,
+            19.2
+          ],
+          "rot_z_grados": 0,
+          "requiere": "b2",
+          "bloquea_al_padre": true,
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "rol": "patin"
+        }
+      ]
+    },
+    "curva": {
+      "titulo": "Una curva",
+      "nodos": [
+        {
+          "id": "z0",
+          "codigo": "K-ZOCALO-G",
+          "origen_mm": [
+            0,
+            0,
+            0
+          ],
+          "rot_z_grados": 0,
+          "requiere": null,
+          "bloquea_al_padre": false,
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "rol": "ancla"
+        },
+        {
+          "id": "c1",
+          "codigo": "S1-CUR-G",
+          "origen_mm": [
+            127.2,
+            0,
+            0
+          ],
+          "rot_z_grados": 0,
+          "requiere": "z0",
+          "bloquea_al_padre": false,
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "rol": "baldosa"
+        },
+        {
+          "id": "zM",
+          "codigo": "K-ZOCALO-G",
+          "origen_mm": [
+            127.2,
+            127.2,
+            0
+          ],
+          "rot_z_grados": 90,
+          "requiere": "c1",
+          "bloquea_al_padre": false,
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "rol": "ancla",
+          "nota_giro": "La hembra local −X queda contra el macho +Y de la pieza anterior."
+        },
+        {
+          "id": "pI",
+          "codigo": "K-PLACA-INICIO",
+          "origen_mm": [
+            16.2,
+            8.2,
+            15.2
+          ],
+          "rot_z_grados": 0,
+          "requiere": "z0",
+          "bloquea_al_padre": true,
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "rol": "placa"
+        },
+        {
+          "id": "pM",
+          "codigo": "K-PLACA-META",
+          "origen_mm": [
+            143.4,
+            135.4,
+            15.2
+          ],
+          "rot_z_grados": 0,
+          "requiere": "zM",
+          "bloquea_al_padre": true,
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "rol": "placa"
+        }
+      ]
+    },
+    "te": {
+      "titulo": "Una T",
+      "nodos": [
+        {
+          "id": "z0",
+          "codigo": "K-ZOCALO-G",
+          "origen_mm": [
+            0,
+            0,
+            0
+          ],
+          "rot_z_grados": 0,
+          "requiere": null,
+          "bloquea_al_padre": false,
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "rol": "ancla"
+        },
+        {
+          "id": "t1",
+          "codigo": "S1-TEE-G",
+          "origen_mm": [
+            127.2,
+            0,
+            0
+          ],
+          "rot_z_grados": 0,
+          "requiere": "z0",
+          "bloquea_al_padre": false,
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "rol": "baldosa"
+        },
+        {
+          "id": "zR",
+          "codigo": "K-ZOCALO-G",
+          "origen_mm": [
+            254.4,
+            0,
+            0
+          ],
+          "rot_z_grados": 0,
+          "requiere": "t1",
+          "bloquea_al_padre": false,
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "rol": "ancla"
+        },
+        {
+          "id": "zB",
+          "codigo": "K-ZOCALO-G",
+          "origen_mm": [
+            127.2,
+            127.2,
+            0
+          ],
+          "rot_z_grados": 90,
+          "requiere": "t1",
+          "bloquea_al_padre": false,
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "rol": "ancla",
+          "nota_giro": "La hembra local −X queda contra el macho +Y de la pieza anterior."
+        },
+        {
+          "id": "pI",
+          "codigo": "K-PLACA-INICIO",
+          "origen_mm": [
+            16.2,
+            8.2,
+            15.2
+          ],
+          "rot_z_grados": 0,
+          "requiere": "z0",
+          "bloquea_al_padre": true,
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "rol": "placa"
+        },
+        {
+          "id": "pP",
+          "codigo": "S1-DEST-PARQUE",
+          "origen_mm": [
+            270.6,
+            8.2,
+            15.2
+          ],
+          "rot_z_grados": 0,
+          "requiere": "zR",
+          "bloquea_al_padre": true,
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "rol": "placa"
+        },
+        {
+          "id": "pC",
+          "codigo": "S1-DEST-CAMA",
+          "origen_mm": [
+            143.4,
+            135.4,
+            15.2
+          ],
+          "rot_z_grados": 0,
+          "requiere": "zB",
+          "bloquea_al_padre": true,
+          "u_insercion": [
+            0,
+            0,
+            -1
+          ],
+          "rol": "placa"
+        }
+      ]
+    }
+  }
+}

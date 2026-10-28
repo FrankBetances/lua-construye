@@ -7,6 +7,8 @@ Bloques pedagógicos que forman mundos de juguete STEAM. El niño construye y ma
 Estado: diseño activo · versión de prueba V5 · octubre 2026.
 Especificación detallada de los seis mundos: [`docs/SETS.md`](docs/SETS.md).
 
+Ejemplo ejecutable del Set 1 (STL, despiece y manual): [`docs/EJEMPLO-SET-1.md`](docs/EJEMPLO-SET-1.md). Se genera con `make ejemplo-s1`.
+
 ---
 
 ## 1. Qué es

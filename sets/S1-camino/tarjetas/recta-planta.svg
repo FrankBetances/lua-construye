@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="520" viewBox="0 0 980 520">
+<rect width="100%" height="100%" fill="#f7f4ef"/>
+<text x="24" y="36" font-family="sans-serif" font-size="16" fill="#222">Planta. La flecha de montaje es vertical: la pieza baja sobre la espiga.</text>
+<line x1="70.0" y1="80.0" x2="241.7" y2="80.0" stroke="rgb(30,30,30)" stroke-width="1.4"/>
+<line x1="241.7" y1="80.0" x2="241.7" y2="251.7" stroke="rgb(30,30,30)" stroke-width="1.4"/>
+<line x1="241.7" y1="251.7" x2="70.0" y2="251.7" stroke="rgb(30,30,30)" stroke-width="1.4"/>
+<line x1="70.0" y1="251.7" x2="70.0" y2="80.0" stroke="rgb(30,30,30)" stroke-width="1.4"/>
+<line x1="80.8" y1="165.9" x2="230.9" y2="165.9" stroke="rgb(150,90,40)" stroke-width="1.4"/>
+<line x1="241.7" y1="80.0" x2="413.4" y2="80.0" stroke="rgb(30,30,30)" stroke-width="1.4"/>
+<line x1="413.4" y1="80.0" x2="413.4" y2="251.7" stroke="rgb(30,30,30)" stroke-width="1.4"/>
+<line x1="413.4" y1="251.7" x2="241.7" y2="251.7" stroke="rgb(30,30,30)" stroke-width="1.4"/>
+<line x1="241.7" y1="251.7" x2="241.7" y2="80.0" stroke="rgb(30,30,30)" stroke-width="1.4"/>
+<line x1="252.5" y1="165.9" x2="402.6" y2="165.9" stroke="rgb(150,90,40)" stroke-width="1.4"/>
+<line x1="413.4" y1="80.0" x2="585.2" y2="80.0" stroke="rgb(30,30,30)" stroke-width="1.4"/>
+<line x1="585.2" y1="80.0" x2="585.2" y2="251.7" stroke="rgb(30,30,30)" stroke-width="1.4"/>
+<line x1="585.2" y1="251.7" x2="413.4" y2="251.7" stroke="rgb(30,30,30)" stroke-width="1.4"/>
+<line x1="413.4" y1="251.7" x2="413.4" y2="80.0" stroke="rgb(30,30,30)" stroke-width="1.4"/>
+<line x1="424.2" y1="165.9" x2="574.4" y2="165.9" stroke="rgb(150,90,40)" stroke-width="1.4"/>
+<line x1="585.2" y1="80.0" x2="756.9" y2="80.0" stroke="rgb(30,30,30)" stroke-width="1.4"/>
+<line x1="756.9" y1="80.0" x2="756.9" y2="251.7" stroke="rgb(30,30,30)" stroke-width="1.4"/>
+<line x1="756.9" y1="251.7" x2="585.2" y2="251.7" stroke="rgb(30,30,30)" stroke-width="1.4"/>
+<line x1="585.2" y1="251.7" x2="585.2" y2="80.0" stroke="rgb(30,30,30)" stroke-width="1.4"/>
+<line x1="596.0" y1="165.9" x2="746.1" y2="165.9" stroke="rgb(150,90,40)" stroke-width="1.4"/>
+<line x1="756.9" y1="80.0" x2="928.6" y2="80.0" stroke="rgb(30,30,30)" stroke-width="1.4"/>
+<line x1="928.6" y1="80.0" x2="928.6" y2="251.7" stroke="rgb(30,30,30)" stroke-width="1.4"/>
+<line x1="928.6" y1="251.7" x2="756.9" y2="251.7" stroke="rgb(30,30,30)" stroke-width="1.4"/>
+<line x1="756.9" y1="251.7" x2="756.9" y2="80.0" stroke="rgb(30,30,30)" stroke-width="1.4"/>
+<line x1="767.7" y1="165.9" x2="917.8" y2="165.9" stroke="rgb(150,90,40)" stroke-width="1.4"/>
+<line x1="91.9" y1="91.1" x2="213.4" y2="91.1" stroke="rgb(40,70,90)" stroke-width="1.4"/>
+<line x1="213.4" y1="91.1" x2="213.4" y2="153.2" stroke="rgb(40,70,90)" stroke-width="1.4"/>
+<line x1="213.4" y1="153.2" x2="91.9" y2="153.2" stroke="rgb(40,70,90)" stroke-width="1.4"/>
+<line x1="91.9" y1="153.2" x2="91.9" y2="91.1" stroke="rgb(40,70,90)" stroke-width="1.4"/>
+<line x1="456.4" y1="122.9" x2="542.2" y2="122.9" stroke="rgb(120,80,40)" stroke-width="1.4"/>
+<line x1="542.2" y1="122.9" x2="542.2" y2="208.8" stroke="rgb(120,80,40)" stroke-width="1.4"/>
+<line x1="542.2" y1="208.8" x2="456.4" y2="208.8" stroke="rgb(120,80,40)" stroke-width="1.4"/>
+<line x1="456.4" y1="208.8" x2="456.4" y2="122.9" stroke="rgb(120,80,40)" stroke-width="1.4"/>
+<line x1="778.8" y1="91.1" x2="900.2" y2="91.1" stroke="rgb(40,70,90)" stroke-width="1.4"/>
+<line x1="900.2" y1="91.1" x2="900.2" y2="153.2" stroke="rgb(40,70,90)" stroke-width="1.4"/>
+<line x1="900.2" y1="153.2" x2="778.8" y2="153.2" stroke="rgb(40,70,90)" stroke-width="1.4"/>
+<line x1="778.8" y1="153.2" x2="778.8" y2="91.1" stroke="rgb(40,70,90)" stroke-width="1.4"/>
+<text x="78.0" y="102.0" font-family="sans-serif" font-size="12" fill="#222">1. K-ZOCALO-G</text>
+<text x="249.7" y="102.0" font-family="sans-serif" font-size="12" fill="#222">2. S1-REC-LIS-G</text>
+<text x="421.4" y="102.0" font-family="sans-serif" font-size="12" fill="#222">3. S1-REC-LIS-G</text>
+<text x="593.2" y="102.0" font-family="sans-serif" font-size="12" fill="#222">4. S1-REC-LIS-G</text>
+<text x="764.9" y="102.0" font-family="sans-serif" font-size="12" fill="#222">5. K-ZOCALO-G</text>
+<text x="95.9" y="107.1" font-family="sans-serif" font-size="12" fill="#222">K-PLACA-INICIO</text>
+<text x="460.4" y="138.9" font-family="sans-serif" font-size="12" fill="#222">K-PATIN-G</text>
+<text x="782.8" y="107.1" font-family="sans-serif" font-size="12" fill="#222">K-PLACA-META</text>
+</svg>

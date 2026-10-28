@@ -1,0 +1,35 @@
+{
+  "comando": "python3 -m agents.pipeline",
+  "agentes": [
+    {
+      "agente": "SpecTopologyAgent",
+      "exit": 0
+    },
+    {
+      "agente": "ManifoldCadAgent",
+      "exit": 0
+    },
+    {
+      "agente": "SafetyNormsAuditor",
+      "exit": 0
+    },
+    {
+      "agente": "AssemblySequencerAgent",
+      "exit": 0
+    },
+    {
+      "agente": "TechnicalIllustrationAgent",
+      "exit": 0
+    },
+    {
+      "agente": "PedagogyManualAgent",
+      "exit": 0
+    },
+    {
+      "agente": "ManualPublisherAgent",
+      "exit": 0
+    }
+  ],
+  "exit": 0,
+  "auditoria_apta": true
+}
