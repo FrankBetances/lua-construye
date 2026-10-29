@@ -20,10 +20,11 @@ según el fichero. **No dice que encaje, que gire ni que aguante.**
 4. **Set 4: la jaula del rotor y la del molinete van abiertas por arriba.** El
    eje de las aspas se apoya en dos cunas en U, sin nada que lo sujete por
    arriba. La embocadura (S4-BOQ) no va: no es PLA por FDM.
-5. **Lúa V5 no va aquí.** El cuerpo se imprime con su propio paquete
-   (`lua-firmware/entrega/lua-v5/lua-v5-imprimir.zip`, del 29/10 por la noche).
-   **Su base tiene dos enchufes debajo para el patín de esta carpeta.** Si se
-   imprime la base del zip anterior, el patín no engancha.
+5. **Lúa V5 no va aquí.** El cuerpo (el cubo con su fondo de 108 × 108) se
+   imprime con su propio paquete, `lua-firmware/entrega/lua-v5/lua-v5-imprimir.zip`.
+   No hay que cambiarle nada: el patín de esta carpeta es una **bandeja** donde
+   apoya el fondo del cubo. Sujeta a Lúa por los lados; si se levanta a Lúa,
+   el patín se queda en la ranura.
 6. **Cantidad de PLA: unos 17,8 kg con el relleno al 100 %.** Es una cota,
    no una medida: con el relleno de abajo pesa bastante menos.
 7. **Sets 8 a 11 (policía, bomberos, hospital, trenes): van ESCALADOS** a la
