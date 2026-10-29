@@ -28,6 +28,8 @@ EXCLUIDAS = {
     ],
     "S0-kit-lua": [
         "K-CUELLO no se imprime: es la unidad sellada del fabricante y queda fuera del alcance del niño.",
+        "K-TRONCO-G, K-LOMO-G, K-PATA-DEL-G, K-PATA-TRA-G y K-COLA-G ya no se imprimen: el cuerpo de Lúa es el de Lúa V5 (lua-firmware), con su propio paquete.",
+        "Sin K-LOMO-G, Lúa V5 no lleva marcador de rumbo en el lomo: D2 sigue abierta y el adulto confirma con un toque.",
     ],
     "S2-estacion-sonido": [
         "S2-RES-ROJ con pared de 1,5 mm no se imprime: incumple el mínimo de 3,2 mm.",
@@ -179,7 +181,7 @@ def _carpeta(raiz: Path, carpeta: str, codigos: list[str], cache: dict) -> dict:
 def _glb(ruta: Path, solido: Manifold) -> tuple[int, float]:
     tolerancia = 0.0
     peso = escribir_glb(ruta, solido)
-    for candidata in (0.25, 0.5, 0.8, 1.2):
+    for candidata in (0.25, 0.5, 0.8, 1.2, 1.8, 2.5):  # 29/10: la rosca helicoidal es densa
         if peso < LIMITE_GLB:
             break
         tolerancia = candidata

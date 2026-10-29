@@ -62,7 +62,7 @@
       "nota": "El código de SETS es S4-ROT-E. La jaula y las aspas se imprimen aparte.",
       "stl": "sets/S4-maquina-soplo/stl/S4-ROT-JAULA-E.stl",
       "glb": "sets/S4-maquina-soplo/ar/S4-ROT-JAULA-E.glb",
-      "triangulos_stl": 224,
+      "triangulos_stl": 260,
       "bbox_mm": [
         0.0,
         0.0,
@@ -71,8 +71,8 @@
         72.0,
         72.0
       ],
-      "volumen_mm3": 222532.7,
-      "glb_bytes": 3296,
+      "volumen_mm3": 180699.0,
+      "glb_bytes": 3656,
       "glb_simplificacion_mm": 0.0
     },
     {
@@ -87,17 +87,17 @@
       "nota": "Eje integral de 9,2 mm. Holgura radial 0,8 mm con la jaula.",
       "stl": "sets/S4-maquina-soplo/stl/S4-ROT-ASPAS-E.stl",
       "glb": "sets/S4-maquina-soplo/ar/S4-ROT-ASPAS-E.glb",
-      "triangulos_stl": 172,
+      "triangulos_stl": 268,
       "bbox_mm": [
         0.0,
         0.0,
         0.0,
-        80.0,
+        98.0,
         48.0,
         48.0
       ],
-      "volumen_mm3": 8548.0,
-      "glb_bytes": 2788,
+      "volumen_mm3": 10242.7,
+      "glb_bytes": 3848,
       "glb_simplificacion_mm": 0.0
     },
     {
@@ -162,7 +162,7 @@
       "nota": "Para el soplo del adulto con menores de 3 años.",
       "stl": "sets/S4-maquina-soplo/stl/S4-MOL-JAULA-G.stl",
       "glb": "sets/S4-maquina-soplo/ar/S4-MOL-JAULA-G.glb",
-      "triangulos_stl": 448,
+      "triangulos_stl": 340,
       "bbox_mm": [
         0.0,
         0.0,
@@ -171,8 +171,8 @@
         96.0,
         96.0
       ],
-      "volumen_mm3": 495200.2,
-      "glb_bytes": 5792,
+      "volumen_mm3": 408496.1,
+      "glb_bytes": 4520,
       "glb_simplificacion_mm": 0.0
     },
     {
@@ -187,17 +187,17 @@
       "nota": "",
       "stl": "sets/S4-maquina-soplo/stl/S4-MOL-ASPAS-G.stl",
       "glb": "sets/S4-maquina-soplo/ar/S4-MOL-ASPAS-G.glb",
-      "triangulos_stl": 172,
+      "triangulos_stl": 340,
       "bbox_mm": [
         0.0,
         0.0,
         0.0,
-        104.0,
+        122.0,
         64.0,
         64.0
       ],
-      "volumen_mm3": 17994.0,
-      "glb_bytes": 2792,
+      "volumen_mm3": 20804.4,
+      "glb_bytes": 4712,
       "glb_simplificacion_mm": 0.0
     },
     {
@@ -209,20 +209,20 @@
       "pared_min_mm": 3.2,
       "recorte_mm": 0.0,
       "esfera": false,
-      "nota": "Mismo sólido que el Set 1.",
+      "nota": "Mismo sólido que el Set 1. Cuna con la huella de Lúa V5 y franja de la placa (29/10).",
       "stl": "sets/S4-maquina-soplo/stl/K-ZOCALO-G.stl",
       "glb": "sets/S4-maquina-soplo/ar/K-ZOCALO-G.glb",
-      "triangulos_stl": 240,
+      "triangulos_stl": 464,
       "bbox_mm": [
         0.0,
         0.0,
         0.0,
         136.8,
-        127.2,
-        19.2
+        190.8,
+        40.8
       ],
-      "volumen_mm3": 281823.3,
-      "glb_bytes": 3692,
+      "volumen_mm3": 450725.3,
+      "glb_bytes": 6380,
       "glb_simplificacion_mm": 0.0
     },
     {
@@ -237,7 +237,7 @@
       "nota": "",
       "stl": "sets/S4-maquina-soplo/stl/K-PLACA-FRONTAL.stl",
       "glb": "sets/S4-maquina-soplo/ar/K-PLACA-FRONTAL.glb",
-      "triangulos_stl": 150,
+      "triangulos_stl": 264,
       "bbox_mm": [
         0.0,
         0.0,
@@ -246,8 +246,8 @@
         54.0,
         7.8
       ],
-      "volumen_mm3": 25061.0,
-      "glb_bytes": 2452,
+      "volumen_mm3": 25087.0,
+      "glb_bytes": 4016,
       "glb_simplificacion_mm": 0.0
     }
   ]

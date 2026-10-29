@@ -12,25 +12,25 @@
   },
   "orientacion": "La izquierda y la derecha son las de Lúa. En los sets 1, 5 y 6 el niño la mira desde atrás.",
   "escena": {
-    "es": "El tronco recibe las patas, el lomo y la cola. La placa se elige según el mundo y baja al zócalo.",
-    "gl": "O tronco recibe as patas, o lombo e a cola. A placa elíxese segundo o mundo e baixa ao zócalo."
+    "es": "El cuerpo de Lúa es el de Lúa V5 y se imprime con su propio paquete. Aquí van el zócalo, el patín y las placas. La placa se elige según el mundo y baja al zócalo.",
+    "gl": "O corpo de Lúa é o de Lúa V5 e imprímese co seu propio paquete. Aquí van o zócalo, o patín e as placas. A placa elíxese segundo o mundo e baixa ao zócalo."
   },
   "pasos": [
     {
-      "es": "Encaja primero las patas traseras, de espiga redonda.",
-      "gl": "Encaixa primeiro as patas traseiras, de espiga redonda."
+      "es": "Para el Set 1, engancha el patín bajo la base de Lúa: dos clics.",
+      "gl": "Para o Set 1, engancha o patín baixo a base de Lúa: dous clics."
     },
     {
-      "es": "Encaja después las delanteras. La llave no entra en el pozo redondo.",
-      "gl": "Encaixa despois as dianteiras. A chave non entra no pozo redondo."
-    },
-    {
-      "es": "Coloca el lomo y la cola en la cara de atrás.",
-      "gl": "Coloca o lombo e a cola na cara de atrás."
+      "es": "Pon a Lúa en la cuna del zócalo mirando hacia el camino. Al revés, sus patas no caben.",
+      "gl": "Pon a Lúa no berce do zócalo mirando cara ao camiño. Ao revés, as súas patas non caben."
     },
     {
       "es": "Elige una placa y bájala al zócalo hasta oír el snap.",
       "gl": "Elixe unha placa e báixaa ao zócalo ata oír o snap."
+    },
+    {
+      "es": "Fuera del Set 1, quita el patín tirando fuerte y recto: Lúa se sostiene sobre su base.",
+      "gl": "Fóra do Set 1, quita o patín tirando forte e recto: Lúa sostense sobre a súa base."
     }
   ]
 }

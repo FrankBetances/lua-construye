@@ -41,9 +41,9 @@
       "dims_mm": [
         58.0,
         58.0,
-        50.0
+        43.0
       ],
-      "nucleo_mm3": 47800.6,
+      "nucleo_mm3": 48341.9,
       "comprobaciones": {
         "stl_hermetico": true,
         "volumen_coincide": true,
@@ -63,9 +63,9 @@
       "dims_mm": [
         48.0,
         48.0,
-        84.0
+        67.6
       ],
-      "nucleo_mm3": 33212.8,
+      "nucleo_mm3": 47949.5,
       "comprobaciones": {
         "stl_hermetico": true,
         "volumen_coincide": true,
@@ -85,9 +85,9 @@
       "dims_mm": [
         84.0,
         77.75,
-        38.0
+        50.6
       ],
-      "nucleo_mm3": 19625.7,
+      "nucleo_mm3": 40461.6,
       "comprobaciones": {
         "stl_hermetico": true,
         "volumen_coincide": true,
@@ -107,9 +107,9 @@
       "dims_mm": [
         72.0,
         72.0,
-        48.0
+        60.6
       ],
-      "nucleo_mm3": 56049.5,
+      "nucleo_mm3": 78945.8,
       "comprobaciones": {
         "stl_hermetico": true,
         "volumen_coincide": true,
@@ -173,9 +173,9 @@
       "dims_mm": [
         45.0,
         45.0,
-        45.79
+        45.69
       ],
-      "nucleo_mm3": 37324.7,
+      "nucleo_mm3": 37723.2,
       "comprobaciones": {
         "stl_hermetico": true,
         "volumen_coincide": true,
@@ -194,10 +194,10 @@
       "codigo": "S6-PRI-AZU",
       "dims_mm": [
         56.0,
-        48.0,
+        42.86,
         42.0
       ],
-      "nucleo_mm3": 36312.3,
+      "nucleo_mm3": 39140.8,
       "comprobaciones": {
         "stl_hermetico": true,
         "volumen_coincide": true,
@@ -216,10 +216,10 @@
       "codigo": "S6-PRI-AMA",
       "dims_mm": [
         48.0,
-        44.0,
+        38.5,
         70.0
       ],
-      "nucleo_mm3": 51337.2,
+      "nucleo_mm3": 55598.9,
       "comprobaciones": {
         "stl_hermetico": true,
         "volumen_coincide": true,
@@ -282,10 +282,10 @@
       "codigo": "K-ZOCALO-G",
       "dims_mm": [
         136.8,
-        127.2,
-        19.2
+        190.8,
+        40.8
       ],
-      "nucleo_mm3": 210203.5,
+      "nucleo_mm3": 340977.7,
       "comprobaciones": {
         "stl_hermetico": true,
         "volumen_coincide": true,

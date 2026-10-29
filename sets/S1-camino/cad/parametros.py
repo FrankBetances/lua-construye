@@ -96,7 +96,23 @@ PATIN_CARRIL_ALTO_MM = RANURA_PROF_MM - 2.0 * HOLGURA_MM  # 7,60
 PATIN_CARRIL_LARGO_MM = 50.0
 
 ICONO_ALTO_MM = 1.40
+ICONO_ENGROSE_MM = 0.40  # por lado: el trazo más fino (2,4) pasa a 3,2
 
 # Segmentos de revolución.
 SEGMENTOS_STL = 48
 SEGMENTOS_AR = 12
+
+# --- Zócalo para Lúa V5 (29/10/2026) ---
+# La cuna sigue la huella de la base de Lúa V5 (lua-v5/interfaz-construye.json,
+# copia de lua-firmware). Lúa mira a +X, que es el sentido del camino.
+# Cerrada por detrás y por los lados, abierta por delante: en INICIO Lúa sale
+# deslizando hacia la primera baldosa; en META se encaja desde arriba. Las patas
+# delanteras solo caben delante: Lúa al revés no asienta.
+ZOCALO_FONDO_MM = 6.0 * MODULO_MM  # 190,80: Lúa en 4 módulos + franja de la placa
+CUNA_HOLGURA_MM = 1.0  # aire entre la base de Lúa y la cuna
+CUNA_PARED_MM = 4.8
+CUNA_ALTO_MM = 21.6  # con el patín, abraza 8,4 mm de la base (13,2 sobre la baldosa)
+CUNA_ABIERTA_X_MM = 0.0  # la cuna acaba en el centro de Lúa: delante de su parte más ancha no hay pared
+COLA_HUECO_MM = 18.0  # medio ancho de la escotadura de la cola, detrás
+# La placa, en la franja de y 127,2 a 190,8. Su ranura norte deja 3,2 mm de pared.
+BOLSA_ZOCALO_Y0_MM = 138.50

@@ -259,10 +259,10 @@
       "union": "espiga",
       "dims_mm": [
         136.8,
-        127.2,
-        19.2
+        190.8,
+        40.8
       ],
-      "nucleo_mm3": 210096.2,
+      "nucleo_mm3": 340693.8,
       "esfera": "no aplica",
       "comprobaciones": {
         "stl_hermetico": true,
@@ -330,11 +330,11 @@
       "codigo": "K-PATIN-G",
       "union": "espiga",
       "dims_mm": [
-        63.6,
-        63.6,
-        14.0
+        32.8,
+        72.8,
+        27.4
       ],
-      "nucleo_mm3": 14734.5,
+      "nucleo_mm3": 15873.4,
       "esfera": "no aplica",
       "comprobaciones": {
         "stl_hermetico": true,

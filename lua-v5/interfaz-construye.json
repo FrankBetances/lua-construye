@@ -1,0 +1,46 @@
+{
+ "version": "v5-2",
+ "fecha": "29/10/2026",
+ "fuente": "lua-firmware · tools/blender/lua_v5_uniones.py (BASE, VIENTRE, PATA, COLA, PATIN)",
+ "aviso": "NO PROBADO: cotas de fichero (CLAUDE.md 9.12).",
+ "marco": "Lúa montada: z = 0 en la cara de abajo de la base, el frente hacia −Y, mm",
+ "base": {
+  "rx": 52.0,
+  "ry": 48.0,
+  "z1": 30.0,
+  "chaflan": 3.0
+ },
+ "patas": {
+  "r": 12.0,
+  "x": [
+   -20.0,
+   20.0
+  ],
+  "y": -44.0,
+  "h": 14.0
+ },
+ "vientre": {
+  "rx": 54.0,
+  "ry": 50.0,
+  "z0": 30.0
+ },
+ "cola": {
+  "r_raiz": 16.5,
+  "y0": 38.0,
+  "y1": 92.0,
+  "z0": 4.0
+ },
+ "patin": {
+  "placa": 4.8,
+  "quilla": 8.4,
+  "r_quilla": 8.0,
+  "y_pivote": 20.0,
+  "r_pivote": 5.6,
+  "largo_pivote": 7.6,
+  "chaflan_pivote": 1.0,
+  "y_tenon": 17.0,
+  "z_baldosa": -13.2,
+  "r_placa": 16.4,
+  "stl": "cad/lua-v5/imprimir/patin.stl"
+ }
+}

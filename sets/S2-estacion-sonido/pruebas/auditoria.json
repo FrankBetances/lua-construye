@@ -18,10 +18,10 @@
       "codigo": "K-ZOCALO-G",
       "dims_mm": [
         136.8,
-        127.2,
-        19.2
+        190.8,
+        40.8
       ],
-      "nucleo_mm3": 210203.5,
+      "nucleo_mm3": 340977.7,
       "comprobaciones": {
         "stl_hermetico": true,
         "volumen_coincide": true,
@@ -65,7 +65,7 @@
         78.0,
         52.0
       ],
-      "nucleo_mm3": 120956.1,
+      "nucleo_mm3": 129464.7,
       "comprobaciones": {
         "stl_hermetico": true,
         "volumen_coincide": true,
@@ -107,9 +107,9 @@
       "dims_mm": [
         78.0,
         64.0,
-        76.0
+        72.0
       ],
-      "nucleo_mm3": 266334.3,
+      "nucleo_mm3": 264152.5,
       "comprobaciones": {
         "stl_hermetico": true,
         "volumen_coincide": true,
@@ -129,9 +129,9 @@
       "dims_mm": [
         78.0,
         64.0,
-        76.0
+        72.0
       ],
-      "nucleo_mm3": 265918.1,
+      "nucleo_mm3": 262779.5,
       "comprobaciones": {
         "stl_hermetico": true,
         "volumen_coincide": true,
@@ -151,9 +151,9 @@
       "dims_mm": [
         78.0,
         64.0,
-        76.0
+        72.0
       ],
-      "nucleo_mm3": 271220.9,
+      "nucleo_mm3": 268860.7,
       "comprobaciones": {
         "stl_hermetico": true,
         "volumen_coincide": true,
@@ -173,9 +173,9 @@
       "dims_mm": [
         78.0,
         64.0,
-        76.0
+        72.0
       ],
-      "nucleo_mm3": 286143.5,
+      "nucleo_mm3": 276807.4,
       "comprobaciones": {
         "stl_hermetico": true,
         "volumen_coincide": true,
@@ -195,9 +195,9 @@
       "dims_mm": [
         78.0,
         64.0,
-        76.0
+        72.0
       ],
-      "nucleo_mm3": 285145.4,
+      "nucleo_mm3": 274841.1,
       "comprobaciones": {
         "stl_hermetico": true,
         "volumen_coincide": true,
@@ -217,9 +217,9 @@
       "dims_mm": [
         78.0,
         64.0,
-        76.0
+        72.0
       ],
-      "nucleo_mm3": 290116.1,
+      "nucleo_mm3": 278690.5,
       "comprobaciones": {
         "stl_hermetico": true,
         "volumen_coincide": true,
@@ -239,9 +239,9 @@
       "dims_mm": [
         78.0,
         64.0,
-        76.0
+        72.0
       ],
-      "nucleo_mm3": 296693.5,
+      "nucleo_mm3": 278235.8,
       "comprobaciones": {
         "stl_hermetico": true,
         "volumen_coincide": true,
@@ -261,9 +261,9 @@
       "dims_mm": [
         78.0,
         64.0,
-        76.0
+        72.0
       ],
-      "nucleo_mm3": 295426.0,
+      "nucleo_mm3": 274803.3,
       "comprobaciones": {
         "stl_hermetico": true,
         "volumen_coincide": true,
@@ -283,9 +283,9 @@
       "dims_mm": [
         78.0,
         64.0,
-        76.0
+        72.0
       ],
-      "nucleo_mm3": 299197.7,
+      "nucleo_mm3": 277294.2,
       "comprobaciones": {
         "stl_hermetico": true,
         "volumen_coincide": true,
@@ -325,11 +325,11 @@
     {
       "codigo": "S2-ESP-E",
       "dims_mm": [
-        100.0,
+        122.0,
         44.0,
-        44.0
+        16.0
       ],
-      "nucleo_mm3": 41239.6,
+      "nucleo_mm3": 57076.5,
       "comprobaciones": {
         "stl_hermetico": true,
         "volumen_coincide": true,

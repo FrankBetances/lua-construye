@@ -106,7 +106,7 @@
       "hipotesis_planta": "Baldosa y zócalo: 4 × 31,80 mm. SETS no da el ancho del cuerpo de Lúa; se usa 2 módulos + 2 módulos.",
       "stl": "sets/S1-camino/stl/S1-CMD-AVA-G.stl",
       "glb": "sets/S1-camino/ar/S1-CMD-AVA-G.glb",
-      "triangulos_stl": 90,
+      "triangulos_stl": 232,
       "bbox_mm": [
         -4.8,
         0.0,
@@ -115,8 +115,8 @@
         36.0,
         9.4
       ],
-      "volumen_mm3": 14088.8,
-      "glb_bytes": 1744,
+      "volumen_mm3": 14121.9,
+      "glb_bytes": 2876,
       "glb_simplificacion_mm": 0.0,
       "glb_bajo_100kb": true
     },
@@ -130,7 +130,7 @@
       "hipotesis_planta": "Baldosa y zócalo: 4 × 31,80 mm. SETS no da el ancho del cuerpo de Lúa; se usa 2 módulos + 2 módulos.",
       "stl": "sets/S1-camino/stl/S1-CMD-PAR-G.stl",
       "glb": "sets/S1-camino/ar/S1-CMD-PAR-G.glb",
-      "triangulos_stl": 72,
+      "triangulos_stl": 168,
       "bbox_mm": [
         -4.8,
         0.0,
@@ -139,8 +139,8 @@
         36.0,
         9.4
       ],
-      "volumen_mm3": 14114.9,
-      "glb_bytes": 1528,
+      "volumen_mm3": 14142.5,
+      "glb_bytes": 2296,
       "glb_simplificacion_mm": 0.0,
       "glb_bajo_100kb": true
     },
@@ -154,7 +154,7 @@
       "hipotesis_planta": "Baldosa y zócalo: 4 × 31,80 mm. SETS no da el ancho del cuerpo de Lúa; se usa 2 módulos + 2 módulos.",
       "stl": "sets/S1-camino/stl/S1-CMD-GIR-G.stl",
       "glb": "sets/S1-camino/ar/S1-CMD-GIR-G.glb",
-      "triangulos_stl": 176,
+      "triangulos_stl": 332,
       "bbox_mm": [
         -4.8,
         0.0,
@@ -163,8 +163,8 @@
         36.0,
         9.4
       ],
-      "volumen_mm3": 13986.7,
-      "glb_bytes": 2392,
+      "volumen_mm3": 14010.5,
+      "glb_bytes": 3740,
       "glb_simplificacion_mm": 0.0,
       "glb_bajo_100kb": true
     },
@@ -178,7 +178,7 @@
       "hipotesis_planta": "Baldosa y zócalo: 4 × 31,80 mm. SETS no da el ancho del cuerpo de Lúa; se usa 2 módulos + 2 módulos.",
       "stl": "sets/S1-camino/stl/S1-CMD-SAL-G.stl",
       "glb": "sets/S1-camino/ar/S1-CMD-SAL-G.glb",
-      "triangulos_stl": 104,
+      "triangulos_stl": 296,
       "bbox_mm": [
         -4.8,
         0.0,
@@ -187,8 +187,8 @@
         36.0,
         9.4
       ],
-      "volumen_mm3": 13992.2,
-      "glb_bytes": 1912,
+      "volumen_mm3": 14020.1,
+      "glb_bytes": 3452,
       "glb_simplificacion_mm": 0.0,
       "glb_bajo_100kb": true
     },
@@ -202,7 +202,7 @@
       "hipotesis_planta": "Baldosa y zócalo: 4 × 31,80 mm. SETS no da el ancho del cuerpo de Lúa; se usa 2 módulos + 2 módulos.",
       "stl": "sets/S1-camino/stl/S1-DEST-PARQUE.stl",
       "glb": "sets/S1-camino/ar/S1-DEST-PARQUE.glb",
-      "triangulos_stl": 152,
+      "triangulos_stl": 248,
       "bbox_mm": [
         0.0,
         -4.8,
@@ -211,8 +211,8 @@
         49.2,
         7.8
       ],
-      "volumen_mm3": 25039.1,
-      "glb_bytes": 2120,
+      "volumen_mm3": 25059.0,
+      "glb_bytes": 3084,
       "glb_simplificacion_mm": 0.0,
       "glb_bajo_100kb": true
     },
@@ -226,7 +226,7 @@
       "hipotesis_planta": "Baldosa y zócalo: 4 × 31,80 mm. SETS no da el ancho del cuerpo de Lúa; se usa 2 módulos + 2 módulos.",
       "stl": "sets/S1-camino/stl/S1-DEST-CAMA.stl",
       "glb": "sets/S1-camino/ar/S1-DEST-CAMA.glb",
-      "triangulos_stl": 84,
+      "triangulos_stl": 200,
       "bbox_mm": [
         0.0,
         -4.8,
@@ -235,8 +235,8 @@
         49.2,
         7.8
       ],
-      "volumen_mm3": 25076.9,
-      "glb_bytes": 1684,
+      "volumen_mm3": 25106.7,
+      "glb_bytes": 2596,
       "glb_simplificacion_mm": 0.0,
       "glb_bajo_100kb": true
     },
@@ -250,17 +250,17 @@
       "hipotesis_planta": "Baldosa y zócalo: 4 × 31,80 mm. SETS no da el ancho del cuerpo de Lúa; se usa 2 módulos + 2 módulos.",
       "stl": "sets/S1-camino/stl/K-ZOCALO-G.stl",
       "glb": "sets/S1-camino/ar/K-ZOCALO-G.glb",
-      "triangulos_stl": 240,
+      "triangulos_stl": 568,
       "bbox_mm": [
         0.0,
         0.0,
         0.0,
         136.8,
-        127.2,
-        19.2
+        190.8,
+        40.8
       ],
-      "volumen_mm3": 281823.3,
-      "glb_bytes": 3692,
+      "volumen_mm3": 450740.9,
+      "glb_bytes": 6380,
       "glb_simplificacion_mm": 0.0,
       "glb_bajo_100kb": true
     },
@@ -274,7 +274,7 @@
       "hipotesis_planta": "Baldosa y zócalo: 4 × 31,80 mm. SETS no da el ancho del cuerpo de Lúa; se usa 2 módulos + 2 módulos.",
       "stl": "sets/S1-camino/stl/K-PLACA-INICIO.stl",
       "glb": "sets/S1-camino/ar/K-PLACA-INICIO.glb",
-      "triangulos_stl": 90,
+      "triangulos_stl": 232,
       "bbox_mm": [
         0.0,
         -4.8,
@@ -283,8 +283,8 @@
         49.2,
         7.8
       ],
-      "volumen_mm3": 25044.2,
-      "glb_bytes": 1760,
+      "volumen_mm3": 25073.9,
+      "glb_bytes": 2892,
       "glb_simplificacion_mm": 0.0,
       "glb_bajo_100kb": true
     },
@@ -298,7 +298,7 @@
       "hipotesis_planta": "Baldosa y zócalo: 4 × 31,80 mm. SETS no da el ancho del cuerpo de Lúa; se usa 2 módulos + 2 módulos.",
       "stl": "sets/S1-camino/stl/K-PLACA-META.stl",
       "glb": "sets/S1-camino/ar/K-PLACA-META.glb",
-      "triangulos_stl": 248,
+      "triangulos_stl": 344,
       "bbox_mm": [
         0.0,
         -4.8,
@@ -307,8 +307,8 @@
         49.2,
         7.8
       ],
-      "volumen_mm3": 25046.7,
-      "glb_bytes": 2888,
+      "volumen_mm3": 25080.7,
+      "glb_bytes": 3752,
       "glb_simplificacion_mm": 0.0,
       "glb_bajo_100kb": true
     },
@@ -322,17 +322,17 @@
       "hipotesis_planta": "Baldosa y zócalo: 4 × 31,80 mm. SETS no da el ancho del cuerpo de Lúa; se usa 2 módulos + 2 módulos.",
       "stl": "sets/S1-camino/stl/K-PATIN-G.stl",
       "glb": "sets/S1-camino/ar/K-PATIN-G.glb",
-      "triangulos_stl": 28,
+      "triangulos_stl": 3192,
       "bbox_mm": [
-        0.0,
-        0.0,
-        0.0,
-        63.6,
-        63.6,
-        14.0
+        -16.4,
+        -36.4,
+        -20.8,
+        16.4,
+        36.4,
+        6.6
       ],
-      "volumen_mm3": 30295.7,
-      "glb_bytes": 984,
+      "volumen_mm3": 25778.5,
+      "glb_bytes": 39024,
       "glb_simplificacion_mm": 0.0,
       "glb_bajo_100kb": true
     }

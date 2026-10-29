@@ -299,16 +299,67 @@ def baldosa_te(segmentos: int) -> Manifold:
     return solido
 
 
+def _lua_v5() -> dict:
+    """Cotas de Lúa V5: copia de lua-firmware (agents/lua_v5.py la compara)."""
+    import json
+
+    ruta = _CAD.parents[2] / "lua-v5" / "interfaz-construye.json"
+    return json.loads(ruta.read_text(encoding="utf-8"))
+
+
+def huella_lua(crece: float, segmentos: int) -> CrossSection:
+    """Planta de la base de Lúa V5 (elipse + patas delanteras) en la baldosa:
+    centro en (W/2, W/2), el frente de Lúa hacia +X."""
+    import math
+
+    L = _lua_v5()
+    w = P.BALDOSA_MM
+    cx = cy = w / 2
+    b = L["base"]
+    n = max(64, segmentos * 2)
+    # lua x → baldosa y; lua y → baldosa −x (giro de +90°)
+    elipse = [
+        (cx + (b["ry"] + crece) * math.sin(2 * math.pi * k / n), cy + (b["rx"] + crece) * math.cos(2 * math.pi * k / n))
+        for k in range(n)
+    ][::-1]  # antihorario
+    sec = CrossSection([elipse])
+    pt = L["patas"]
+    for x in pt["x"]:
+        sec = sec + CrossSection.circle(pt["r"] + crece, n).translate((cx - pt["y"], cy + x))
+    return sec
+
+
+def cuna(segmentos: int) -> Manifold:
+    """La cuna de Lúa V5, encima del zócalo."""
+    w = P.BALDOSA_MM
+    dentro = huella_lua(P.CUNA_HOLGURA_MM, segmentos)
+    fuera = huella_lua(P.CUNA_HOLGURA_MM + P.CUNA_PARED_MM, segmentos)
+    aro = Manifold.extrude(fuera - dentro, P.CUNA_ALTO_MM).translate((0.0, 0.0, P.ALTURA_BASE_MM))
+    z0, z1 = P.ALTURA_BASE_MM - 0.1, P.ALTURA_BASE_MM + P.CUNA_ALTO_MM + 0.1
+    # abierta por delante: Lúa sale de INICIO hacia la primera baldosa
+    aro = aro - caja(w / 2 + P.CUNA_ABIERTA_X_MM, -1.0, z0, w + 10.0, w + 1.0, z1)
+    # escotadura de la cola, detrás
+    aro = aro - caja(-10.0, w / 2 - P.COLA_HUECO_MM, z0, w / 2, w / 2 + P.COLA_HUECO_MM, z1)
+    return aro
+
+
 def zocalo(segmentos: int) -> Manifold:
-    """Zócalo con la misma ranura y la misma espiga, más el bolsillo de la placa."""
-    solido = cuerpo_baldosa(segmentos) - ranura_recta()
-    solido = solido - bolsillo_placa()
+    """Zócalo para Lúa V5 (29/10/2026): la ranura y la espiga de las baldosas,
+    la cuna con la huella de Lúa y, al lado, la franja con el bolsillo de la
+    placa de identidad, fuera de la planta de Lúa para que no la tape."""
+    w = P.BALDOSA_MM
+    solido = caja(0.0, 0.0, 0.0, w, P.ZOCALO_FONDO_MM, P.ALTURA_BASE_MM)
+    for y in P.COLA_Y_MM:
+        solido = solido + cola_macho_x(y, w, +1)
+        solido = solido - cola_hembra_x(y, 0.0, +1)
+    solido = solido - ranura_recta()
+    solido = solido + cuna(segmentos)
+    solido = solido - bolsillo_placa(P.BOLSA_ZOCALO_Y0_MM)
     return solido
 
 
-def bolsillo_placa() -> Manifold:
+def bolsillo_placa(y0: float = P.BOLSA_Y0_MM) -> Manifold:
     x0 = P.BOLSA_X0_MM
-    y0 = P.BOLSA_Y0_MM
     x1 = x0 + P.BOLSA_ANCHO_MM
     y1 = y0 + P.BOLSA_FONDO_MM
     z0 = P.ALTURA_BASE_MM - P.BOLSA_PROF_MM
@@ -371,7 +422,23 @@ def placa(icono: str, segmentos: int) -> Manifold:
 
 
 def icono_en(nombre: str, ancho: float, fondo: float, alto: float, segmentos: int) -> Manifold:
-    """Relieve geométrico. Sin letras y sin emoji. Apoyado en la cara superior."""
+    """Relieve geométrico. Sin letras y sin emoji. Apoyado en la cara superior.
+
+    29/10: cada trazo se engruesa 0,4 mm por lado sobre el dibujo de la v1. Los
+    trazos de 2,4 y 2,8 mm (escucha, nivel, jardín, salta, cama) quedaban por
+    debajo de la pared de 3,2 mm que mide check-v3-piezas de lua-firmware.
+    """
+    from manifold3d import JoinType
+
+    trazo = _icono_v1(nombre, ancho, fondo, alto, segmentos)
+    z0 = trazo.bounding_box()[2]
+    alto_trazo = trazo.bounding_box()[5] - z0
+    planta = trazo.project().offset(P.ICONO_ENGROSE_MM, JoinType.Round, 2.0, max(16, segmentos // 2))
+    return Manifold.extrude(planta, alto_trazo).translate((0.0, 0.0, z0))
+
+
+def _icono_v1(nombre: str, ancho: float, fondo: float, alto: float, segmentos: int) -> Manifold:
+    """El dibujo del icono de la v1, sin engrosar."""
     z = alto - 0.05
     h = P.ICONO_ALTO_MM + 0.05
     cx, cy = ancho * 0.62, fondo * 0.55
@@ -433,11 +500,21 @@ def icono_en(nombre: str, ancho: float, fondo: float, alto: float, segmentos: in
 
 
 def patin(segmentos: int) -> Manifold:
-    """Placa con carril. El carril es la espiga que corre por la ranura de 12 mm.
+    """El patín de Lúa V5: copia de lua-firmware (lua-v5/patin-montaje.stl).
 
-    El encaje al tronco no está acotado en SETS: no se inventan tetones.
-    Se imprime con el carril hacia arriba y se da la vuelta al usarlo.
+    Se engancha con dos clics en la base de Lúa y corre con dos pivotes
+    redondos que caben también por la curva. El de la v1 (`patin_v1`) no se
+    enganchaba a nada y su carril recto de 50 mm no pasaba por la curva.
     """
+    del segmentos
+    sys.path.insert(0, str(_CAD.parents[2]))
+    from agents.malla_io import leer_stl
+
+    return leer_stl(_CAD.parents[2] / "lua-v5" / "patin-montaje.stl")
+
+
+def patin_v1(segmentos: int) -> Manifold:
+    """Patín de la v1 (28/10). Se conserva; ya no se imprime."""
     del segmentos
     p = P.PATIN_PLANTA_MM
     solido = caja(0.0, 0.0, 0.0, p, p, P.PATIN_ALTO_MM)

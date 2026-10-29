@@ -219,7 +219,7 @@
         150.0,
         26.0
       ],
-      "nucleo_mm3": 358032.0,
+      "nucleo_mm3": 365961.4,
       "comprobaciones": {
         "stl_hermetico": true,
         "volumen_coincide": true,
@@ -260,10 +260,10 @@
       "codigo": "K-ZOCALO-G",
       "dims_mm": [
         136.8,
-        127.2,
-        19.2
+        190.8,
+        40.8
       ],
-      "nucleo_mm3": 210203.5,
+      "nucleo_mm3": 340977.7,
       "comprobaciones": {
         "stl_hermetico": true,
         "volumen_coincide": true,

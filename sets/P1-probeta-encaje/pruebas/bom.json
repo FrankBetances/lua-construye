@@ -4,7 +4,7 @@
   "fase": "Fase 1 del plan de impresión",
   "hipotesis": [
     "Módulo de planta 31,80 mm y altura de bloque 19,20 mm, como en el Set 1. D1 sigue abierta.",
-    "Cuerpo de Lúa: 72 × 64 × 40 mm. SETS no da el milímetro del tronco.",
+    "Cuerpo de Lúa: el de Lúa V5 (lua-firmware), base de 104 × 104 mm. El zócalo y el patín salen de lua-v5/interfaz-construye.json.",
     "Tetón de la probeta G: diámetro 9,40 mm y alto 4,50 mm. Tetón E: diámetro 6,40 mm y alto 3,20 mm.",
     "Holgura de la probeta, radial: 0,15, 0,20 y 0,25 mm, en la hembra.",
     "Rampa: H = 19,20 mm y L = 153,60 mm. Con H = 31,80 mm, L = 254,40 mm y no cabe en la cama de 220 mm.",

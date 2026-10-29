@@ -1,131 +1,6 @@
 {
   "maestros": [
     {
-      "codigo": "K-TRONCO-G",
-      "nombre": "Tronco con llave de cuello",
-      "cantidad": 1,
-      "union": "espiga",
-      "rosca_mm": null,
-      "pared_min_mm": 3.2,
-      "recorte_mm": 0.0,
-      "esfera": false,
-      "nota": "La llave del cuello está desplazada. K-CUELLO no se imprime.",
-      "stl": "sets/S0-kit-lua/stl/K-TRONCO-G.stl",
-      "glb": "sets/S0-kit-lua/ar/K-TRONCO-G.glb",
-      "triangulos_stl": 380,
-      "bbox_mm": [
-        0.0,
-        0.0,
-        0.0,
-        72.0,
-        64.0,
-        40.0
-      ],
-      "volumen_mm3": 162899.2,
-      "glb_bytes": 5188,
-      "glb_simplificacion_mm": 0.0
-    },
-    {
-      "codigo": "K-LOMO-G",
-      "nombre": "Bloque dorsal",
-      "cantidad": 1,
-      "union": "espiga",
-      "rosca_mm": null,
-      "pared_min_mm": 3.2,
-      "recorte_mm": 0.0,
-      "esfera": false,
-      "nota": "Cara superior plana.",
-      "stl": "sets/S0-kit-lua/stl/K-LOMO-G.stl",
-      "glb": "sets/S0-kit-lua/ar/K-LOMO-G.glb",
-      "triangulos_stl": 44,
-      "bbox_mm": [
-        0.0,
-        0.0,
-        0.0,
-        76.0,
-        33.4,
-        20.0
-      ],
-      "volumen_mm3": 39398.7,
-      "glb_bytes": 1160,
-      "glb_simplificacion_mm": 0.0
-    },
-    {
-      "codigo": "K-PATA-DEL-G",
-      "nombre": "Pata delantera con llave",
-      "cantidad": 2,
-      "union": "espiga",
-      "rosca_mm": null,
-      "pared_min_mm": 3.2,
-      "recorte_mm": 0.0,
-      "esfera": false,
-      "nota": "",
-      "stl": "sets/S0-kit-lua/stl/K-PATA-DEL-G.stl",
-      "glb": "sets/S0-kit-lua/ar/K-PATA-DEL-G.glb",
-      "triangulos_stl": 36,
-      "bbox_mm": [
-        0.0,
-        0.0,
-        0.0,
-        48.0,
-        40.0,
-        45.4
-      ],
-      "volumen_mm3": 71086.9,
-      "glb_bytes": 1068,
-      "glb_simplificacion_mm": 0.0
-    },
-    {
-      "codigo": "K-PATA-TRA-G",
-      "nombre": "Pata trasera",
-      "cantidad": 2,
-      "union": "espiga",
-      "rosca_mm": null,
-      "pared_min_mm": 3.2,
-      "recorte_mm": 0.0,
-      "esfera": false,
-      "nota": "",
-      "stl": "sets/S0-kit-lua/stl/K-PATA-TRA-G.stl",
-      "glb": "sets/S0-kit-lua/ar/K-PATA-TRA-G.glb",
-      "triangulos_stl": 140,
-      "bbox_mm": [
-        0.0,
-        0.0,
-        0.0,
-        48.0,
-        40.0,
-        45.6
-      ],
-      "volumen_mm3": 70253.4,
-      "glb_bytes": 2320,
-      "glb_simplificacion_mm": 0.0
-    },
-    {
-      "codigo": "K-COLA-G",
-      "nombre": "Cola",
-      "cantidad": 1,
-      "union": "espiga",
-      "rosca_mm": null,
-      "pared_min_mm": 3.2,
-      "recorte_mm": 0.0,
-      "esfera": false,
-      "nota": "Marca la parte de atrás de Lúa.",
-      "stl": "sets/S0-kit-lua/stl/K-COLA-G.stl",
-      "glb": "sets/S0-kit-lua/ar/K-COLA-G.glb",
-      "triangulos_stl": 52,
-      "bbox_mm": [
-        0.0,
-        0.0,
-        0.0,
-        88.0,
-        41.4,
-        18.0
-      ],
-      "volumen_mm3": 50635.6,
-      "glb_bytes": 1256,
-      "glb_simplificacion_mm": 0.0
-    },
-    {
       "codigo": "K-PATIN-G",
       "nombre": "Patín guía",
       "cantidad": 1,
@@ -134,20 +9,20 @@
       "pared_min_mm": 3.2,
       "recorte_mm": 0.0,
       "esfera": false,
-      "nota": "Mismo sólido que el Set 1. Corre en la ranura de 12 mm.",
+      "nota": "El patín de Lúa V5, copia de lua-firmware: dos clics en la base y dos pivotes en la ranura de 12 mm.",
       "stl": "sets/S0-kit-lua/stl/K-PATIN-G.stl",
       "glb": "sets/S0-kit-lua/ar/K-PATIN-G.glb",
-      "triangulos_stl": 28,
+      "triangulos_stl": 3192,
       "bbox_mm": [
         0.0,
         0.0,
         0.0,
-        63.6,
-        63.6,
-        14.0
+        32.8,
+        72.8,
+        27.4
       ],
-      "volumen_mm3": 30295.7,
-      "glb_bytes": 984,
+      "volumen_mm3": 25778.5,
+      "glb_bytes": 38976,
       "glb_simplificacion_mm": 0.0
     },
     {
@@ -159,20 +34,20 @@
       "pared_min_mm": 3.2,
       "recorte_mm": 0.0,
       "esfera": false,
-      "nota": "Mismo sólido que el Set 1.",
+      "nota": "Mismo sólido que el Set 1. Cuna con la huella de Lúa V5 y franja de la placa (29/10).",
       "stl": "sets/S0-kit-lua/stl/K-ZOCALO-G.stl",
       "glb": "sets/S0-kit-lua/ar/K-ZOCALO-G.glb",
-      "triangulos_stl": 240,
+      "triangulos_stl": 464,
       "bbox_mm": [
         0.0,
         0.0,
         0.0,
         136.8,
-        127.2,
-        19.2
+        190.8,
+        40.8
       ],
-      "volumen_mm3": 281823.3,
-      "glb_bytes": 3692,
+      "volumen_mm3": 450725.3,
+      "glb_bytes": 6380,
       "glb_simplificacion_mm": 0.0
     },
     {
@@ -187,7 +62,7 @@
       "nota": "",
       "stl": "sets/S0-kit-lua/stl/K-PLACA-INICIO.stl",
       "glb": "sets/S0-kit-lua/ar/K-PLACA-INICIO.glb",
-      "triangulos_stl": 90,
+      "triangulos_stl": 184,
       "bbox_mm": [
         0.0,
         0.0,
@@ -196,8 +71,8 @@
         54.0,
         7.8
       ],
-      "volumen_mm3": 25044.2,
-      "glb_bytes": 1732,
+      "volumen_mm3": 25073.9,
+      "glb_bytes": 2864,
       "glb_simplificacion_mm": 0.0
     },
     {
@@ -212,7 +87,7 @@
       "nota": "",
       "stl": "sets/S0-kit-lua/stl/K-PLACA-META.stl",
       "glb": "sets/S0-kit-lua/ar/K-PLACA-META.glb",
-      "triangulos_stl": 184,
+      "triangulos_stl": 248,
       "bbox_mm": [
         0.0,
         0.0,
@@ -221,8 +96,8 @@
         54.0,
         7.8
       ],
-      "volumen_mm3": 25044.7,
-      "glb_bytes": 2860,
+      "volumen_mm3": 25078.6,
+      "glb_bytes": 3724,
       "glb_simplificacion_mm": 0.0
     },
     {
@@ -237,7 +112,7 @@
       "nota": "",
       "stl": "sets/S0-kit-lua/stl/K-PLACA-ESCUCHA.stl",
       "glb": "sets/S0-kit-lua/ar/K-PLACA-ESCUCHA.glb",
-      "triangulos_stl": 104,
+      "triangulos_stl": 296,
       "bbox_mm": [
         0.0,
         0.0,
@@ -246,8 +121,8 @@
         54.0,
         7.8
       ],
-      "volumen_mm3": 25021.8,
-      "glb_bytes": 1900,
+      "volumen_mm3": 25061.0,
+      "glb_bytes": 4208,
       "glb_simplificacion_mm": 0.0
     },
     {
@@ -262,7 +137,7 @@
       "nota": "",
       "stl": "sets/S0-kit-lua/stl/K-PLACA-RECEPTOR.stl",
       "glb": "sets/S0-kit-lua/ar/K-PLACA-RECEPTOR.glb",
-      "triangulos_stl": 98,
+      "triangulos_stl": 184,
       "bbox_mm": [
         0.0,
         0.0,
@@ -271,8 +146,8 @@
         54.0,
         7.8
       ],
-      "volumen_mm3": 25058.7,
-      "glb_bytes": 1828,
+      "volumen_mm3": 25095.7,
+      "glb_bytes": 2864,
       "glb_simplificacion_mm": 0.0
     },
     {
@@ -287,7 +162,7 @@
       "nota": "",
       "stl": "sets/S0-kit-lua/stl/K-PLACA-FRONTAL.stl",
       "glb": "sets/S0-kit-lua/ar/K-PLACA-FRONTAL.glb",
-      "triangulos_stl": 150,
+      "triangulos_stl": 264,
       "bbox_mm": [
         0.0,
         0.0,
@@ -296,8 +171,8 @@
         54.0,
         7.8
       ],
-      "volumen_mm3": 25061.0,
-      "glb_bytes": 2452,
+      "volumen_mm3": 25087.0,
+      "glb_bytes": 4016,
       "glb_simplificacion_mm": 0.0
     },
     {
@@ -312,7 +187,7 @@
       "nota": "",
       "stl": "sets/S0-kit-lua/stl/K-PLACA-NIVEL.stl",
       "glb": "sets/S0-kit-lua/ar/K-PLACA-NIVEL.glb",
-      "triangulos_stl": 88,
+      "triangulos_stl": 184,
       "bbox_mm": [
         0.0,
         0.0,
@@ -321,8 +196,8 @@
         54.0,
         7.8
       ],
-      "volumen_mm3": 25006.4,
-      "glb_bytes": 1708,
+      "volumen_mm3": 25035.4,
+      "glb_bytes": 2860,
       "glb_simplificacion_mm": 0.0
     },
     {
@@ -337,7 +212,7 @@
       "nota": "",
       "stl": "sets/S0-kit-lua/stl/K-PLACA-JARDIN.stl",
       "glb": "sets/S0-kit-lua/ar/K-PLACA-JARDIN.glb",
-      "triangulos_stl": 108,
+      "triangulos_stl": 224,
       "bbox_mm": [
         0.0,
         0.0,
@@ -346,8 +221,8 @@
         54.0,
         7.8
       ],
-      "volumen_mm3": 24994.3,
-      "glb_bytes": 1948,
+      "volumen_mm3": 25023.2,
+      "glb_bytes": 3344,
       "glb_simplificacion_mm": 0.0
     }
   ]

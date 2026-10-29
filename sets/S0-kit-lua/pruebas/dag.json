@@ -1,10 +1,5 @@
 {
   "nodos": [
-    "K-TRONCO-G",
-    "K-LOMO-G",
-    "K-PATA-DEL-G",
-    "K-PATA-TRA-G",
-    "K-COLA-G",
     "K-PATIN-G",
     "K-ZOCALO-G",
     "K-PLACA-INICIO",
@@ -16,51 +11,6 @@
     "K-PLACA-JARDIN"
   ],
   "aristas": [
-    {
-      "desde": "K-TRONCO-G",
-      "hasta": "K-LOMO-G",
-      "u": [
-        0,
-        0,
-        -1
-      ]
-    },
-    {
-      "desde": "K-LOMO-G",
-      "hasta": "K-PATA-DEL-G",
-      "u": [
-        0,
-        0,
-        -1
-      ]
-    },
-    {
-      "desde": "K-PATA-DEL-G",
-      "hasta": "K-PATA-TRA-G",
-      "u": [
-        0,
-        0,
-        -1
-      ]
-    },
-    {
-      "desde": "K-PATA-TRA-G",
-      "hasta": "K-COLA-G",
-      "u": [
-        0,
-        0,
-        -1
-      ]
-    },
-    {
-      "desde": "K-COLA-G",
-      "hasta": "K-PATIN-G",
-      "u": [
-        0,
-        0,
-        -1
-      ]
-    },
     {
       "desde": "K-PATIN-G",
       "hasta": "K-ZOCALO-G",

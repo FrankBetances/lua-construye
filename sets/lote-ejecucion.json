@@ -7,19 +7,19 @@
       "pdf": true,
       "typst": [
         {
-          "comando": "/home/ubuntu/.local/bin/typst compile --root /workspace /workspace/sets/P1-probeta-encaje/manual/manual.typ /workspace/sets/P1-probeta-encaje/manual/manual.pdf",
+          "comando": "/tmp/claude-0/-home-user/81b607b5-f6c9-524e-8ae3-d2feed43adf7/scratchpad/bin/typst compile --root /home/user/lua-construye /home/user/lua-construye/sets/P1-probeta-encaje/manual/manual.typ /home/user/lua-construye/sets/P1-probeta-encaje/manual/manual.pdf",
           "exit": 0
         }
       ]
     },
     {
       "carpeta": "S0-kit-lua",
-      "piezas": 14,
+      "piezas": 9,
       "auditoria": true,
       "pdf": true,
       "typst": [
         {
-          "comando": "/home/ubuntu/.local/bin/typst compile --root /workspace /workspace/sets/S0-kit-lua/manual/manual.typ /workspace/sets/S0-kit-lua/manual/manual.pdf",
+          "comando": "/tmp/claude-0/-home-user/81b607b5-f6c9-524e-8ae3-d2feed43adf7/scratchpad/bin/typst compile --root /home/user/lua-construye /home/user/lua-construye/sets/S0-kit-lua/manual/manual.typ /home/user/lua-construye/sets/S0-kit-lua/manual/manual.pdf",
           "exit": 0
         }
       ]
@@ -31,7 +31,7 @@
       "pdf": true,
       "typst": [
         {
-          "comando": "/home/ubuntu/.local/bin/typst compile --root /workspace /workspace/sets/S2-estacion-sonido/manual/manual.typ /workspace/sets/S2-estacion-sonido/manual/manual.pdf",
+          "comando": "/tmp/claude-0/-home-user/81b607b5-f6c9-524e-8ae3-d2feed43adf7/scratchpad/bin/typst compile --root /home/user/lua-construye /home/user/lua-construye/sets/S2-estacion-sonido/manual/manual.typ /home/user/lua-construye/sets/S2-estacion-sonido/manual/manual.pdf",
           "exit": 0
         }
       ]
@@ -43,7 +43,7 @@
       "pdf": true,
       "typst": [
         {
-          "comando": "/home/ubuntu/.local/bin/typst compile --root /workspace /workspace/sets/S3-laboratorio-rampas/manual/manual.typ /workspace/sets/S3-laboratorio-rampas/manual/manual.pdf",
+          "comando": "/tmp/claude-0/-home-user/81b607b5-f6c9-524e-8ae3-d2feed43adf7/scratchpad/bin/typst compile --root /home/user/lua-construye /home/user/lua-construye/sets/S3-laboratorio-rampas/manual/manual.typ /home/user/lua-construye/sets/S3-laboratorio-rampas/manual/manual.pdf",
           "exit": 0
         }
       ]
@@ -55,7 +55,7 @@
       "pdf": true,
       "typst": [
         {
-          "comando": "/home/ubuntu/.local/bin/typst compile --root /workspace /workspace/sets/S4-maquina-soplo/manual/manual.typ /workspace/sets/S4-maquina-soplo/manual/manual.pdf",
+          "comando": "/tmp/claude-0/-home-user/81b607b5-f6c9-524e-8ae3-d2feed43adf7/scratchpad/bin/typst compile --root /home/user/lua-construye /home/user/lua-construye/sets/S4-maquina-soplo/manual/manual.typ /home/user/lua-construye/sets/S4-maquina-soplo/manual/manual.pdf",
           "exit": 0
         }
       ]
@@ -67,7 +67,7 @@
       "pdf": true,
       "typst": [
         {
-          "comando": "/home/ubuntu/.local/bin/typst compile --root /workspace /workspace/sets/S5-puente-equilibrio/manual/manual.typ /workspace/sets/S5-puente-equilibrio/manual/manual.pdf",
+          "comando": "/tmp/claude-0/-home-user/81b607b5-f6c9-524e-8ae3-d2feed43adf7/scratchpad/bin/typst compile --root /home/user/lua-construye /home/user/lua-construye/sets/S5-puente-equilibrio/manual/manual.typ /home/user/lua-construye/sets/S5-puente-equilibrio/manual/manual.pdf",
           "exit": 0
         }
       ]
@@ -79,7 +79,7 @@
       "pdf": true,
       "typst": [
         {
-          "comando": "/home/ubuntu/.local/bin/typst compile --root /workspace /workspace/sets/S6-jardin/manual/manual.typ /workspace/sets/S6-jardin/manual/manual.pdf",
+          "comando": "/tmp/claude-0/-home-user/81b607b5-f6c9-524e-8ae3-d2feed43adf7/scratchpad/bin/typst compile --root /home/user/lua-construye /home/user/lua-construye/sets/S6-jardin/manual/manual.typ /home/user/lua-construye/sets/S6-jardin/manual/manual.pdf",
           "exit": 0
         }
       ]

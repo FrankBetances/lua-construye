@@ -12,7 +12,7 @@
       "nota": "La arista es un cilindro de 5 mm. El desgaste de PETG no se ha ensayado.",
       "stl": "sets/S5-puente-equilibrio/stl/S5-FUL-G.stl",
       "glb": "sets/S5-puente-equilibrio/ar/S5-FUL-G.glb",
-      "triangulos_stl": 84,
+      "triangulos_stl": 92,
       "bbox_mm": [
         0.0,
         0.0,
@@ -21,8 +21,8 @@
         52.0,
         37.0
       ],
-      "volumen_mm3": 108524.9,
-      "glb_bytes": 1628,
+      "volumen_mm3": 123916.9,
+      "glb_bytes": 1724,
       "glb_simplificacion_mm": 0.0
     },
     {
@@ -309,20 +309,20 @@
       "pared_min_mm": 3.2,
       "recorte_mm": 0.0,
       "esfera": false,
-      "nota": "Mismo sólido que el Set 1.",
+      "nota": "Mismo sólido que el Set 1. Cuna con la huella de Lúa V5 y franja de la placa (29/10).",
       "stl": "sets/S5-puente-equilibrio/stl/K-ZOCALO-G.stl",
       "glb": "sets/S5-puente-equilibrio/ar/K-ZOCALO-G.glb",
-      "triangulos_stl": 240,
+      "triangulos_stl": 464,
       "bbox_mm": [
         0.0,
         0.0,
         0.0,
         136.8,
-        127.2,
-        19.2
+        190.8,
+        40.8
       ],
-      "volumen_mm3": 281823.3,
-      "glb_bytes": 3692,
+      "volumen_mm3": 450725.3,
+      "glb_bytes": 6380,
       "glb_simplificacion_mm": 0.0
     },
     {
@@ -337,7 +337,7 @@
       "nota": "",
       "stl": "sets/S5-puente-equilibrio/stl/K-PLACA-NIVEL.stl",
       "glb": "sets/S5-puente-equilibrio/ar/K-PLACA-NIVEL.glb",
-      "triangulos_stl": 88,
+      "triangulos_stl": 184,
       "bbox_mm": [
         0.0,
         0.0,
@@ -346,8 +346,8 @@
         54.0,
         7.8
       ],
-      "volumen_mm3": 25006.4,
-      "glb_bytes": 1708,
+      "volumen_mm3": 25035.4,
+      "glb_bytes": 2860,
       "glb_simplificacion_mm": 0.0
     }
   ]

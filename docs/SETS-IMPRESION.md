@@ -1,12 +1,14 @@
 # Carpetas de impresión
 
-Una carpeta por envío a Masque3D. El Set 1 ya estaba y no se ha regenerado.
-Generadas con `python3 -m agents.pipeline_todos`.
+Las carpetas de trabajo de cada set. El Set 1 se genera con `python3 -m agents.pipeline`
+y estas con `python3 -m agents.pipeline_todos`. **Lo que va a masque3d no son estas carpetas**:
+es `entrega/masque3d-sets-v1/` (`python3 -m agents.paquete_masque3d`), con el sostén dibujado
+y cada pieza medida. El análisis: `docs/ANALISIS-SETS-V1-LUA.md`.
 
 | Carpeta | Piezas | Auditoría | PDF |
 |---|---|---|---|
 | `sets/P1-probeta-encaje` | 12 | apta | sí |
-| `sets/S0-kit-lua` | 14 | apta | sí |
+| `sets/S0-kit-lua` | 9 | apta | sí |
 | `sets/S2-estacion-sonido` | 21 | apta | sí |
 | `sets/S3-laboratorio-rampas` | 15 | apta | sí |
 | `sets/S4-maquina-soplo` | 10 | apta | sí |
@@ -20,6 +22,8 @@ Generadas con `python3 -m agents.pipeline_todos`.
 
 ### S0-kit-lua
 - K-CUELLO no se imprime: es la unidad sellada del fabricante y queda fuera del alcance del niño.
+- K-TRONCO-G, K-LOMO-G, K-PATA-DEL-G, K-PATA-TRA-G y K-COLA-G ya no se imprimen: el cuerpo de Lúa es el de Lúa V5 (lua-firmware), con su propio paquete.
+- Sin K-LOMO-G, Lúa V5 no lleva marcador de rumbo en el lomo: D2 sigue abierta y el adulto confirma con un toque.
 
 ### S2-estacion-sonido
 - S2-RES-ROJ con pared de 1,5 mm no se imprime: incumple el mínimo de 3,2 mm.

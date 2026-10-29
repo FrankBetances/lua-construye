@@ -237,7 +237,7 @@
       "nota": "",
       "stl": "sets/S3-laboratorio-rampas/stl/S3-CUR-PER-G.stl",
       "glb": "sets/S3-laboratorio-rampas/ar/S3-CUR-PER-G.glb",
-      "triangulos_stl": 574,
+      "triangulos_stl": 1060,
       "bbox_mm": [
         0.0,
         0.0,
@@ -246,8 +246,8 @@
         150.0,
         26.0
       ],
-      "volumen_mm3": 458579.2,
-      "glb_bytes": 7520,
+      "volumen_mm3": 464463.7,
+      "glb_bytes": 13352,
       "glb_simplificacion_mm": 0.0
     },
     {
@@ -284,20 +284,20 @@
       "pared_min_mm": 3.2,
       "recorte_mm": 0.0,
       "esfera": false,
-      "nota": "Mismo sólido que el Set 1.",
+      "nota": "Mismo sólido que el Set 1. Cuna con la huella de Lúa V5 y franja de la placa (29/10).",
       "stl": "sets/S3-laboratorio-rampas/stl/K-ZOCALO-G.stl",
       "glb": "sets/S3-laboratorio-rampas/ar/K-ZOCALO-G.glb",
-      "triangulos_stl": 240,
+      "triangulos_stl": 464,
       "bbox_mm": [
         0.0,
         0.0,
         0.0,
         136.8,
-        127.2,
-        19.2
+        190.8,
+        40.8
       ],
-      "volumen_mm3": 281823.3,
-      "glb_bytes": 3692,
+      "volumen_mm3": 450725.3,
+      "glb_bytes": 6380,
       "glb_simplificacion_mm": 0.0
     },
     {
@@ -312,7 +312,7 @@
       "nota": "",
       "stl": "sets/S3-laboratorio-rampas/stl/K-PLACA-RECEPTOR.stl",
       "glb": "sets/S3-laboratorio-rampas/ar/K-PLACA-RECEPTOR.glb",
-      "triangulos_stl": 98,
+      "triangulos_stl": 184,
       "bbox_mm": [
         0.0,
         0.0,
@@ -321,8 +321,8 @@
         54.0,
         7.8
       ],
-      "volumen_mm3": 25058.7,
-      "glb_bytes": 1828,
+      "volumen_mm3": 25095.7,
+      "glb_bytes": 2864,
       "glb_simplificacion_mm": 0.0
     },
     {

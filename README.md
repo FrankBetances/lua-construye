@@ -9,7 +9,9 @@ Especificación detallada de los seis mundos: [`docs/SETS.md`](docs/SETS.md).
 
 Ejemplo ejecutable del Set 1 (STL, despiece y manual): [`docs/EJEMPLO-SET-1.md`](docs/EJEMPLO-SET-1.md). Se genera con `make ejemplo-s1`.
 
-Carpetas de impresión del plan (probeta, kit y sets 2 a 6): [`docs/SETS-IMPRESION.md`](docs/SETS-IMPRESION.md). Se generan con `make sets-todos`. El Set 1 no se regenera.
+Carpetas de impresión del plan (probeta, kit y sets 2 a 6): [`docs/SETS-IMPRESION.md`](docs/SETS-IMPRESION.md). Se generan con `make sets-todos`.
+
+**29/10/2026 · los sets v1, compatibles con Lúa V5 y listos para masque3d, NO PROBADOS.** Lo encontrado, lo cambiado y lo que no se cumple: [`docs/ANALISIS-SETS-V1-LUA.md`](docs/ANALISIS-SETS-V1-LUA.md). La carpeta para el taller es `entrega/masque3d-sets-v1/` (y su zip), con su [`LEEME`](docs/LEEME-masque3d.md). `make check FIRMWARE=../lua-firmware` pone a Lúa V5 sobre el camino.
 
 ---
 

@@ -9,20 +9,20 @@
       "pared_min_mm": 3.2,
       "recorte_mm": 0.0,
       "esfera": false,
-      "nota": "Mismo sólido que el Set 1.",
+      "nota": "Mismo sólido que el Set 1. Cuna con la huella de Lúa V5 y franja de la placa (29/10).",
       "stl": "sets/S2-estacion-sonido/stl/K-ZOCALO-G.stl",
       "glb": "sets/S2-estacion-sonido/ar/K-ZOCALO-G.glb",
-      "triangulos_stl": 240,
+      "triangulos_stl": 464,
       "bbox_mm": [
         0.0,
         0.0,
         0.0,
         136.8,
-        127.2,
-        19.2
+        190.8,
+        40.8
       ],
-      "volumen_mm3": 281823.3,
-      "glb_bytes": 3692,
+      "volumen_mm3": 450725.3,
+      "glb_bytes": 6380,
       "glb_simplificacion_mm": 0.0
     },
     {
@@ -37,7 +37,7 @@
       "nota": "",
       "stl": "sets/S2-estacion-sonido/stl/K-PLACA-ESCUCHA.stl",
       "glb": "sets/S2-estacion-sonido/ar/K-PLACA-ESCUCHA.glb",
-      "triangulos_stl": 104,
+      "triangulos_stl": 296,
       "bbox_mm": [
         0.0,
         0.0,
@@ -46,8 +46,8 @@
         54.0,
         7.8
       ],
-      "volumen_mm3": 25021.8,
-      "glb_bytes": 1900,
+      "volumen_mm3": 25061.0,
+      "glb_bytes": 4208,
       "glb_simplificacion_mm": 0.0
     },
     {
@@ -71,7 +71,7 @@
         78.0,
         52.0
       ],
-      "volumen_mm3": 170594.6,
+      "volumen_mm3": 178579.2,
       "glb_bytes": 4136,
       "glb_simplificacion_mm": 0.0
     },
@@ -112,17 +112,17 @@
       "nota": "Cavidad r 16.0 mm, profundidad 46.0 mm, garganta r 6.0 mm. Pared 8 mm. La variante de 1,5 mm no se imprime.",
       "stl": "sets/S2-estacion-sonido/stl/S2-RES-AZU-E-A.stl",
       "glb": "sets/S2-estacion-sonido/ar/S2-RES-AZU-E-A.glb",
-      "triangulos_stl": 284,
+      "triangulos_stl": 552,
       "bbox_mm": [
         0.0,
         0.0,
         0.0,
         78.0,
         64.0,
-        76.0
+        72.0
       ],
-      "volumen_mm3": 323942.1,
-      "glb_bytes": 4040,
+      "volumen_mm3": 321164.2,
+      "glb_bytes": 7256,
       "glb_simplificacion_mm": 0.0
     },
     {
@@ -137,17 +137,17 @@
       "nota": "Cavidad r 16.0 mm, profundidad 46.0 mm, garganta r 7.2 mm. Pared 8 mm. La variante de 1,5 mm no se imprime.",
       "stl": "sets/S2-estacion-sonido/stl/S2-RES-AZU-E-B.stl",
       "glb": "sets/S2-estacion-sonido/ar/S2-RES-AZU-E-B.glb",
-      "triangulos_stl": 284,
+      "triangulos_stl": 552,
       "bbox_mm": [
         0.0,
         0.0,
         0.0,
         78.0,
         64.0,
-        76.0
+        72.0
       ],
-      "volumen_mm3": 323447.7,
-      "glb_bytes": 4040,
+      "volumen_mm3": 319881.8,
+      "glb_bytes": 7256,
       "glb_simplificacion_mm": 0.0
     },
     {
@@ -162,17 +162,17 @@
       "nota": "Cavidad r 16.0 mm, profundidad 40.0 mm, garganta r 6.0 mm. Pared 8 mm. La variante de 1,5 mm no se imprime.",
       "stl": "sets/S2-estacion-sonido/stl/S2-RES-AZU-E-C.stl",
       "glb": "sets/S2-estacion-sonido/ar/S2-RES-AZU-E-C.glb",
-      "triangulos_stl": 280,
+      "triangulos_stl": 552,
       "bbox_mm": [
         0.0,
         0.0,
         0.0,
         78.0,
         64.0,
-        76.0
+        72.0
       ],
-      "volumen_mm3": 328511.9,
-      "glb_bytes": 4016,
+      "volumen_mm3": 325284.5,
+      "glb_bytes": 7256,
       "glb_simplificacion_mm": 0.0
     },
     {
@@ -187,17 +187,17 @@
       "nota": "Cavidad r 13.0 mm, profundidad 34.0 mm, garganta r 9.0 mm. Pared 8 mm. La variante de 1,5 mm no se imprime.",
       "stl": "sets/S2-estacion-sonido/stl/S2-RES-AMA-E-A.stl",
       "glb": "sets/S2-estacion-sonido/ar/S2-RES-AMA-E-A.glb",
-      "triangulos_stl": 280,
+      "triangulos_stl": 552,
       "bbox_mm": [
         0.0,
         0.0,
         0.0,
         78.0,
         64.0,
-        76.0
+        72.0
       ],
-      "volumen_mm3": 340854.1,
-      "glb_bytes": 4016,
+      "volumen_mm3": 331720.9,
+      "glb_bytes": 7256,
       "glb_simplificacion_mm": 0.0
     },
     {
@@ -212,17 +212,17 @@
       "nota": "Cavidad r 13.0 mm, profundidad 34.0 mm, garganta r 10.2 mm. Pared 8 mm. La variante de 1,5 mm no se imprime.",
       "stl": "sets/S2-estacion-sonido/stl/S2-RES-AMA-E-B.stl",
       "glb": "sets/S2-estacion-sonido/ar/S2-RES-AMA-E-B.glb",
-      "triangulos_stl": 280,
+      "triangulos_stl": 552,
       "bbox_mm": [
         0.0,
         0.0,
         0.0,
         78.0,
         64.0,
-        76.0
+        72.0
       ],
-      "volumen_mm3": 339991.1,
-      "glb_bytes": 4016,
+      "volumen_mm3": 329867.6,
+      "glb_bytes": 7256,
       "glb_simplificacion_mm": 0.0
     },
     {
@@ -237,17 +237,17 @@
       "nota": "Cavidad r 13.0 mm, profundidad 28.0 mm, garganta r 9.0 mm. Pared 8 mm. La variante de 1,5 mm no se imprime.",
       "stl": "sets/S2-estacion-sonido/stl/S2-RES-AMA-E-C.stl",
       "glb": "sets/S2-estacion-sonido/ar/S2-RES-AMA-E-C.glb",
-      "triangulos_stl": 280,
+      "triangulos_stl": 552,
       "bbox_mm": [
         0.0,
         0.0,
         0.0,
         78.0,
         64.0,
-        76.0
+        72.0
       ],
-      "volumen_mm3": 344019.3,
-      "glb_bytes": 4016,
+      "volumen_mm3": 333369.0,
+      "glb_bytes": 7256,
       "glb_simplificacion_mm": 0.0
     },
     {
@@ -262,17 +262,17 @@
       "nota": "Cavidad r 10.0 mm, profundidad 24.0 mm, garganta r 12.0 mm. Pared 8 mm. La variante de 1,5 mm no se imprime.",
       "stl": "sets/S2-estacion-sonido/stl/S2-RES-ROJ-E-A.stl",
       "glb": "sets/S2-estacion-sonido/ar/S2-RES-ROJ-E-A.glb",
-      "triangulos_stl": 280,
+      "triangulos_stl": 296,
       "bbox_mm": [
         0.0,
         0.0,
         0.0,
         78.0,
         64.0,
-        76.0
+        72.0
       ],
-      "volumen_mm3": 348938.7,
-      "glb_bytes": 4016,
+      "volumen_mm3": 332353.9,
+      "glb_bytes": 4184,
       "glb_simplificacion_mm": 0.0
     },
     {
@@ -287,17 +287,17 @@
       "nota": "Cavidad r 10.0 mm, profundidad 24.0 mm, garganta r 13.2 mm. Pared 8 mm. La variante de 1,5 mm no se imprime.",
       "stl": "sets/S2-estacion-sonido/stl/S2-RES-ROJ-E-B.stl",
       "glb": "sets/S2-estacion-sonido/ar/S2-RES-ROJ-E-B.glb",
-      "triangulos_stl": 280,
+      "triangulos_stl": 296,
       "bbox_mm": [
         0.0,
         0.0,
         0.0,
         78.0,
         64.0,
-        76.0
+        72.0
       ],
-      "volumen_mm3": 347806.0,
-      "glb_bytes": 4016,
+      "volumen_mm3": 329295.6,
+      "glb_bytes": 4184,
       "glb_simplificacion_mm": 0.0
     },
     {
@@ -312,17 +312,17 @@
       "nota": "Cavidad r 10.0 mm, profundidad 18.0 mm, garganta r 12.0 mm. Pared 8 mm. La variante de 1,5 mm no se imprime.",
       "stl": "sets/S2-estacion-sonido/stl/S2-RES-ROJ-E-C.stl",
       "glb": "sets/S2-estacion-sonido/ar/S2-RES-ROJ-E-C.glb",
-      "triangulos_stl": 280,
+      "triangulos_stl": 296,
       "bbox_mm": [
         0.0,
         0.0,
         0.0,
         78.0,
         64.0,
-        76.0
+        72.0
       ],
-      "volumen_mm3": 350811.5,
-      "glb_bytes": 4016,
+      "volumen_mm3": 331529.8,
+      "glb_bytes": 4184,
       "glb_simplificacion_mm": 0.0
     },
     {
@@ -362,17 +362,17 @@
       "nota": "La punta es un medio cilindro.",
       "stl": "sets/S2-estacion-sonido/stl/S2-ESP-E.stl",
       "glb": "sets/S2-estacion-sonido/ar/S2-ESP-E.glb",
-      "triangulos_stl": 160,
+      "triangulos_stl": 88,
       "bbox_mm": [
         0.0,
         0.0,
         0.0,
-        100.0,
+        122.0,
         44.0,
-        44.0
+        16.0
       ],
-      "volumen_mm3": 63306.6,
-      "glb_bytes": 2540,
+      "volumen_mm3": 80833.1,
+      "glb_bytes": 1676,
       "glb_simplificacion_mm": 0.0
     },
     {

@@ -16,6 +16,7 @@ import importlib.util
 import math
 from pathlib import Path
 
+import numpy as np
 from manifold3d import CrossSection, Manifold, OpType
 
 SEG = 32
@@ -24,8 +25,9 @@ ROSCA = 3.60
 PASO_ROSCA = 8.0
 VUELTAS = 3
 
-# Rosca gruesa. Diente 3,60 mm, por encima de los 3,00 mm del reglamento.
-R_MENOR = 13.40
+# Rosca gruesa. Diente de 3,00 mm de alto y 8 mm de base (29/10: 3,60 en la v1,
+# que eran tacos sueltos). El reglamento pide 3,00.
+R_MENOR = 14.00
 R_MAYOR = 17.00
 R_BORE = 17.40
 R_CRESTA = 13.85
@@ -59,33 +61,88 @@ def asentar(solido: Manifold) -> Manifold:
     return solido.translate((-caja_[0], -caja_[1], -caja_[2]))
 
 
-def _dientes(radio_base: float, prof: float, z0: float, fase: float) -> Manifold:
-    """Rosca de filete cuadrado. El paso es 8 mm y el diente no llena el vano."""
-    n_vuelta = 12
-    total = VUELTAS * n_vuelta
-    bloques = []
-    for i in range(total):
-        ang = fase + 2 * math.pi * i / n_vuelta
-        z = z0 + PASO_ROSCA * i / n_vuelta
-        bloque = Manifold.cube((prof, 4.4, 2.8), True)
-        bloque = bloque.translate((radio_base + prof / 2.0, 0.0, 0.0))
-        bloque = bloque.rotate((0.0, 0.0, math.degrees(ang)))
-        bloque = bloque.translate((0.0, 0.0, z))
-        bloques.append(bloque)
-    return Manifold.batch_boolean(bloques, OpType.Add)
+# Rosca de verdad (29/10). La de la v1 eran 36 tacos cuadrados en hélice que
+# no llegaban a tocar el núcleo: salían sueltos en el STL (37 cuerpos en la
+# semilla, 38 en el tallo) y no podían roscar. Esta es una hélice continua de
+# perfil en V con flancos a 51° de la horizontal (se imprime con el eje
+# vertical, sin soporte dentro: 45° justos dejaban facetas por encima del
+# límite), extruida con giro: una sola pieza con el núcleo. Diente de 3 mm de
+# alto y 8 mm de base (paso 8): por encima de los 3 × 1,5 mm del reglamento.
+CRESTA = 0.5          # meseta de la cresta del macho, axial
+FLANCO = 1.25         # avance axial del flanco por mm de alto (tan 51°)
+HOLGURA_ROSCA = 0.4   # entre flancos (decisión 12 de lua-firmware: ajuste en PLA sin probeta)
+R_TUBO = 24.0         # radio exterior del collar hembra
+# el collar: la rosca (3 vueltas), el techo en cono a 45° encima y 3,2 de tapa
+ALTO_COLLAR = PASO_ROSCA * VUELTAS + (R_MAYOR + HOLGURA_ROSCA) + 3.2
+
+
+def _seccion_rosca(r_raiz: float, h: float, crece: float, n: int = 96) -> CrossSection:
+    """Planta de la rosca: el núcleo y un diente cuyo ancho angular sigue el
+    perfil axial (semi-ancho w(r) = base/2 − (r − r_raiz), flancos a 45°).
+    crece: la hembra es el macho crecido la holgura (radial y axial)."""
+    base2 = FLANCO * h + CRESTA / 2.0 + crece * math.hypot(1.0, FLANCO)
+    r_cresta = r_raiz + h + crece
+
+    def ang(r):
+        w = base2 - FLANCO * (r - r_raiz)
+        return min(180.0, 360.0 * w / PASO_ROSCA)
+
+    # el núcleo llega hasta donde el diente ocupa toda la vuelta (ang = 180)
+    r_nucleo = max(r_raiz + crece, r_raiz + (base2 - PASO_ROSCA / 2.0) / FLANCO)
+    rs = np.linspace(r_nucleo, r_cresta, 24)
+    pts = []
+    for k in range(9):  # cresta, de −a a +a
+        a = math.radians(-ang(r_cresta) + 2 * ang(r_cresta) * k / 8)
+        pts.append((r_cresta * math.cos(a), r_cresta * math.sin(a)))
+    for r in rs[::-1][1:]:  # flanco +, hacia dentro
+        a = math.radians(ang(r))
+        pts.append((r * math.cos(a), r * math.sin(a)))
+    a0 = ang(r_nucleo)
+    if a0 < 179.9:  # el arco del núcleo
+        for k in range(1, n):
+            a = math.radians(a0 + (360.0 - 2 * a0) * k / n)
+            pts.append((r_nucleo * math.cos(a), r_nucleo * math.sin(a)))
+    for r in rs[:-1]:  # flanco −, hacia fuera
+        a = math.radians(-ang(r))
+        pts.append((r * math.cos(a), r * math.sin(a)))
+    return CrossSection([pts])
+
+
+def _helice(r_raiz: float, h: float, crece: float, z0: float, z1: float) -> Manifold:
+    """La rosca de z0 a z1, en fase con la cota absoluta (macho y hembra casan
+    estén donde estén)."""
+    largo = z1 - z0
+    sec = _seccion_rosca(r_raiz, h, crece).rotate(360.0 * z0 / PASO_ROSCA)
+    # un corte cada 6° de giro (0,13 mm): medido con check-v3-piezas, los
+    # cortes cada 18° dejaban facetas que cuelgan
+    n = max(8, int(360.0 * largo / PASO_ROSCA / 6.0))
+    return Manifold.extrude(sec, largo, n, 360.0 * largo / PASO_ROSCA).translate((0.0, 0.0, z0))
 
 
 def rosca_macho(z0: float) -> Manifold:
-    nucleo = cil(PASO_ROSCA * VUELTAS + 6.0, R_MENOR).translate((0.0, 0.0, z0))
-    return nucleo + _dientes(R_MENOR, R_MAYOR - R_MENOR, z0 + 2.2, 0.0)
+    """Espiga roscada de tres vueltas (1 mm más corta que la hembra), con la
+    punta en chaflán de 45°."""
+    largo = PASO_ROSCA * VUELTAS - 1.0
+    sol = _helice(R_MENOR, R_MAYOR - R_MENOR, 0.0, z0, z0 + largo)
+    # la punta: un cono a 45° recorta el último medio paso del filete
+    cono = Manifold.cylinder(largo, R_MAYOR + largo - 3.0, R_MAYOR - 3.0, SEG * 2, False)
+    return sol ^ cono.translate((0.0, 0.0, z0))
 
 
 def collar_hembra(z0: float) -> Manifold:
-    """Collar con cresta desfasada medio paso: el diente macho cae en el vano."""
-    alto = PASO_ROSCA * VUELTAS + 8.0
-    tubo = cil(alto, 24.0).translate((0.0, 0.0, z0)) - cil(alto + 2.0, R_BORE).translate((0.0, 0.0, z0 - 1.0))
-    cresta = _dientes(R_CRESTA, R_BORE - R_CRESTA, z0 + 2.2 + PASO_ROSCA / 2.0, 0.0)
-    return tubo + cresta
+    """Collar con la rosca hembra (el macho crecido la holgura), abierto por
+    abajo y con techo en cono a 45° (sin soporte dentro). Embocadura en chaflán."""
+    alto = ALTO_COLLAR
+    tubo = cil(alto, R_TUBO).translate((0.0, 0.0, z0))
+    z_techo = z0 + PASO_ROSCA * VUELTAS
+    hueco = _helice(R_MENOR, R_MAYOR - R_MENOR, HOLGURA_ROSCA, z0 - 1.0, z_techo)
+    r_e = R_MAYOR + HOLGURA_ROSCA
+    techo = Manifold.cylinder(r_e + 0.01, r_e, 0.0, SEG * 2, False).translate((0.0, 0.0, z_techo - 0.01))
+    # embocadura a 45° hasta la cresta de la hembra: el primer diente no
+    # empieza en un escalón plano (lo cazó check-v3-piezas)
+    r_n = R_MENOR + HOLGURA_ROSCA - 0.1
+    boca = Manifold.cylinder(r_e + 2.0 - r_n, r_e + 2.0, r_n, SEG * 2, False).translate((0.0, 0.0, z0 - 0.01))
+    return tubo - hueco - techo - boca
 
 
 def _exigir(solido: Manifold, codigo: str) -> Manifold:
@@ -174,16 +231,36 @@ def _patin() -> Manifold:
 def resonador(radio: float, prof: float, garganta: float) -> Manifold:
     """Volumen exterior común. La pared real es 8 mm, muy por encima de 3,2."""
     cuerpo = caja(0, 0, 0, 78, 64, 72)
-    cuerpo = cuerpo - cil(prof, radio).translate((39, 32, 16))
-    cuerpo = cuerpo - cil(14, garganta).translate((39, 32, 60))
-    # Espiga de apoyo, común a las tres familias, para el banco del martillo.
-    cuerpo = cuerpo + caja(24, 22, -4.0, 54, 42, 0.2)
+    # la cavidad sigue acabando en z = 16 + prof; su último tramo es el cono
+    cono_h = max(0.0, radio - garganta)
+    # (empieza en z 18: deja 3,6 mm de suelo sobre el techo del hueco de apoyo)
+    cuerpo = cuerpo - cil(prof - cono_h + 0.5 - 2.0, radio).translate((39, 32, 18))
+    # 29/10: en la v1 la garganta (z 60–74) no llegaba a la cavidad en 5 de las 9
+    # variantes: quedaba un hueco cerrado, que no resuena. Ahora la cavidad
+    # acaba en un techo en cono a 45° (sin soporte dentro) que baja hasta la
+    # garganta, y la garganta sale arriba.
+    z_techo = 16 + prof - cono_h
+    if radio > garganta:
+        # el cono acaba 1 mm más estrecho que la garganta: la corta a 45°, sin caras que coincidan
+        # y empieza 0,5 mm por debajo y 0,5 más ancho que la cavidad, por lo mismo
+        cono = Manifold.cylinder(radio - garganta + 2.0, radio + 0.5, garganta - 1.0, SEG, False).translate((39, 32, z_techo - 0.5))
+        cuerpo = cuerpo - cono
+        z_techo += radio - garganta
+    cuerpo = cuerpo - cil(72.4 - z_techo + 0.4, garganta).translate((39, 32, z_techo - 0.4))
+    # Hueco de apoyo, común a las tres familias, para el tetón del banco del
+    # martillo (29/10: en la v1 era una espiga debajo y el bloque de 78 × 64
+    # colgaba 4 mm sobre la cama). Techo a dos aguas a 45°: sin soporte dentro.
+    hueco = caja(23.8, 21.8, -0.4, 54.2, 42.2, 4.2)
+    techo = Manifold.hull_points([(x, y, 4.19) for x in (23.8, 54.2) for y in (21.8, 42.2)]
+                                 + [(x, 32.0, 14.4) for x in (23.8, 54.2)])
+    cuerpo = cuerpo - hueco - techo
     return cuerpo
 
 
 def bal_base() -> Manifold:
     cuerpo = caja(0, 0, 0, 120, 78, 16)
-    cuerpo = cuerpo - caja(36, 22, 11, 70, 56, 16.4)
+    # 29/10: tetón donde se apoya el resonador (antes, un pozo para su espiga)
+    cuerpo = cuerpo + caja(38.2, 29.2, 15.9, 67.8, 48.8, 19.8)
     cuerpo = cuerpo + caja(18, 0, 16, 46, 14, 52)
     cuerpo = cuerpo + caja(18, 64, 16, 46, 78, 52)
     # El cilindro, tras rotar 90° en X, queda hacia −Y y aquí atraviesa las dos carrilleras.
@@ -215,10 +292,13 @@ def raspador() -> Manifold:
 
 
 def espatula() -> Manifold:
-    cuerpo = caja(20, 0, 0, 120, 44, 12)
-    punta = cil(12, 22).rotate((0, 90, 0)).translate((20, 22, 6))
-    # Caja que recibe la espiga del raspador.
-    cuerpo = cuerpo - caja(108, 14.4, 2.2, 120.4, 29.6, 9.8)
+    """29/10: pala plana de 16 mm con la punta redonda en planta. La de la v1
+    apoyaba en la cama por la generatriz de un cilindro (huella 0) y la caja de
+    la espiga dejaba paredes de 2,2 mm."""
+    cuerpo = caja(20, 0, 0, 120, 44, 16)
+    punta = cil(16, 22).translate((20, 22, 0))
+    # Caja que recibe la espiga del raspador (16 × 8): 0,2 mm de aire por lado.
+    cuerpo = cuerpo - caja(108, 13.8, 3.8, 120.4, 30.2, 12.2)
     return cuerpo + punta
 
 
@@ -282,6 +362,22 @@ def friccion() -> Manifold:
 
 
 def curva_peraltada() -> Manifold:
+    """29/10: canal de revolución con el fondo peraltado (z 8 dentro, 12 fuera)
+    y bocas rectas a las dos caras. La v1 lo hacía con 16 cajas giradas y dejaba
+    paredes de 2 mm entre ellas."""
+    solido = caja(0, 0, 0, 150, 150, 26)
+    cx, cy, radio, medio = 18.0, 18.0, 78.0, 24.0
+    perfil = CrossSection([[(radio - medio, 8.0), (radio + medio, 12.0), (radio + medio, 27.0), (radio - medio, 27.0)]])
+    canal = Manifold.revolve(perfil, SEG * 4, 90.0).translate((cx, cy, 0))
+    # bocas: el mismo perfil, recto, hasta las caras y = 0 y x = 0
+    boca = Manifold.extrude(perfil, cy + 1.0)  # en el plano x-z, a lo largo de +z
+    boca_y = boca.rotate((90, 0, 0))
+    boca_x = boca_y.mirror((1.0, -1.0, 0.0))  # cambia x por y: la otra boca, hacia x = 0
+    boca_y, boca_x = boca_y.translate((cx, cy, 0)), boca_x.translate((cx, cy, 0))
+    return solido - canal - boca_y - boca_x
+
+
+def _curva_peraltada_v1() -> Manifold:
     solido = caja(0, 0, 0, 150, 150, 26)
     cx, cy, radio = 18.0, 18.0, 78.0
     vacios = []
@@ -338,27 +434,35 @@ def codo() -> Manifold:
 
 
 def _jaula(lado_x, lado_y, lado_z, pared, radio_eje, ranuras) -> Manifold:
+    """29/10: jaula abierta por arriba, con dos cunas en U en las paredes X
+    donde se apoya el eje de las aspas. La de la v1 era una caja cerrada (las
+    aspas no podían entrar y el techo de 80 mm colgaba sin soporte) y su eje
+    iba en Y, cruzado con el de las aspas, que va en X."""
     cuerpo = caja(0, 0, 0, lado_x, lado_y, lado_z)
-    cuerpo = cuerpo - caja(pared, pared, pared, lado_x - pared, lado_y - pared, lado_z - pared)
+    cuerpo = cuerpo - caja(pared, pared, pared, lado_x - pared, lado_y - pared, lado_z + 1)
     for x0, x1, z0, z1 in ranuras:
         cuerpo = cuerpo - caja(x0, -1, z0, x1, pared + 1, z1)
         cuerpo = cuerpo - caja(x0, lado_y - pared - 1, z0, x1, lado_y + 1, z1)
-    eje = cil(lado_y + 8, radio_eje).rotate((90, 0, 0)).translate((lado_x / 2, lado_y + 4, lado_z / 2))
-    return cuerpo - eje
+    cuna = cil(lado_x + 8, radio_eje).rotate((0, 90, 0)).translate((-4, lado_y / 2, lado_z / 2))
+    cuna = cuna + caja(-4, lado_y / 2 - radio_eje, lado_z / 2, lado_x + 4, lado_y / 2 + radio_eje, lado_z + 1)
+    return cuerpo - cuna
 
 
 def rotor_jaula() -> Manifold:
     return _jaula(
         96, 72, 72, 8.0, 5.4,
-        ((22, 74, 20, 34), (22, 74, 40, 54)),
+        # 29/10: las ranuras de la v1 (z 20–34 y 40–54) rozaban el agujero del
+        # eje (z 30,6–41,4) y dejaban filos de 0,14 mm
+        ((22, 74, 12, 26), (22, 74, 46, 60)),
     )
 
 
 def rotor_aspas() -> Manifold:
-    eje = cil(80, 4.6).rotate((0, 90, 0)).translate((0, 0, 0))
+    # el eje cruza la jaula (96) y asoma 1 mm por cada lado
+    eje = cil(98, 4.6).rotate((0, 90, 0)).translate((-9, 0, 0))
     aspas = []
     for i in range(4):
-        aspa = caja(-5, -2.4, 7, 5, 2.4, 24)
+        aspa = caja(-5, -2.4, 3, 5, 2.4, 24)  # 29/10: nace dentro del eje (en la v1, suelta)
         aspas.append(aspa.rotate((90.0 * i, 0.0, 0.0)).translate((40, 0, 0)))
     return eje + Manifold.batch_boolean(aspas, OpType.Add)
 
@@ -371,10 +475,10 @@ def mol_jaula() -> Manifold:
 
 
 def mol_aspas() -> Manifold:
-    eje = cil(104, 5.2).rotate((0, 90, 0)).translate((0, 0, 0))
+    eje = cil(122, 5.2).rotate((0, 90, 0)).translate((-9, 0, 0))
     aspas = []
     for i in range(4):
-        aspa = caja(-6, -4.0, 8, 6, 4.0, 32)
+        aspa = caja(-6, -4.0, 3.5, 6, 4.0, 32)  # 29/10: nace dentro del eje (en la v1, suelta)
         aspas.append(aspa.rotate((90.0 * i, 0.0, 0.0)).translate((52, 0, 0)))
     return eje + Manifold.batch_boolean(aspas, OpType.Add)
 
@@ -390,7 +494,9 @@ def compuerta(grueso: float, barras: int) -> Manifold:
 # --- Set 5. Palanca. La viga de 10 × 31,80 mm no cabe en 220 mm. ---
 
 def fulcro() -> Manifold:
-    perfil = [(0, 0), (96, 0), (64, 32), (32, 32)]
+    # 29/10: zócalo vertical de 6 mm. Con el trapecio de la v1 los cantos de
+    # abajo eran cuñas de 45° (paredes de 0,35 mm en la cama)
+    perfil = [(0, 0), (96, 0), (96, 6), (68, 32), (28, 32), (0, 6)]
     solido = Manifold.extrude(CrossSection([perfil]), 52)
     lomo_redondo = cil(52, 5.0).translate((48, 32, 0))
     return (solido + lomo_redondo).rotate((90, 0, 0)).translate((0, 52, 0))
@@ -455,26 +561,26 @@ def semilla() -> Manifold:
 
 
 def tallo() -> Manifold:
-    hembra = collar_hembra(0)
-    vastago = cil(40, R_MENOR).translate((0, 0, 32))
-    punta = cil(12, 12.0).translate((0, 0, 72))
-    return hembra + vastago + _dientes(R_MENOR, R_MAYOR - R_MENOR, 40.0, 0.0) + punta
+    """Collar hembra abajo y espiga roscada arriba: los tallos se apilan."""
+    return collar_hembra(0) + rosca_macho(ALTO_COLLAR)
 
 
 def _corona_floral(copa: bool) -> Manifold:
     solido = collar_hembra(0)
+    dz = ALTO_COLLAR - 32.0  # 29/10: el collar creció; la corona sube con él
     if copa:
-        cuenco = cil(20, 36).translate((0, 0, 28)) - cil(12, 22).translate((0, 0, 38))
+        # 29/10: cuenco de r 20 (en la v1, 22): 3,6 mm de pared a cada lado de los pozos de los frutos
+        cuenco = cil(20, 36).translate((0, 0, 28 + dz)) - cil(12, 20).translate((0, 0, 38 + dz))
         solido = solido + cuenco
         for i in range(3):
             ang = math.radians(i * 120 + 30)
             cx, cy = 28 * math.cos(ang), 28 * math.sin(ang)
-            solido = solido - cil(7.0, 4.4).translate((cx, cy, 42))
+            solido = solido - cil(7.0, 4.4).translate((cx, cy, 42 + dz))
     else:
-        solido = solido + cil(10, 12).translate((0, 0, 28))
+        solido = solido + cil(10, 12).translate((0, 0, 28 + dz))
         petalos = []
         for i in range(6):
-            petalo = caja(16, -5, 26, 42, 5, 34)
+            petalo = caja(16, -5, 26 + dz, 42, 5, 34 + dz)
             petalo = petalo.rotate((0, 0, i * 60.0))
             petalos.append(petalo)
         solido = solido + Manifold.batch_boolean(petalos, OpType.Add)
@@ -492,13 +598,17 @@ def fruto_naranja() -> Manifold:
 
 def fruto_manzana() -> Manifold:
     cuerpo = Manifold.sphere(22.5, 40)
-    cuerpo = cuerpo - Manifold.sphere(6.0, 16).translate((0, 0, 20))
+    cuerpo = cuerpo - Manifold.sphere(6.0, 16).translate((0, 0, 22.5))  # 29/10: canto a 90° (en la v1, filo)
     cuerpo = cuerpo + cil(6.0, 4.0).translate((0, 0, -24))
     return cuerpo
 
 
 def prisma(ancho, fondo, alto) -> Manifold:
-    perfil = [(0, 0), (ancho, 0), (ancho / 2, fondo)]
+    # 29/10: el vértice se corta con una meseta de 6 mm (en la v1, filo de 0,16 mm)
+    k = 3.0 / (ancho / 2)
+    # y los cantos de abajo llevan 4 mm de pared vertical (en la v1, cuñas finas)
+    perfil = [(0, 0), (ancho, 0), (ancho, 4.0), (ancho / 2 + 3.0, fondo * (1 - k)),
+              (ancho / 2 - 3.0, fondo * (1 - k)), (0, 4.0)]
     solido = Manifold.extrude(CrossSection([perfil]), alto)
     return solido + cil(6.0, 6.0).translate((ancho / 2, fondo * 0.35, -6))
 
@@ -506,7 +616,7 @@ def prisma(ancho, fondo, alto) -> Manifold:
 def _pantalla(hueco: str, noche: bool) -> Manifold:
     cuerpo = caja(0, 0, 0, 120, 96, 8)
     if hueco == "arbol":
-        cuerpo = cuerpo - caja(52, 16, -0.4, 68, 48, 8.4)
+        cuerpo = cuerpo - caja(52, 16, -0.4, 68, 52, 8.4)  # 29/10: entra en la copa (en la v1, filo de 0,03)
         cuerpo = cuerpo - cil(10, 16).translate((60, 62, -1))
     else:
         cuerpo = cuerpo - cil(10, 18).translate((60, 52, -1))
@@ -611,8 +721,8 @@ def _pilares():
 
 
 _COMUN = {
-    "K-ZOCALO-G": _f("K-ZOCALO-G", "Zócalo universal", 1, "espiga", _zocalo, nota="Mismo sólido que el Set 1."),
-    "K-PATIN-G": _f("K-PATIN-G", "Patín guía", 1, "espiga", _patin, nota="Mismo sólido que el Set 1. Corre en la ranura de 12 mm."),
+    "K-ZOCALO-G": _f("K-ZOCALO-G", "Zócalo universal", 1, "espiga", _zocalo, nota="Mismo sólido que el Set 1. Cuna con la huella de Lúa V5 y franja de la placa (29/10)."),
+    "K-PATIN-G": _f("K-PATIN-G", "Patín guía", 1, "espiga", _patin, nota="El patín de Lúa V5, copia de lua-firmware: dos clics en la base y dos pivotes en la ranura de 12 mm."),
     "K-PLACA-INICIO": _f("K-PLACA-INICIO", "Placa Inicio", 1, "snap", lambda: _placa("inicio"), recorte=1.8),
     "K-PLACA-META": _f("K-PLACA-META", "Placa Meta", 1, "snap", lambda: _placa("meta"), recorte=1.8),
     "K-PLACA-ESCUCHA": _f("K-PLACA-ESCUCHA", "Placa Escucha", 1, "snap", lambda: _placa("escucha"), recorte=1.8),
@@ -696,7 +806,7 @@ for _pieza in _probetas() + _variantes_resonador() + _pilares():
 
 HIPOTESIS = [
     "Módulo de planta 31,80 mm y altura de bloque 19,20 mm, como en el Set 1. D1 sigue abierta.",
-    "Cuerpo de Lúa: 72 × 64 × 40 mm. SETS no da el milímetro del tronco.",
+    "Cuerpo de Lúa: el de Lúa V5 (lua-firmware), base de 104 × 104 mm. El zócalo y el patín salen de lua-v5/interfaz-construye.json.",
     "Tetón de la probeta G: diámetro 9,40 mm y alto 4,50 mm. Tetón E: diámetro 6,40 mm y alto 3,20 mm.",
     "Holgura de la probeta, radial: 0,15, 0,20 y 0,25 mm, en la hembra.",
     "Rampa: H = 19,20 mm y L = 153,60 mm. Con H = 31,80 mm, L = 254,40 mm y no cabe en la cama de 220 mm.",
@@ -732,12 +842,11 @@ def carpeta_codigos() -> dict[str, list[str]]:
     ]
     return {
         "P1-probeta-encaje": probetas,
+        # 29/10: el cuerpo de Lúa es el de la V5 (lua-firmware). El tronco, el
+        # lomo, las patas y la cola de la v1 eran un segundo cuerpo de Lúa, de
+        # otra medida (72 × 64 mm frente a 104 × 104): sus funciones siguen en
+        # el catálogo, pero ya no van a la carpeta de impresión.
         "S0-kit-lua": [
-            "K-TRONCO-G",
-            "K-LOMO-G",
-            "K-PATA-DEL-G",
-            "K-PATA-TRA-G",
-            "K-COLA-G",
             "K-PATIN-G",
             "K-ZOCALO-G",
             *placas,
@@ -822,13 +931,13 @@ TEXTOS = {
     "S0-kit-lua": {
         "titulo": "Kit Lúa",
         "fase": "Fase 2 del plan de impresión",
-        "es": "El tronco recibe las patas, el lomo y la cola. La placa se elige según el mundo y baja al zócalo.",
-        "gl": "O tronco recibe as patas, o lombo e a cola. A placa elíxese segundo o mundo e baixa ao zócalo.",
+        "es": "El cuerpo de Lúa es el de Lúa V5 y se imprime con su propio paquete. Aquí van el zócalo, el patín y las placas. La placa se elige según el mundo y baja al zócalo.",
+        "gl": "O corpo de Lúa é o de Lúa V5 e imprímese co seu propio paquete. Aquí van o zócalo, o patín e as placas. A placa elíxese segundo o mundo e baixa ao zócalo.",
         "pasos": [
-            ("Encaja primero las patas traseras, de espiga redonda.", "Encaixa primeiro as patas traseiras, de espiga redonda."),
-            ("Encaja después las delanteras. La llave no entra en el pozo redondo.", "Encaixa despois as dianteiras. A chave non entra no pozo redondo."),
-            ("Coloca el lomo y la cola en la cara de atrás.", "Coloca o lombo e a cola na cara de atrás."),
+            ("Para el Set 1, engancha el patín bajo la base de Lúa: dos clics.", "Para o Set 1, engancha o patín baixo a base de Lúa: dous clics."),
+            ("Pon a Lúa en la cuna del zócalo mirando hacia el camino. Al revés, sus patas no caben.", "Pon a Lúa no berce do zócalo mirando cara ao camiño. Ao revés, as súas patas non caben."),
             ("Elige una placa y bájala al zócalo hasta oír el snap.", "Elixe unha placa e báixaa ao zócalo ata oír o snap."),
+            ("Fuera del Set 1, quita el patín tirando fuerte y recto: Lúa se sostiene sobre su base.", "Fóra do Set 1, quita o patín tirando forte e recto: Lúa sostense sobre a súa base."),
         ],
         "orientacion": "La izquierda y la derecha son las de Lúa. En los sets 1, 5 y 6 el niño la mira desde atrás.",
     },
