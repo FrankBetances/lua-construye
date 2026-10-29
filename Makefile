@@ -12,7 +12,7 @@ sets-todos:
 
 # Trae de lua-firmware la interfaz de Lúa V5 y su patín (lua-v5/).
 lua-v5:
-	python3 -m agents.lua_v5 --copiar $(FIRMWARE)
+	@echo "la interfaz del cubo se escribe a mano en lua-v5/; make check la compara"
 
 # Las medidas con Lúa: que la copia de lua-v5/ sea la de lua-firmware y que
 # Lúa V5 corra por el Set 1 y entre en el zócalo. Sin el vecino, se saltan.

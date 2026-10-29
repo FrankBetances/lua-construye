@@ -28,10 +28,10 @@ Auditoría de diseño: apta. No es un ensayo EN 71-1 de laboratorio y no declara
 - `sets/S1-camino/stl/S1-CMD-SAL-G.stl` (296 triángulos, 14020.1 mm³)
 - `sets/S1-camino/stl/S1-DEST-PARQUE.stl` (248 triángulos, 25059.0 mm³)
 - `sets/S1-camino/stl/S1-DEST-CAMA.stl` (200 triángulos, 25106.7 mm³)
-- `sets/S1-camino/stl/K-ZOCALO-G.stl` (568 triángulos, 450740.9 mm³)
+- `sets/S1-camino/stl/K-ZOCALO-G.stl` (308 triángulos, 458093.2 mm³)
 - `sets/S1-camino/stl/K-PLACA-INICIO.stl` (232 triángulos, 25073.9 mm³)
 - `sets/S1-camino/stl/K-PLACA-META.stl` (344 triángulos, 25080.7 mm³)
-- `sets/S1-camino/stl/K-PATIN-G.stl` (3192 triángulos, 25778.5 mm³)
+- `sets/S1-camino/stl/K-PATIN-G.stl` (1218 triángulos, 93477.5 mm³)
 
 ## GLB (menos de 100 KB)
 
@@ -45,10 +45,10 @@ Auditoría de diseño: apta. No es un ensayo EN 71-1 de laboratorio y no declara
 - `sets/S1-camino/ar/S1-CMD-SAL-G.glb` (3452 bytes)
 - `sets/S1-camino/ar/S1-DEST-PARQUE.glb` (3084 bytes)
 - `sets/S1-camino/ar/S1-DEST-CAMA.glb` (2596 bytes)
-- `sets/S1-camino/ar/K-ZOCALO-G.glb` (6380 bytes)
+- `sets/S1-camino/ar/K-ZOCALO-G.glb` (4432 bytes)
 - `sets/S1-camino/ar/K-PLACA-INICIO.glb` (2892 bytes)
 - `sets/S1-camino/ar/K-PLACA-META.glb` (3752 bytes)
-- `sets/S1-camino/ar/K-PATIN-G.glb` (39024 bytes)
+- `sets/S1-camino/ar/K-PATIN-G.glb` (15264 bytes)
 
 ## Documentación de montaje
 

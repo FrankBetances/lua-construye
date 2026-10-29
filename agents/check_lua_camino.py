@@ -55,7 +55,7 @@ from agents.malla_io import leer_stl  # noqa: E402
 
 LIBRE = 0.05  # mm³
 SEG = 48
-CUERPO = ("base", "vientre", "pecho", "brazo_izq", "brazo_der", "cola")
+CUERPO = ("cubo_fondo", "cubo_caja", "pata_izq", "pata_der", "brazo_izq", "brazo_der", "ala_izq", "ala_der", "cola", "lazo")
 
 
 def _colocar(s: Manifold, x: float, y: float, rumbo: float, z: float) -> Manifold:
@@ -66,7 +66,7 @@ def _colocar(s: Manifold, x: float, y: float, rumbo: float, z: float) -> Manifol
 def _lua(fw: Path, con_patin: bool) -> Manifold:
     piezas = [leer_stl(fw / "cad" / "lua-v5" / "montaje" / f"{n}.stl") for n in CUERPO]
     if con_patin:
-        piezas.append(leer_stl(RAIZ / "lua-v5" / "patin-montaje.stl"))
+        piezas.append(G.patin(SEG))
     s = piezas[0]
     for p in piezas[1:]:
         s = s + p
@@ -88,7 +88,7 @@ def main(argv=None) -> int:
     ap.add_argument("--romper", choices=["sin_patin", "al_reves"], default=None)
     a = ap.parse_args(argv)
     fw = Path(a.firmware)
-    if not (fw / "cad" / "lua-v5" / "montaje" / "base.stl").exists():
+    if not (fw / "cad" / "lua-v5" / "montaje" / "cubo_fondo.stl").exists():
         print(f"· check_lua_camino: no hay lua-firmware en {fw}: Lúa sobre el camino NO se mide")
         return 0
     L = interfaz()
@@ -170,7 +170,7 @@ def main(argv=None) -> int:
     x0, y0 = P.BOLSA_X0_MM, P.BOLSA_ZOCALO_Y0_MM
     placa = Manifold.cube((P.BOLSA_ANCHO_MM, P.BOLSA_FONDO_MM, 400.0)).translate((x0, y0, -100.0))
     sombra = _colocar(con, c, c, 0.0, 0.0).project()
-    tapa = (Manifold.extrude(sombra, 400.0).translate((0.0, 0.0, -100.0)) ^ placa).volume() / 400.0
+    tapa = (Manifold.extrude(sombra, 400.0).translate((0.0, 0.0, -100.0)) ^ placa).volume() / 400.0 if True else 0
     print(f"      · aviso: vista desde arriba, Lúa (sin cabeza) tapa {tapa:.0f} de "
           f"{P.BOLSA_ANCHO_MM * P.BOLSA_FONDO_MM:.0f} mm² de la placa (los brazos)")
 

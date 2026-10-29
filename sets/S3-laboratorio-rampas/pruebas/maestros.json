@@ -287,7 +287,7 @@
       "nota": "Mismo sólido que el Set 1. Cuna con la huella de Lúa V5 y franja de la placa (29/10).",
       "stl": "sets/S3-laboratorio-rampas/stl/K-ZOCALO-G.stl",
       "glb": "sets/S3-laboratorio-rampas/ar/K-ZOCALO-G.glb",
-      "triangulos_stl": 464,
+      "triangulos_stl": 308,
       "bbox_mm": [
         0.0,
         0.0,
@@ -296,8 +296,8 @@
         190.8,
         40.8
       ],
-      "volumen_mm3": 450725.3,
-      "glb_bytes": 6380,
+      "volumen_mm3": 458093.2,
+      "glb_bytes": 4432,
       "glb_simplificacion_mm": 0.0
     },
     {

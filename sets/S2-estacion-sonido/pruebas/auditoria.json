@@ -21,7 +21,7 @@
         190.8,
         40.8
       ],
-      "nucleo_mm3": 340977.7,
+      "nucleo_mm3": 340527.8,
       "comprobaciones": {
         "stl_hermetico": true,
         "volumen_coincide": true,

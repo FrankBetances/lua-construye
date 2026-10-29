@@ -250,7 +250,7 @@
       "hipotesis_planta": "Baldosa y zócalo: 4 × 31,80 mm. SETS no da el ancho del cuerpo de Lúa; se usa 2 módulos + 2 módulos.",
       "stl": "sets/S1-camino/stl/K-ZOCALO-G.stl",
       "glb": "sets/S1-camino/ar/K-ZOCALO-G.glb",
-      "triangulos_stl": 568,
+      "triangulos_stl": 308,
       "bbox_mm": [
         0.0,
         0.0,
@@ -259,8 +259,8 @@
         190.8,
         40.8
       ],
-      "volumen_mm3": 450740.9,
-      "glb_bytes": 6380,
+      "volumen_mm3": 458093.2,
+      "glb_bytes": 4432,
       "glb_simplificacion_mm": 0.0,
       "glb_bajo_100kb": true
     },
@@ -322,17 +322,17 @@
       "hipotesis_planta": "Baldosa y zócalo: 4 × 31,80 mm. SETS no da el ancho del cuerpo de Lúa; se usa 2 módulos + 2 módulos.",
       "stl": "sets/S1-camino/stl/K-PATIN-G.stl",
       "glb": "sets/S1-camino/ar/K-PATIN-G.glb",
-      "triangulos_stl": 3192,
+      "triangulos_stl": 1218,
       "bbox_mm": [
-        -16.4,
-        -36.4,
+        -58.0,
+        -64.0,
         -20.8,
-        16.4,
-        36.4,
-        6.6
+        58.0,
+        58.0,
+        9.0
       ],
-      "volumen_mm3": 25778.5,
-      "glb_bytes": 39024,
+      "volumen_mm3": 93477.5,
+      "glb_bytes": 15264,
       "glb_simplificacion_mm": 0.0,
       "glb_bajo_100kb": true
     }

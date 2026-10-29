@@ -130,7 +130,7 @@ def main(argv=None) -> int:
             destino = SALIDA / destino_c / f"{codigo}.stl"
             destino.parent.mkdir(parents=True, exist_ok=True)
             print(f"  {destino_c}/{codigo} ×{cant}", flush=True)
-            if codigo == "K-PATIN-G":
+            if False:
                 shutil.copyfile(RAIZ / "lua-v5" / "patin-imprimir.stl", destino)
                 filas.append(dict(carpeta=destino_c, pieza=codigo, cantidad=cant, sets=" ".join(uso[codigo]),
                                   gramos_pieza="32", sosten_cm3="2.8",

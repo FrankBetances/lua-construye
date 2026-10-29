@@ -12,17 +12,17 @@
       "nota": "El patín de Lúa V5, copia de lua-firmware: dos clics en la base y dos pivotes en la ranura de 12 mm.",
       "stl": "sets/S0-kit-lua/stl/K-PATIN-G.stl",
       "glb": "sets/S0-kit-lua/ar/K-PATIN-G.glb",
-      "triangulos_stl": 3192,
+      "triangulos_stl": 1218,
       "bbox_mm": [
         0.0,
         0.0,
         0.0,
-        32.8,
-        72.8,
-        27.4
+        116.0,
+        122.0,
+        29.8
       ],
-      "volumen_mm3": 25778.5,
-      "glb_bytes": 38976,
+      "volumen_mm3": 93477.5,
+      "glb_bytes": 15260,
       "glb_simplificacion_mm": 0.0
     },
     {
@@ -37,7 +37,7 @@
       "nota": "Mismo sólido que el Set 1. Cuna con la huella de Lúa V5 y franja de la placa (29/10).",
       "stl": "sets/S0-kit-lua/stl/K-ZOCALO-G.stl",
       "glb": "sets/S0-kit-lua/ar/K-ZOCALO-G.glb",
-      "triangulos_stl": 464,
+      "triangulos_stl": 308,
       "bbox_mm": [
         0.0,
         0.0,
@@ -46,8 +46,8 @@
         190.8,
         40.8
       ],
-      "volumen_mm3": 450725.3,
-      "glb_bytes": 6380,
+      "volumen_mm3": 458093.2,
+      "glb_bytes": 4432,
       "glb_simplificacion_mm": 0.0
     },
     {

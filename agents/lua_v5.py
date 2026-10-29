@@ -36,7 +36,7 @@ def _dict_fw(fw: Path, nombre: str) -> dict:
     if not m:
         raise SystemExit(f"✗ no encuentro {nombre} en lua_v5_uniones.py")
     sin_comentarios = re.sub(r"#.*", "", m.group(1))
-    return {k: ast.literal_eval(v.strip()) for k, v in
+    return {k.strip(): ast.literal_eval(v.strip()) for k, v in
             (par.split("=") for par in sin_comentarios.split(",") if "=" in par)}
 
 
@@ -50,7 +50,7 @@ def main(argv=None) -> int:
         return 0
     F = _dict_fw(fw, "FONDO")
     mio = interfaz()["fondo"]
-    fallos = [f"fondo.{k}: aquí {mio[k]}, en lua-firmware {F[k]}" for k in mio if mio[k] != F.get(k)]
+    fallos = [f"fondo.{k}: aquí {mio[k]}, en lua-firmware {F.get(k)}" for k in mio if mio[k] != F.get(k)]
     for f in fallos:
         print(f"  ✗ {f}")
     if not fallos:
