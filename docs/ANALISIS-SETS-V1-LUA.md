@@ -10,7 +10,10 @@
 
 ## 0. Lo que NO se cumple o no está comprobado, primero
 
-1. **Sets 8 a 11 (policía, bomberos, hospital, trenes): no van a la carpeta.**
+1. **Sets 8 a 11 (30/10, orden de Frank: van todos): van escalados a la cama**
+   (60 % y 33 %, `agents/paquete_escenas.py`); policía en verde, bomberos,
+   hospital y trenes con un fallo de medida cada uno (ver el LEEME). Lo de
+   abajo sigue valiendo para jugar con ellos:
    Cada uno es un único STL decorativo de 318 × 191 a 491 × 582 mm, con 1 a 12
    cuerpos sueltos y una gata de juguete fundida al suelo que no es Lúa V5. No
    caben en la cama y no tienen fuente (solo el STL), así que no se pueden

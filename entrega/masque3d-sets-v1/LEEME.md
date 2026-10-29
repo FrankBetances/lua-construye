@@ -26,9 +26,13 @@ según el fichero. **No dice que encaje, que gire ni que aguante.**
    imprime la base del zip anterior, el patín no engancha.
 6. **Cantidad de PLA: unos 17,8 kg con el relleno al 100 %.** Es una cota,
    no una medida: con el relleno de abajo pesa bastante menos.
-7. **Los sets 8 a 11 (policía, bomberos, hospital y trenes) no van.** Son una
-   sola pieza decorativa de 318 a 582 mm, no caben en la cama y llevan una gata
-   de juguete fundida al suelo que no es Lúa.
+7. **Sets 8 a 11 (policía, bomberos, hospital, trenes): van ESCALADOS** a la
+   cama (policía, bomberos y hospital al 60 %; trenes al 33 %), en una pieza
+   cada uno y con su sostén dibujado. Son maquetas: no casan con Lúa V5. Medida:
+   policía en verde; **bomberos** con un voladizo de 152 mm² sin sostén,
+   **hospital** con pared fina y **trenes** con sostén pegado a la pieza. En
+   esas tres el taller puede **añadir soporte automático** donde su programa lo
+   pida (excepción a la regla de abajo).
 
 ## Cómo imprimir
 
