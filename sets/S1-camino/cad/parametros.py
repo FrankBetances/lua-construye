@@ -109,8 +109,8 @@ SEGMENTOS_AR = 12
 # deslizando hacia la primera baldosa; en META se encaja desde arriba. Las patas
 # delanteras solo caben delante: Lúa al revés no asienta.
 ZOCALO_FONDO_MM = 6.0 * MODULO_MM  # 190,80: Lúa en 4 módulos + franja de la placa
-CUNA_HOLGURA_MM = 1.0  # aire entre la base de Lúa y la cuna
-CUNA_PARED_MM = 4.8
+CUNA_HOLGURA_MM = 0.6  # aire entre el patín de Lúa y la cuna
+CUNA_PARED_MM = 4.0
 CUNA_ALTO_MM = 21.6  # con el patín, abraza 8,4 mm de la base (13,2 sobre la baldosa)
 CUNA_ABIERTA_X_MM = 0.0  # la cuna acaba en el centro de Lúa: delante de su parte más ancha no hay pared
 COLA_HUECO_MM = 18.0  # medio ancho de la escotadura de la cola, detrás

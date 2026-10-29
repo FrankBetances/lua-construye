@@ -307,40 +307,23 @@ def _lua_v5() -> dict:
     return json.loads(ruta.read_text(encoding="utf-8"))
 
 
-def huella_lua(crece: float, segmentos: int) -> CrossSection:
-    """Planta de la base de Lúa V5 (elipse + patas delanteras) en la baldosa:
-    centro en (W/2, W/2), el frente de Lúa hacia +X."""
-    import math
-
-    L = _lua_v5()
-    w = P.BALDOSA_MM
-    cx = cy = w / 2
-    b = L["base"]
-    n = max(64, segmentos * 2)
-    # lua x → baldosa y; lua y → baldosa −x (giro de +90°)
-    elipse = [
-        (cx + (b["ry"] + crece) * math.sin(2 * math.pi * k / n), cy + (b["rx"] + crece) * math.cos(2 * math.pi * k / n))
-        for k in range(n)
-    ][::-1]  # antihorario
-    sec = CrossSection([elipse])
-    pt = L["patas"]
-    for x in pt["x"]:
-        sec = sec + CrossSection.circle(pt["r"] + crece, n).translate((cx - pt["y"], cy + x))
-    return sec
+def _cuadrado(medio: float) -> CrossSection:
+    return CrossSection.square((2 * medio, 2 * medio), True)
 
 
 def cuna(segmentos: int) -> Manifold:
-    """La cuna de Lúa V5, encima del zócalo."""
+    """La cuna de Lúa V5 (el cubo) encima del zócalo: una C cerrada por detrás
+    y por los lados alrededor del patín (bandeja), abierta por delante (+X)
+    para que Lúa salga deslizando. Al revés, la llave del patín choca con la
+    pared de atrás."""
+    del segmentos
+    L = _lua_v5()["patin"]
     w = P.BALDOSA_MM
-    dentro = huella_lua(P.CUNA_HOLGURA_MM, segmentos)
-    fuera = huella_lua(P.CUNA_HOLGURA_MM + P.CUNA_PARED_MM, segmentos)
-    aro = Manifold.extrude(fuera - dentro, P.CUNA_ALTO_MM).translate((0.0, 0.0, P.ALTURA_BASE_MM))
+    medio = _lua_v5()["fondo"]["lado"] / 2 + L["holgura"] + L["pared"] + P.CUNA_HOLGURA_MM
+    aro = Manifold.extrude(_cuadrado(medio + P.CUNA_PARED_MM) - _cuadrado(medio), P.CUNA_ALTO_MM)
+    aro = aro.translate((w / 2, w / 2, P.ALTURA_BASE_MM))
     z0, z1 = P.ALTURA_BASE_MM - 0.1, P.ALTURA_BASE_MM + P.CUNA_ALTO_MM + 0.1
-    # abierta por delante: Lúa sale de INICIO hacia la primera baldosa
-    aro = aro - caja(w / 2 + P.CUNA_ABIERTA_X_MM, -1.0, z0, w + 10.0, w + 1.0, z1)
-    # escotadura de la cola, detrás
-    aro = aro - caja(-10.0, w / 2 - P.COLA_HUECO_MM, z0, w / 2, w / 2 + P.COLA_HUECO_MM, z1)
-    return aro
+    return aro - caja(w / 2 + P.CUNA_ABIERTA_X_MM, -10.0, z0, w + 20.0, w + 10.0, z1)
 
 
 def zocalo(segmentos: int) -> Manifold:
@@ -500,17 +483,39 @@ def _icono_v1(nombre: str, ancho: float, fondo: float, alto: float, segmentos: i
 
 
 def patin(segmentos: int) -> Manifold:
-    """El patín de Lúa V5: copia de lua-firmware (lua-v5/patin-montaje.stl).
-
-    Se engancha con dos clics en la base de Lúa y corre con dos pivotes
-    redondos que caben también por la curva. El de la v1 (`patin_v1`) no se
-    enganchaba a nada y su carril recto de 50 mm no pasaba por la curva.
+    """El patín de Lúa V5 (30/10): una bandeja donde se apoya el fondo del cubo
+    (108 × 108), con dos pivotes redondos que corren por la ranura de 12 mm
+    (caben también por la curva y la T) y una quilla que levanta el fondo 13,2
+    mm sobre la baldosa (las fichas sobresalen 4,4). Delante, una llave que en
+    la cuna del zócalo solo entra mirando al camino. Marco de Lúa: z = 0 en la
+    cara de abajo del fondo, frente hacia −Y. Sujeta a Lúa por los lados; hacia
+    arriba, no (Lúa se levanta y el patín se queda en la ranura).
     """
-    del segmentos
-    sys.path.insert(0, str(_CAD.parents[2]))
-    from agents.malla_io import leer_stl
+    import math
 
-    return leer_stl(_CAD.parents[2] / "lua-v5" / "patin-montaje.stl")
+    L = _lua_v5()["patin"]
+    n = max(48, segmentos)
+    zb, zp = L["z_baldosa"], -L["placa"]
+
+    def estadio(r, y, z0, z1):
+        pts = [(r * math.cos(math.pi * k / n), y + r * math.sin(math.pi * k / n)) for k in range(n + 1)]
+        pts += [(r * math.cos(math.pi + math.pi * k / n), -y + r * math.sin(math.pi + math.pi * k / n)) for k in range(n + 1)]
+        return Manifold.extrude(CrossSection([pts]), z1 - z0).translate((0, 0, z0))
+
+    quilla = Manifold.hull(estadio(L["r_quilla"], L["y_pivote"], zb, zb + 0.01)
+                           + estadio(L["r_placa"], L["y_pivote"], zp - 0.01, zp))
+    medio = _lua_v5()["fondo"]["lado"] / 2 + L["holgura"]
+    suelo = Manifold.extrude(_cuadrado(medio + L["pared"]), L["placa"]).translate((0, 0, zp))
+    pared = Manifold.extrude(_cuadrado(medio + L["pared"]) - _cuadrado(medio), L["alto_pared"])
+    ancho, sale = L["llave"]
+    llave = caja(-ancho / 2, -(medio + L["pared"] + sale), zp, ancho / 2, -(medio + L["pared"]) + 0.1, 0.0)
+    sol = quilla + suelo + pared + llave
+    r, c, Lp = L["r_pivote"], L["chaflan_pivote"], L["largo_pivote"]
+    for sy in (1, -1):
+        pv = Manifold.cylinder(Lp - c + 0.5, r, r, n).translate((0, 0, zb - Lp + c))
+        pv = pv + Manifold.cylinder(c, r - c, r, n).translate((0, 0, zb - Lp))
+        sol = sol + pv.translate((0, sy * L["y_pivote"], 0))
+    return sol
 
 
 def patin_v1(segmentos: int) -> Manifold:

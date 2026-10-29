@@ -1,17 +1,13 @@
 """Lo que lua-construye copia de Lúa V5 (lua-firmware), y el gate que compara la copia.
 
-    python3 -m agents.lua_v5 --copiar ../lua-firmware   # trae la copia
-    python3 -m agents.lua_v5 --check  ../lua-firmware   # rojo si la copia no es la de allí
+    python3 -m agents.lua_v5 --check ../lua-firmware   # rojo si el fondo no es el de allí
 
 La fuente es lua-firmware (`tools/blender/lua_v5_uniones.py` y
 `lua_v5_cuerpo.py`, en Blender). Aquí hay una copia en `lua-v5/`:
 
-- `interfaz-construye.json`: la huella de la base, las patas, la cola y las
-  cotas del patín. De aquí sale la cuna del zócalo.
-- `patin-montaje.stl`: el patín en el marco de Lúa montada (z = 0 en la cara
-  de abajo de la base, el frente hacia −Y). Es K-PATIN-G.
-- `patin-imprimir.stl`: el mismo, en la cama y con su sostén. Es el que va a
-  masque3d.
+- `interfaz-construye.json`: el fondo del cubo de Lúa V5 (108 × 108 × 5) y
+  las cotas del patín (bandeja). De aquí salen la cuna del zócalo y el patín.
+  El gate compara el fondo con `FONDO` de lua_v5_uniones.py.
 
 Si la copia se edita aquí, el zócalo deja de casar con la Lúa que se imprime.
 Sin el vecino, el gate se salta y lo dice: ese verde no ha comparado nada.
@@ -20,52 +16,45 @@ Sin el vecino, el gate se salta y lo dice: ese verde no ha comparado nada.
 from __future__ import annotations
 
 import argparse
-import hashlib
+import ast
 import json
-import shutil
+import re
 import sys
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parents[1]
 COPIA = RAIZ / "lua-v5"
-FICHEROS = {
-    "interfaz-construye.json": "cad/lua-v5/interfaz-construye.json",
-    "patin-montaje.stl": "cad/lua-v5/montaje/patin.stl",
-    "patin-imprimir.stl": "cad/lua-v5/imprimir/patin.stl",
-}
 
 
 def interfaz() -> dict:
     return json.loads((COPIA / "interfaz-construye.json").read_text(encoding="utf-8"))
 
 
-def _sha(ruta: Path) -> str:
-    return hashlib.sha256(ruta.read_bytes()).hexdigest()
+def _dict_fw(fw: Path, nombre: str) -> dict:
+    texto = (fw / "tools" / "blender" / "lua_v5_uniones.py").read_text(encoding="utf-8")
+    m = re.search(rf"^{nombre} = dict\((.*?)\)\n", texto, re.S | re.M)
+    if not m:
+        raise SystemExit(f"✗ no encuentro {nombre} en lua_v5_uniones.py")
+    sin_comentarios = re.sub(r"#.*", "", m.group(1))
+    return {k: ast.literal_eval(v.strip()) for k, v in
+            (par.split("=") for par in sin_comentarios.split(",") if "=" in par)}
 
 
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser()
-    g = ap.add_mutually_exclusive_group(required=True)
-    g.add_argument("--copiar", metavar="LUA_FIRMWARE")
-    g.add_argument("--check", metavar="LUA_FIRMWARE")
+    ap.add_argument("--check", metavar="LUA_FIRMWARE", required=True)
     a = ap.parse_args(argv)
-    fw = Path(a.copiar or a.check)
-    if not (fw / "cad" / "lua-v5").is_dir():
-        print(f"· lua_v5: no hay lua-firmware en {fw}: la copia de lua-v5/ NO se compara")
-        return 0 if a.check else 1
-    fallos = []
-    for local, remoto in FICHEROS.items():
-        src, dst = fw / remoto, COPIA / local
-        if a.copiar:
-            COPIA.mkdir(exist_ok=True)
-            shutil.copyfile(src, dst)
-            print(f"  copiado {remoto} → lua-v5/{local}")
-        elif not dst.exists() or _sha(src) != _sha(dst):
-            fallos.append(f"lua-v5/{local} no es {remoto} de lua-firmware")
+    fw = Path(a.check)
+    if not (fw / "tools" / "blender" / "lua_v5_uniones.py").exists():
+        print(f"· lua_v5: no hay lua-firmware en {fw}: la interfaz NO se compara")
+        return 0
+    F = _dict_fw(fw, "FONDO")
+    mio = interfaz()["fondo"]
+    fallos = [f"fondo.{k}: aquí {mio[k]}, en lua-firmware {F[k]}" for k in mio if mio[k] != F.get(k)]
     for f in fallos:
         print(f"  ✗ {f}")
-    if a.check and not fallos:
-        print(f"✓ lua-v5/: {len(FICHEROS)} ficheros iguales a los de lua-firmware")
+    if not fallos:
+        print("✓ lua-v5/interfaz-construye.json: el fondo del cubo es el de lua-firmware")
     return 1 if fallos else 0
 
 
