@@ -1,0 +1,160 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><title>Lúa Construye · Manual de montaje 11 sets (30/10/2026)</title><style>
+    @page { size: A4; margin: 13mm 13mm 15mm 13mm; }
+    body { font-family: 'DejaVu Sans', Arial, sans-serif; color: #1b1f24; margin: 0; font-size: 9.5pt; }
+    section { page-break-after: always; position: relative; min-height: 264mm; box-sizing: border-box; padding-bottom: 10mm; }
+    h1 { font-size: 22pt; margin: 0 0 2mm; }
+    h2 { font-size: 14pt; margin: 0 0 2mm; border-bottom: 1.5px solid #1b1f24; padding-bottom: 1.5mm; }
+    .sub { color: #4b5563; font-size: 9.5pt; margin-bottom: 3mm; }
+    .chips span { display: inline-block; border: 1.2px solid #1b1f24; border-radius: 12px; padding: 1px 8px;
+      margin-right: 5px; margin-bottom: 4px; font-size: 8pt; font-weight: bold; background: #f3f4f6; }
+    .aviso { border: 1.5px solid #1b1f24; background: #fffbeb; padding: 2.5mm 3.5mm; font-size: 8.5pt; margin: 3mm 0; }
+    img { max-width: 100%; height: auto; border-radius: 4px; background: #eef0f3; display: block; margin: 2mm auto; }
+    .paso { display: grid; grid-template-columns: 78mm 1fr; gap: 4mm; margin-bottom: 3.5mm; border: 1px solid #d0d7de;
+      border-radius: 6px; padding: 2.5mm; page-break-inside: avoid; align-items: center; }
+    .num { font-size: 26pt; font-weight: bold; line-height: 1; float: left; margin-right: 3mm; }
+    .letras span { display: inline-block; border: 1px solid #1b1f24; border-radius: 4px; padding: 0 5px;
+      margin-right: 3px; margin-bottom: 2px; font-weight: bold; font-size: 7.5pt; background: #f3f4f6; }
+    table { border-collapse: collapse; width: 100%; font-size: 8pt; margin-top: 2mm; }
+    td, th { border: 1px solid #8b949e; padding: 1.5mm 2mm; vertical-align: top; text-align: left; }
+    th { background: #eaedf0; }
+    .pie { position: absolute; bottom: 0; left: 0; right: 0; font-size: 7.5pt; color: #4b5563;
+      border-top: 1px solid #d0d7de; padding-top: 1.5mm; display: flex; justify-content: space-between; }
+    </style></head><body>
+<section>
+    <h1>Lúa Construye · Manual de montaje (11 sets)</h1>
+    <div class="sub">Guía visual paso a paso tipo IKEA · Paquete masque3d-sets-v1 · 30/10/2026 · ES / GL</div>
+    <div class="chips"><span>sin tornillos</span><span>sin pegamento</span><span>sin herramientas</span>
+    <span>paso Duplo 31,80 mm</span><span>pared &gt;= 3,20 mm</span><span>EN 71-1 (&gt; 31,75 mm)</span></div>
+    <div class="aviso"><b>NO PROBADO.</b> Este manual describe el montaje diseñado en CAD a 30/10/2026. Que las piezas
+    encajen y aguanten impresas lo dirá la primera tirada en el PLA de Masque3D tras medir la Fase 1
+    (<code>P1-probeta-encaje</code>). El muñeco Lúa es <b>Lúa V5, el cubo de luz</b> (108 × 108 mm).</div>
+    <img src="cad/manual/portada.png" style="max-height:92mm;">
+    <table><tr><th>Carpeta</th><th>Conjunto / Fase</th><th>STL</th><th>Masa</th><th>Estado y alcance</th></tr><tr><td><b>P1-probeta-encaje</b></td><td>Fase 1 · Probetas de encaje G y E</td><td>12</td><td>306 g</td><td>Se imprime ANTES que los sets (holguras 0,15 / 0,20 / 0,25 mm)</td></tr><tr><td><b>00-comun</b></td><td>Fase 2 · Zócalo, patín, 7 placas y 6 pilares</td><td>15</td><td>760 g</td><td>Común a los sets 1 a 6 · Huella de Lúa V5 (cubo 108×108 mm)</td></tr><tr><td><b>S1-camino</b></td><td>Fase 3 · Set 1: El Camino de Lúa</td><td>10 (23 ud)</td><td>1303 g</td><td>Baldosas con colas de milano, fichas de orden y 2 destinos</td></tr><tr><td><b>S2-estacion-sonido</b></td><td>Fase 7 · Set 2: La Estación de Sonido y Eco</td><td>13 (14 ud)</td><td>1831 g</td><td>Martillo articulado, 9 resonadores (A/B/C), raspadores y espátula</td></tr><tr><td><b>S3-laboratorio-rampas</b></td><td>Fase 5 · Set 3: Laboratorio de Rampas y Gravedad</td><td>7 (9 ud)</td><td>684 g</td><td>Bisagra en C, rampa L=8H, fricción, curva peraltada, receptor y esferas</td></tr><tr><td><b>S4-maquina-soplo</b></td><td>Fase 8 · Set 4: La Máquina de Soplo y Viento</td><td>8 (9 ud)</td><td>989 g</td><td>Canal, codo 90°, rotor E, molinete G y 2 compuertas (sin embocadura)</td></tr><tr><td><b>S5-puente-equilibrio</b></td><td>Fase 4 · Set 5: El Puente de Equilibrio y Fuerza</td><td>6 (10 ud)</td><td>415 g</td><td>Fulcro redondeado, viga de 186 mm, masas 20/40/60 g y clips en U</td></tr><tr><td><b>S6-jardin</b></td><td>Fase 6 · Set 6: El Jardín del Sol y la Semilla</td><td>12 (16 ud)</td><td>1274 g</td><td>Tierra, semilla, 5 tallos roscados, flor, copa, 3 frutos, prismas y sombras</td></tr><tr><td><b>NO-IMPRIMIR (S7)</b></td><td>Set 7 · La Granja de Lúa (excluido del ZIP)</td><td>0</td><td>—</td><td>Escena de la app con partes en el aire · Pendiente de despiezar</td></tr><tr><td><b>S8..S11 (Oficios)</b></td><td>Sets 8, 9, 10 (60 %) y Set 11 (33 %) · Maquetas</td><td>4</td><td>1379 g</td><td>Escenas decorativas de una pieza con sostén · No son sets de bloques</td></tr></table>
+    <div class="pie"><span>Lúa Construye · 30/10/2026</span><span>NO PROBADO</span><span>1</span></div>
+    </section>
+<section>
+        <h2>S1 · Set 1 · El Camino de Lúa / Set 1 · O Camiño de Lúa</h2>
+        <p>Circuito físico de orientación espacial y secuencias paso a paso. El niño mira a Lúa V5 desde atrás para que la izquierda y la derecha de Lúa coincidan con las manos del niño. Las baldosas se unen por colas de milano verticales (resisten el empuje horizontal sin soltarse).</p>
+        <div class="aviso"><b>ORIENTACIÓN Y PATÍN:</b> Lúa V5 (el cubo de 108 × 108 mm) se apoya sobre la bandeja K-PATIN-G, cuyos dos pivotes inferiores (Ø11,6 mm) corren por la ranura de 12 mm. En el zócalo de Inicio (K-ZOCALO-G), las patas delanteras de Lúa solo caben mirando hacia el camino (+X).</div>
+        <img src="cad/manual/s1_despiece.png" style="max-height:80mm;">
+        <table><tr><th>Código STL</th><th>Pieza</th><th>Ud.</th><th>Dimensiones</th><th>Unión / Detalle</th></tr><tr><td><b>S1-REC-LIS-G</b></td><td>Baldosa recta lisa con ranura de 12 mm y pozo</td><td>4</td><td>136,8 × 127,2 × 19,2 mm</td><td>Colas de milano macho (+X) y hembra (0)</td></tr><tr><td><b>S1-REC-RUG-G</b></td><td>Baldosa recta rugosa (nervios táctiles de 1,5 mm)</td><td>2</td><td>136,8 × 127,2 × 20,7 mm</td><td>Relieve redondeado en el lado −Y</td></tr><tr><td><b>S1-CUR-G</b></td><td>Baldosa curva de 90° con cuarto de anillo</td><td>4</td><td>127,2 × 136,8 × 19,2 mm</td><td>Hembra en X=0 y macho en Y=127,2 mm</td></tr><tr><td><b>S1-TEE-G</b></td><td>Baldosa de bifurcación en T (tres bocas)</td><td>1</td><td>136,8 × 136,8 × 19,2 mm</td><td>Paso recto en X y rama lateral hacia +Y</td></tr><tr><td><b>S1-CMD-AVA/GIR/PAR/SAL-G</b></td><td>Fichas de orden: Avanza (4), Gira (3), Para (2), Salta (1)</td><td>10</td><td>57,6 × 36,0 × 9,4 mm</td><td>Snap lateral + recorte de llave 10,2 mm</td></tr><tr><td><b>S1-DEST-CAMA / PARQUE</b></td><td>Placas de destino: Cama y Parque</td><td>2</td><td>89,6 × 54,0 × 7,8 mm</td><td>Entran en el bolsillo del segundo zócalo</td></tr><tr><td><b>K-ZOCALO-G + K-PATIN-G</b></td><td>Zócalo universal (×2) + Bandeja patín (de 00-comun)</td><td>2 + 1</td><td>136,8×190,8 / 116×122 mm</td><td>Inicio y Meta + bandeja guía de Lúa V5</td></tr></table>
+        </section><section>
+        <h2>S1 · Pasos de montaje</h2>
+        <div class="paso"><div><div class="num">1</div>
+            <b>Acoplar el zócalo de Inicio y la primera baldosa</b><br><small>GL: Acoplar o zócalo de Inicio e a primeira lousa</small>
+            <div class="letras" style="margin-top:2mm;"><span>K-ZOCALO-G</span><span>K-PLACA-INICIO</span><span>S1-REC-LIS-G</span></div>
+            <p style="margin:1.5mm 0;"><b>ES:</b> Encaja la placa K-PLACA-INICIO en el bolsillo lateral del zócalo hasta notar el clic. Alinea las dos colas de milano hembra de S1-REC-LIS-G sobre los machos frontales del zócalo y desliza verticalmente hacia abajo hasta que las bases apoyen en la mesa.</p>
+            <p style="margin:1mm 0;color:#4b5563;"><b>GL:</b> Encaixa a placa K-PLACA-INICIO no peto lateral do zócalo ata notar o clic. Aliña as dúas colas de milano femia de S1-REC-LIS-G sobre os machos frontais do zócalo e desliza cara abaixo.</p></div>
+            <div><img src="cad/manual/s1_paso_1.png" style="max-height:68mm;"></div></div><div class="paso"><div><div class="num">2</div>
+            <b>Trazar el camino: rectas, curva, bifurcación y meta</b><br><small>GL: Trazar o camiño: rectas, curva, bifurcación e meta</small>
+            <div class="letras" style="margin-top:2mm;"><span>S1-REC-RUG-G</span><span>S1-TEE-G</span><span>S1-CUR-G</span><span>S1-DEST-CAMA</span></div>
+            <p style="margin:1.5mm 0;"><b>ES:</b> Continúa encadenando de arriba abajo los tramos rectos o rugosos, la te de bifurcación S1-TEE-G y las curvas S1-CUR-G. Cierra el final del camino acoplando el segundo zócalo con K-PLACA-META o con las placas de destino S1-DEST-CAMA / S1-DEST-PARQUE.</p>
+            <p style="margin:1mm 0;color:#4b5563;"><b>GL:</b> Continúa encadeando de arriba abaixo os tramos rectos ou rugosos, a bifurcación S1-TEE-G e as curvas S1-CUR-G. Pecha o final co segundo zócalo e a placa de Meta ou Destino.</p></div>
+            <div><img src="cad/manual/s1_paso_2.png" style="max-height:68mm;"></div></div><div class="paso"><div><div class="num">3</div>
+            <b>Colocar las fichas de comando y deslizar a Lúa V5</b><br><small>GL: Colocar as fichas de comando e deslizar a Lúa V5</small>
+            <div class="letras" style="margin-top:2mm;"><span>S1-CMD-AVA-G</span><span>S1-CMD-GIR-G</span><span>K-PATIN-G</span><span>LUA-V5</span></div>
+            <p style="margin:1.5mm 0;"><b>ES:</b> Baja cada ficha S1-CMD-* en el pozo de su baldosa haciendo coincidir la esquina recortada con el poste de llave hasta oír el snap. Pon la bandeja K-PATIN-G en la ranura de 12 mm, apoya dentro a Lúa V5 mirando al frente del camino y deslízala siguiendo las órdenes.</p>
+            <p style="margin:1mm 0;color:#4b5563;"><b>GL:</b> Baixa cada ficha S1-CMD-* no pozo da súa lousa facendo coincidir a esquina recortada co poste de chave ata oír o snap. Pon o patín K-PATIN-G na rañura de 12 mm e apoia dentro a Lúa V5.</p></div>
+            <div><img src="cad/manual/s1_paso_3.png" style="max-height:68mm;"></div></div>
+        </section>
+<section>
+        <h2>S2 · Set 2 · La Estación de Sonido y Eco / Set 2 · A Estación de Son e Eco</h2>
+        <p>Exploración acústica analógica de timbre, altura tonal (grave, medio, agudo) y ritmo mediante percusión y raspado. Lúa V5 se coloca de frente al niño sobre el zócalo con la placa Escucha; la tableta nunca emite audio encima del sonido físico de la pieza.</p>
+        <div class="aviso"><b>NOTA TÉCNICA HONESTA (LEEME-masque3d.md):</b> Cada familia de resonador (Azul grave, Amarillo medio, Rojo agudo) incluye 3 variantes (A, B, C) con pared de 8 mm y distinta cavidad/garganta para probar al oído cuál suena más distinto. El cuerpo del resonador mide 78 × 64 mm y el rebaje entre las mejillas del banco mide 34 × 34 mm (punto abierto).</div>
+        <img src="cad/manual/s2_despiece.png" style="max-height:80mm;">
+        <table><tr><th>Código STL</th><th>Pieza</th><th>Ud.</th><th>Dimensiones</th><th>Unión / Detalle</th></tr><tr><td><b>S2-BAL-BASE-E</b></td><td>Banco del martillo con mejillas en C</td><td>1</td><td>120,0 × 78,0 × 52,0 mm</td><td>Aloja el eje del brazo sin pasadores sueltos</td></tr><tr><td><b>S2-BAL-BRAZO-E</b></td><td>Brazo del martillo con eje integral y maza</td><td>1</td><td>98,4 × 58,0 × 28,0 mm</td><td>Eje Ø10,4 mm integrado en una sola pieza</td></tr><tr><td><b>S2-RES-AZU-E-A/B/C</b></td><td>Resonador grave (azul) · variantes A, B y C</td><td>3</td><td>78,0 × 64,0 × 72,0 mm</td><td>Cavidad r=16 mm, prof 46/40 mm, garganta 6/7,2 mm</td></tr><tr><td><b>S2-RES-AMA-E-A/B/C</b></td><td>Resonador medio (amarillo) · variantes A, B y C</td><td>3</td><td>78,0 × 64,0 × 72,0 mm</td><td>Cavidad r=13 mm, prof 34/28 mm, garganta 9/10,2 mm</td></tr><tr><td><b>S2-RES-ROJ-E-A/B/C</b></td><td>Resonador agudo (rojo) · variantes A, B y C</td><td>3</td><td>78,0 × 64,0 × 72,0 mm</td><td>Cavidad r=10 mm, prof 24/18 mm, garganta 12/13,2 mm</td></tr><tr><td><b>S2-RAS-E</b></td><td>Raspador estriado encadenable</td><td>2</td><td>144,0 × 44,0 × 18,2 mm</td><td>11 estrías redondeadas (r=2,2 mm) + espiga y mortaja</td></tr><tr><td><b>S2-ESP-E</b></td><td>Espátula sin filo (punta semicilíndrica)</td><td>1</td><td>122,0 × 44,0 × 16,0 mm</td><td>Punta redondeada r=7 mm · Incluye mortaja trasera</td></tr><tr><td><b>K-ZOCALO-G + ESCUCHA</b></td><td>Zócalo universal + Placa Escucha (de 00-comun)</td><td>1 + 1</td><td>136,8 × 190,8 × 40,8 mm</td><td>Lúa V5 mira de frente al niño (sin espejo)</td></tr></table>
+        </section><section>
+        <h2>S2 · Pasos de montaje</h2>
+        <div class="paso"><div><div class="num">1</div>
+            <b>Encajar el brazo del martillo en el banco</b><br><small>GL: Encaixar o brazo do martelo no banco</small>
+            <div class="letras" style="margin-top:2mm;"><span>S2-BAL-BASE-E</span><span>S2-BAL-BRAZO-E</span></div>
+            <p style="margin:1.5mm 0;"><b>ES:</b> Apoya el banco S2-BAL-BASE-E en la mesa. Alinea los dos extremos del eje integral de S2-BAL-BRAZO-E sobre las bocas superiores en C de las mejillas del banco y presiona recto hacia abajo hasta que el eje entre en su alojamiento cilíndrico y bascule libremente.</p>
+            <p style="margin:1mm 0;color:#4b5563;"><b>GL:</b> Apoia o banco S2-BAL-BASE-E na mesa. Aliña o eixe integral de S2-BAL-BRAZO-E sobre as bocas en C das meixelas do banco e preme recto cara abaixo ata que bascule libremente.</p></div>
+            <div><img src="cad/manual/s2_paso_1.png" style="max-height:68mm;"></div></div><div class="paso"><div><div class="num">2</div>
+            <b>Situar los resonadores y comparar las variantes A, B y C</b><br><small>GL: Situar os resoadores e comparar as variantes A, B e C</small>
+            <div class="letras" style="margin-top:2mm;"><span>S2-RES-AZU-E-A</span><span>S2-RES-AMA-E-A</span><span>S2-RES-ROJ-E-A</span></div>
+            <p style="margin:1.5mm 0;"><b>ES:</b> Coloca un resonador ante la maza del martillo con la boca circular hacia arriba. En el taller, prueba con el martillo las variantes A, B y C de cada color (Azul grave, Amarillo medio, Rojo agudo) para elegir el trío cuyo timbre se distinga mejor al oído.</p>
+            <p style="margin:1mm 0;color:#4b5563;"><b>GL:</b> Coloca un resoador ante a maza do martelo coa boca circular cara arriba. Proba as variantes A, B e C de cada cor (Azul grave, Amarelo medio, Vermello agudo) e escolle as que soen máis distintas.</p></div>
+            <div><img src="cad/manual/s2_paso_2.png" style="max-height:68mm;"></div></div><div class="paso"><div><div class="num">3</div>
+            <b>Encadenar los raspadores, usar la espátula y situar a Lúa</b><br><small>GL: Encadear os raspadores, usar a espátula e situar a Lúa</small>
+            <div class="letras" style="margin-top:2mm;"><span>S2-RAS-E</span><span>S2-ESP-E</span><span>K-ZOCALO-G</span><span>K-PLACA-ESCUCHA</span></div>
+            <p style="margin:1.5mm 0;"><b>ES:</b> Para un recorrido de raspado largo, introduce la espiga saliente de un S2-RAS-E en la mortaja del segundo S2-RAS-E. Desliza la punta redondeada de S2-ESP-E sobre las estrías. Coloca al lado el zócalo con K-PLACA-ESCUCHA y a Lúa V5 mirando de frente al niño.</p>
+            <p style="margin:1mm 0;color:#4b5563;"><b>GL:</b> Introduce a espiga dun S2-RAS-E na mortaxa do segundo S2-RAS-E e desliza a espátula S2-ESP-E sobre as estrías. Coloca ao lado o zócalo con K-PLACA-ESCUCHA e a Lúa V5 mirando de fronte.</p></div>
+            <div><img src="cad/manual/s2_paso_3.png" style="max-height:68mm;"></div></div>
+        </section>
+<section>
+        <h2>S3 · Set 3 · El Laboratorio de Rampas y Gravedad / Set 3 · O Laboratorio de Rampas e Gravidade</h2>
+        <p>Experimentación física de pendiente, velocidad, rozamiento y conservación del movimiento. La altura modular es H = 19,20 mm (para que la rampa L = 8H = 153,60 mm quepa en la cama de 220 mm). Las dos esferas miden Ø45,0 mm (&gt; 44,5 mm EN 71-1) y diferencian liso frente a rugoso sin piezas sueltas.</p>
+        <div class="aviso"><b>PROTECCIÓN DE LÚA V5:</b> El receptor final S3-REC-G incorpora una lengüeta transversal de tope un módulo (40 mm) antes de su extremo trasero. Así la esfera se detiene siempre dentro de la cubeta y nunca golpea a Lúa V5.</div>
+        <img src="cad/manual/s3_despiece.png" style="max-height:80mm;">
+        <table><tr><th>Código STL</th><th>Pieza</th><th>Ud.</th><th>Dimensiones</th><th>Unión / Detalle</th></tr><tr><td><b>S3-BIS-G</b></td><td>Bloque bisagra con alojamiento en C</td><td>1</td><td>72,0 × 96,0 × 50,0 mm</td><td>Recibe el eje de la rampa sin pasador suelto</td></tr><tr><td><b>S3-RAM-G</b></td><td>Rampa articulada en U con eje transversal</td><td>1</td><td>153,6 × 100,0 × 24,0 mm</td><td>Canal interior de 48 mm para esferas de Ø45 mm</td></tr><tr><td><b>S3-PIL-1..6-G</b></td><td>Pilares apilables con 1 a 6 barras táctiles (de 00-comun)</td><td>6</td><td>44,0 × 47,2 × 25,2 mm</td><td>Altura útil H = 19,20 mm · Tetón superior y pozo inferior</td></tr><tr><td><b>S3-FRI-G</b></td><td>Tramo de fricción reversible (9 nervios cilíndricos)</td><td>1</td><td>132,0 × 64,0 × 17,8 mm</td><td>Cara superior nervada y cara inferior lisa + lengüeta</td></tr><tr><td><b>S3-CUR-PER-G</b></td><td>Curva peraltada de 90° (canal de revolución)</td><td>1</td><td>150,0 × 150,0 × 26,0 mm</td><td>Fondo peraltado (z=8 mm dentro, z=12 mm fuera)</td></tr><tr><td><b>S3-REC-G</b></td><td>Receptor final con lengüeta de parada</td><td>1</td><td>156,0 × 80,0 × 36,0 mm</td><td>Detiene la esfera 40 mm antes del borde trasero</td></tr><tr><td><b>S3-ESF-LIS-G / RUG-G</b></td><td>Esferas Ø45 mm: 2 lisas y 2 rugosas (14 botones)</td><td>2 + 2</td><td>Ø45,0 mm</td><td>Superan el umbral de 44,5 mm para menores de 3 años</td></tr><tr><td><b>K-ZOCALO-G + RECEPTOR</b></td><td>Zócalo universal + Placa Receptor (de 00-comun)</td><td>1 + 1</td><td>136,8 × 190,8 × 40,8 mm</td><td>Se sitúa detrás del receptor final</td></tr></table>
+        </section><section>
+        <h2>S3 · Pasos de montaje</h2>
+        <div class="paso"><div><div class="num">1</div>
+            <b>Articular la rampa en la bisagra y graduar la altura con pilares</b><br><small>GL: Articular a rampa na bisagra e graduar a altura con piares</small>
+            <div class="letras" style="margin-top:2mm;"><span>S3-BIS-G</span><span>S3-RAM-G</span><span>S3-PIL-1-G</span><span>S3-PIL-2-G</span></div>
+            <p style="margin:1.5mm 0;"><b>ES:</b> Asienta el bloque bisagra S3-BIS-G y baja el eje transversal de la rampa S3-RAM-G dentro de su boca en C superior. Apila bajo la rampa los pilares graduados S3-PIL-1..6-G: dos pilares dan pendiente suave; cuatro pilares dan pendiente pronunciada.</p>
+            <p style="margin:1mm 0;color:#4b5563;"><b>GL:</b> Asenta o bloque bisagra S3-BIS-G e baixa o eixe transversal da rampa S3-RAM-G na boca en C. Apila baixo a rampa os piares S3-PIL-1..6-G segundo a pendente buscada.</p></div>
+            <div><img src="cad/manual/s3_paso_1.png" style="max-height:68mm;"></div></div><div class="paso"><div><div class="num">2</div>
+            <b>Encadenar el tramo de fricción y la curva peraltada</b><br><small>GL: Encadear o tramo de fricción e a curva peraltada</small>
+            <div class="letras" style="margin-top:2mm;"><span>S3-FRI-G</span><span>S3-CUR-PER-G</span></div>
+            <p style="margin:1.5mm 0;"><b>ES:</b> A la salida de la rampa, acopla el tramo de fricción S3-FRI-G (con los nervios hacia arriba para frenar la esfera, o volteado del lado liso para dejarla correr) y, si el reto lo pide, encadena la curva peraltada de 90° S3-CUR-PER-G.</p>
+            <p style="margin:1mm 0;color:#4b5563;"><b>GL:</b> Á saída da rampa, acopla o tramo de fricción S3-FRI-G (cos nervios cara arriba para frear ou liso para correr) e, se o reto o pide, a curva peraltada S3-CUR-PER-G.</p></div>
+            <div><img src="cad/manual/s3_paso_2.png" style="max-height:68mm;"></div></div><div class="paso"><div><div class="num">3</div>
+            <b>Cerrar con el receptor, proteger a Lúa y soltar las esferas</b><br><small>GL: Pechar co receptor, protexer a Lúa e soltar as esferas</small>
+            <div class="letras" style="margin-top:2mm;"><span>S3-REC-G</span><span>K-ZOCALO-G</span><span>K-PLACA-RECEPTOR</span><span>S3-ESF-LIS-G</span></div>
+            <p style="margin:1.5mm 0;"><b>ES:</b> Encaja la mortaja frontal del receptor S3-REC-G en la lengüeta del tramo anterior, con la pared de parada mirando hacia la rampa. Sitúa detrás el zócalo con K-PLACA-RECEPTOR y a Lúa V5, y suelta desde arriba la esfera lisa o rugosa para comparar su llegada.</p>
+            <p style="margin:1mm 0;color:#4b5563;"><b>GL:</b> Encaixa o receptor S3-REC-G coa lingüeta mirando cara á rampa. Sitúa detrás o zócalo con K-PLACA-RECEPTOR e a Lúa V5, e solta desde arriba a esfera lisa ou rugosa.</p></div>
+            <div><img src="cad/manual/s3_paso_3.png" style="max-height:68mm;"></div></div>
+        </section>
+<section>
+        <h2>S4 · Set 4 · La Máquina de Soplo y Viento / Set 4 · A Máquina de Sopro e Vento</h2>
+        <p>Juego aerodinámico de causa-efecto (dirección del aire y resistencia mecánica entre compuerta ligera y pesada). Finalidad exclusivamente lúdica y educativa: no es un espirómetro ni un tratamiento del velo. Las jaulas son abiertas por arriba con cunas en U en las paredes X para apoyar el eje de las aspas.</p>
+        <div class="aviso"><b>HIGIENE Y MENORES DE 3 AÑOS:</b> La embocadura personal (S4-EMB-E) NO está en esta carpeta ni se imprime en PLA FDM por higiene (las estrías entre capas acumulan humedad y no soportan lavado térmico). Con menores de 3 años solo se usa el molinete G (S4-MOL-*) y sopla la persona adulta.</div>
+        <img src="cad/manual/s4_despiece.png" style="max-height:80mm;">
+        <table><tr><th>Código STL</th><th>Pieza</th><th>Ud.</th><th>Dimensiones</th><th>Unión / Detalle</th></tr><tr><td><b>S4-CAN-E</b></td><td>Cuerpo del canal aerodinámico con tobera Ø4 mm</td><td>2</td><td>156,0 × 52,0 × 52,0 mm</td><td>Conducto interior cónico Ø24 → Ø4 mm + 2 pozos arriba</td></tr><tr><td><b>S4-COD-E</b></td><td>Codo de 90° para desviar el flujo de aire</td><td>1</td><td>78,0 × 78,0 × 40,0 mm</td><td>Tubo interior r=8 mm y pared exterior r=20 mm</td></tr><tr><td><b>S4-ROT-JAULA-E</b></td><td>Jaula abierta del rotor con cunas en U</td><td>1</td><td>96,0 × 72,0 × 72,0 mm</td><td>Pared de 8 mm, ventanas de aire y cuna r=5,4 mm</td></tr><tr><td><b>S4-ROT-ASPAS-E</b></td><td>Rotor de 4 aspas con eje integral</td><td>1</td><td>98,0 × 48,0 × 48,0 mm</td><td>Eje Ø9,2 mm que asoma 1 mm por cada lado de la jaula</td></tr><tr><td><b>S4-MOL-JAULA-G</b></td><td>Jaula abierta del molinete (escala G)</td><td>1</td><td>120,0 × 96,0 × 96,0 mm</td><td>Pared de 10 mm y cunas en U de r=6,2 mm</td></tr><tr><td><b>S4-MOL-ASPAS-G</b></td><td>Aspas anchas del molinete con eje integral</td><td>1</td><td>122,0 × 64,0 × 64,0 mm</td><td>Eje Ø10,4 mm · Para soplo del adulto en etapa I2</td></tr><tr><td><b>S4-COM-LIG-E / PES-E</b></td><td>Compuerta ligera (1 barra, 8 mm) y pesada (3 barras, 16 mm)</td><td>1 + 1</td><td>76,0 × 44,0 × 16/24 mm</td><td>Diferencia de masa por volumen de PLA (sin lastre suelto)</td></tr><tr><td><b>K-ZOCALO-G + FRONTAL</b></td><td>Zócalo universal + Placa Frontal (de 00-comun)</td><td>1 + 1</td><td>136,8 × 190,8 × 40,8 mm</td><td>Lúa V5 mira de frente al niño</td></tr></table>
+        </section><section>
+        <h2>S4 · Pasos de montaje</h2>
+        <div class="paso"><div><div class="num">1</div>
+            <b>Alojar las aspas en las cunas en U de su jaula</b><br><small>GL: Aloxar as aspas nos berces en U da súa gaiola</small>
+            <div class="letras" style="margin-top:2mm;"><span>S4-ROT-JAULA-E</span><span>S4-ROT-ASPAS-E</span><span>S4-MOL-JAULA-G</span><span>S4-MOL-ASPAS-G</span></div>
+            <p style="margin:1.5mm 0;"><b>ES:</b> Toma la jaula S4-ROT-JAULA-E (o S4-MOL-JAULA-G para el molinete grande) e introduce desde arriba el eje integral de las aspas S4-ROT-ASPAS-E (o S4-MOL-ASPAS-G) en las dos cunas en U de las paredes laterales. Comprueba con el dedo que gira libre sin rozar.</p>
+            <p style="margin:1mm 0;color:#4b5563;"><b>GL:</b> Toma a gaiola S4-ROT-JAULA-E (ou S4-MOL-JAULA-G) e introduce desde arriba o eixe integral das aspas nos dous berces en U das paredes laterais. Comproba que xira sen rozar.</p></div>
+            <div><img src="cad/manual/s4_paso_1.png" style="max-height:68mm;"></div></div><div class="paso"><div><div class="num">2</div>
+            <b>Acoplar el canal, el codo de 90° y las compuertas</b><br><small>GL: Acoplar a canle, o cóbado de 90° e as comportas</small>
+            <div class="letras" style="margin-top:2mm;"><span>S4-CAN-E</span><span>S4-COD-E</span><span>S4-COM-LIG-E</span><span>S4-COM-PES-E</span></div>
+            <p style="margin:1.5mm 0;"><b>ES:</b> Sitúa el canal S4-CAN-E en la mesa y, si el reto pide doblar el recorrido del aire, enchufa en su boca el codo de 90° S4-COD-E. Clava la espiga de la compuerta ligera S4-COM-LIG-E (1 barra táctil) o de la pesada S4-COM-PES-E (3 barras táctiles) en los pozos superiores del canal.</p>
+            <p style="margin:1mm 0;color:#4b5563;"><b>GL:</b> Sitúa a canle S4-CAN-E na mesa e, se o reto o pide, acopla o cóbado S4-COD-E. Crava a comporta lixeira S4-COM-LIG-E (1 barra) ou a pesada S4-COM-PES-E (3 barras) nos pozos superiores.</p></div>
+            <div><img src="cad/manual/s4_paso_2.png" style="max-height:68mm;"></div></div><div class="paso"><div><div class="num">3</div>
+            <b>Enfrentar la salida de aire al rotor y colocar a Lúa V5</b><br><small>GL: Enfrontar a saída de aire ao rotor e colocar a Lúa V5</small>
+            <div class="letras" style="margin-top:2mm;"><span>S4-CAN-E</span><span>S4-MOL-JAULA-G</span><span>K-ZOCALO-G</span><span>K-PLACA-FRONTAL</span></div>
+            <p style="margin:1.5mm 0;"><b>ES:</b> Alinea el orificio de salida del canal (Ø4 mm) frente a la ventana de la jaula del rotor o del molinete. Coloca al lado el zócalo con la placa K-PLACA-FRONTAL y a Lúa V5 mirando al niño.</p>
+            <p style="margin:1mm 0;color:#4b5563;"><b>GL:</b> Aliña o orificio de saída da canle (Ø4 mm) fronte á xanela da gaiola do rotor ou do muíño. Coloca ao lado o zócalo coa placa K-PLACA-FRONTAL e a Lúa V5 mirando ao neno.</p></div>
+            <div><img src="cad/manual/s4_paso_3.png" style="max-height:68mm;"></div></div>
+        </section>
+<section>
+        <h2>S5 · Set 5 · El Puente de Equilibrio y Fuerza / Set 5 · A Ponte de Equilibrio e Forza</h2>
+        <p>Palanca de primer género, ley del equilibrio (masa × distancia al fulcro) y construcción de un puente fijo estable. La viga mide 186 × 48 × 18 mm (diez módulos de 31,80 mm medirían 318 mm y no cabrían en la cama de 220 mm) e incorpora 5 pozos numerados a cada lado con marcas táctiles en los bordes.</p>
+        <div class="aviso"><b>REGLA DE SEGURIDAD DE LÚA V5:</b> Lúa V5 se coloca siempre en su zócalo con la placa Nivel junto a la viga, NUNCA encima del balancín suelto. Las masas de 20, 40 y 60 g son objetivos volumétricos en PLA a 1,24 g/cm³ (no pesadas en báscula).</div>
+        <img src="cad/manual/s5_despiece.png" style="max-height:80mm;">
+        <table><tr><th>Código STL</th><th>Pieza</th><th>Ud.</th><th>Dimensiones</th><th>Unión / Detalle</th></tr><tr><td><b>S5-FUL-G</b></td><td>Fulcro prismático con lomo cilíndrico redondeado</td><td>1</td><td>96,0 × 52,0 × 37,0 mm</td><td>Arista superior cilíndrica r=5 mm y zócalo vertical de 6 mm</td></tr><tr><td><b>S5-VIG-G</b></td><td>Viga balancín con 5 posiciones por brazo</td><td>1</td><td>186,0 × 48,0 × 19,8 mm</td><td>Rebaje central para el fulcro + marcas táctiles 1 a 5</td></tr><tr><td><b>S5-MAS-20</b></td><td>Masa de referencia 20 g (relieve de nube)</td><td>2</td><td>48,0 × 40,0 × 15,8 mm</td><td>Volumen 14,6 cm³ · Tres botones superiores en línea</td></tr><tr><td><b>S5-MAS-40</b></td><td>Masa de referencia 40 g (relieve de hoja / cruz)</td><td>1</td><td>56,0 × 46,0 × 20,4 mm</td><td>Volumen 30,8 cm³ · Relieve táctil en cruz arriba</td></tr><tr><td><b>S5-MAS-60</b></td><td>Masa de referencia 60 g (chaflán facetado)</td><td>1</td><td>64,0 × 50,0 × 20,1 mm</td><td>Volumen 48,2 cm³ · Esquinas superiores achaflanadas</td></tr><tr><td><b>S5-PAS-G</b></td><td>Clip de puente en U (sustituye a pasadores pequeños)</td><td>4</td><td>64,0 × 40,0 × 28,0 mm</td><td>Abraza la viga por encima · Cumple EN 71-1 (&gt; 31,75 mm)</td></tr><tr><td><b>S3-PIL-1..6-G + NIVEL</b></td><td>Pilares graduados + Zócalo + Placa Nivel (de 00-comun)</td><td>6 + 2</td><td>44×47,2 / 136,8×190,8 mm</td><td>Estribos del puente fijo y asiento lateral de Lúa V5</td></tr></table>
+        </section><section>
+        <h2>S5 · Pasos de montaje</h2>
+        <div class="paso"><div><div class="num">1</div>
+            <b>Modo Balancín: apoyar la viga sobre el fulcro redondeado</b><br><small>GL: Modo Balancín: apoiar a viga sobre o fulcro redondeado</small>
+            <div class="letras" style="margin-top:2mm;"><span>S5-FUL-G</span><span>S5-VIG-G</span></div>
+            <p style="margin:1.5mm 0;"><b>ES:</b> Asienta el fulcro S5-FUL-G en la mesa con su lomo cilíndrico hacia arriba. Baja el rebaje central inferior de la viga S5-VIG-G sobre el lomo del fulcro: el rebaje centra la viga sin partirla y permite que bascule a izquierda y derecha.</p>
+            <p style="margin:1mm 0;color:#4b5563;"><b>GL:</b> Asenta o fulcro S5-FUL-G na mesa co lombo cilíndrico cara arriba. Baixa o rebaixe central inferior da viga S5-VIG-G sobre o lombo do fulcro para que bascule libremente.</p></div>
+            <div><img src="cad/manual/s5_paso_1.png" style="max-height:68mm;"></div></div><div class="paso"><div><div class="num">2</div>
+            <b>Equilibrar las masas en las posiciones numeradas 1 a 5</b><br><small>GL: Equilibrar as masas nas posicións numeradas 1 a 5</small>
+            <div class="letras" style="margin-top:2mm;"><span>S5-MAS-60</span><span>S5-MAS-20</span><span>S5-MAS-40</span></div>
+            <p style="margin:1.5mm 0;"><b>ES:</b> Cada lado de la viga tiene 5 pozos (identificados en el borde por barras táctiles de longitud creciente 1 a 5). Clava el tetón inferior de S5-MAS-60 en la posición 1 de un brazo y el de S5-MAS-20 en la posición 3 del brazo opuesto para comprobar que 60 × 1 equilibra a 20 × 3.</p>
+            <p style="margin:1mm 0;color:#4b5563;"><b>GL:</b> Cada lado da viga ten 5 pozos numerados no bordo. Crava S5-MAS-60 na posición 1 dun brazo e S5-MAS-20 na posición 3 do brazo oposto para comprobar que 60 × 1 equilibra a 20 × 3.</p></div>
+            <div><img src="cad/manual/s5_paso_2.png" style="max-height:68mm;"></div></div><div class="paso"><div><div class="num">3</div>
+            <b>Modo Puente Fijo: estribos de pilares y bloqueo con clips en U</b><br><small>GL: Modo Ponte Fixa: estribos de piares e bloqueo con clips en U</small>
+            <div class="letras" style="margin-top:2mm;"><span>S3-PIL-1-G</span><span>S3-PIL-2-G</span><span>S5-PAS-G</span><span>K-PLACA-NIVEL</span></div>
+            <p style="margin:1.5mm 0;"><b>ES:</b> Retira el fulcro, levanta dos torres de igual altura con los pilares S3-PIL-* bajo los extremos de la viga y baja los clips en U S5-PAS-G por encima para inmovilizar el tablero. Coloca al lado el zócalo con K-PLACA-NIVEL y a Lúa V5 vista desde atrás.</p>
+            <p style="margin:1mm 0;color:#4b5563;"><b>GL:</b> Retira o fulcro, apoia os extremos da viga sobre dúas torres iguais de piares S3-PIL-* e baixa os clips en U S5-PAS-G por riba. Pon ao lado o zócalo con K-PLACA-NIVEL e a Lúa V5.</p></div>
+            <div><img src="cad/manual/s5_paso_3.png" style="max-height:68mm;"></div></div>
+        </section>
+</body></html>
