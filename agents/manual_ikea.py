@@ -447,7 +447,7 @@ TABLA_PAQUETE_PORTADA = [
     ["S5-puente-equilibrio", "Fase 4 · Set 5: El Puente de Equilibrio y Fuerza", "6 (10 ud)", "415 g", "Fulcro redondeado, viga de 186 mm, masas 20/40/60 g y clips en U"],
     ["S6-jardin", "Fase 6 · Set 6: El Jardín del Sol y la Semilla", "12 (16 ud)", "1274 g", "Tierra, semilla, 5 tallos roscados, flor, copa, 3 frutos, prismas y sombras"],
     ["NO-IMPRIMIR (S7)", "Set 7 · La Granja de Lúa (excluido del ZIP)", "0", "—", "Escena de la app con partes en el aire · Pendiente de despiezar"],
-    ["S8..S11 (Oficios)", "Sets 8, 9, 10 (60 %) y Set 11 (33 %) · Maquetas", "4", "1379 g", "Escenas decorativas de una pieza con sostén · No son sets de bloques"],
+    ["S8..S11 (Oficios)", "Sets 8, 9, 10 (60 %) y Set 11 (33 %) · Maquetas", "4", "1379 g", "Escenas decorativas de una pieza sin soporte · No son sets de bloques"],
 ]
 
 SETS_PAGINAS = [
@@ -828,8 +828,8 @@ def pagina_2_probetas_y_taller(pdf: PdfPages, total_pags: int):
     c = LienzoPagina(pdf, 2, total_pags)
     c.titulo_h2(
         "P1 + TALLER",
-        "Fase 1: Probetas de encaje y retirada de sostenes",
-        "Fase 1: Probetas de encaixe e retirada de sosténs",
+        "Fase 1: Probetas de encaje y soportes en laminador",
+        "Fase 1: Probetas de encaixe e soportes no laminador",
         "Antes de lanzar la tirada de los sets",
     )
     c.parrafo(
@@ -855,17 +855,17 @@ def pagina_2_probetas_y_taller(pdf: PdfPages, total_pags: int):
         fontsize=7.4,
     )
     c.aviso(
-        "SOSTENES DE IMPRESIÓN INCORPORADOS (EN NARANJA):",
-        "Los ficheros STL de entrega/masque3d-sets-v1/ ya van orientados para la cama de 200 × 200 mm y llevan su "
-        "propio sostén dibujado (sosten.py de lua-firmware) bajo los voladizos (carriles del patín, ejes de rampa "
-        "y rotores, frutos, pétalos y maquetas S8..S11). NO añadas soportes automáticos en el laminador. Tras "
-        "imprimir, despega el sostén con la mano o con alicate de corte a ras antes de entregar la pieza.",
+        "SIN SOPORTES MODELADOS EN EL STL (INDICACIÓN DE MASQUE3D · 30/10/2026):",
+        "Los 87 ficheros STL de entrega/masque3d-sets-v1/ van limpios, SIN soportes dibujados dentro del fichero "
+        "(sosten_cm3 = 0,0) y ya orientados sobre la cama (z = 0). El centro de impresión aplica sus soportes en el "
+        "laminador donde haya voladizos (carriles del patín, ejes, esferas, codo, frutos, pétalos y maquetas S8..S11), "
+        "bloqueando soportes dentro de las roscas del Set 6 (S6-SEM-G, S6-TAL-G, S6-FLO-G y S6-COP-G).",
         fontsize=8.0,
     )
     c.imagen(
         "taller_sostenes.png",
         alto_mm=58.0,
-        Pie="Ejemplos de piezas de entrega/masque3d-sets-v1/ en la cama con su sostén impreso en naranja: K-PATIN-G, S3-RAM-G, S4-ROT-ASPAS-E y S6-FLO-G.",
+        Pie="Ejemplos de piezas de entrega/masque3d-sets-v1/ orientadas sobre la cama sin soporte modelado: K-PATIN-G, S3-RAM-G, S4-ROT-ASPAS-E y S6-FLO-G.",
     )
     c.cerrar()
 
@@ -1097,8 +1097,8 @@ def pagina_17_s7_s8_s9(pdf: PdfPages, total_pags: int):
         "la app de 381,6 × 381,6 mm con tejados y postigos colgando en el aire; no se puede imprimir hasta "
         "despiezarla con uniones reales.\n"
         "• Sets 8, 9, 10 y 11 (Oficios): son maquetas decorativas de UNA SOLA PIEZA escaladas al 60 % (S8, S9, S10) "
-        "o al 33 % (S11) para caber en la cama de 200 mm, con su sostén generado con sosten.py. No tienen paso de "
-        "31,80 mm ni piezas desmontables, y a esa escala quedan más pequeñas que Lúa V5.",
+        "o al 33 % (S11) para caber en la cama de 200 mm, limpias sin soportes modelados (el taller los añade en el "
+        "laminador). No tienen paso de 31,80 mm ni piezas desmontables.",
         fontsize=7.9,
     )
     c.paso_ikea(
@@ -1106,11 +1106,11 @@ def pagina_17_s7_s8_s9(pdf: PdfPages, total_pags: int):
         "Set 8 · Comisaría de Policía (maqueta de 1 pieza al 60 %)",
         "Set 8 · Comisaría de Policía (maqueta de 1 peza ao 60 %)",
         ["S8-policia-escala-60.stl"],
-        "190,0 × 114,0 × 83,2 mm (376 g con sostén). Izquierda: cómo sale de la impresora sobre la cama con su "
-        "sostén en naranja (16 050 triángulos de sostén bajo la puerta y el coche). Derecha: tras despegar el "
-        "sostén con alicate, la maqueta de una pieza se coloca en la mesa junto a Lúa V5 en su zócalo.",
-        "190,0 × 114,0 × 83,2 mm (376 g con sostén). Esquerda: como sae da impresora co seu sostén en laranxa. "
-        "Dereita: tras retirar o sostén, a maqueta dunha peza colócase na mesa xunto a Lúa V5.",
+        "190,0 × 114,0 × 83,2 mm (741 g al 100 %; ~260 g con relleno 30 %). Izquierda: STL limpio sobre la cama de "
+        "200 mm (el taller aplica soporte de laminador en el dintel y el vehículo). Derecha: tras retirar los "
+        "soportes del laminador, la maqueta se coloca en la mesa junto a Lúa V5 en su zócalo.",
+        "190,0 × 114,0 × 83,2 mm (sen soportes modelados). Esquerda: STL limpo na cama para laminar con soportes "
+        "automáticos. Dereita: maqueta dunha peza na mesa xunto a Lúa V5.",
         "s8_policia.png",
         alto_bloque_mm=98.0,
     )
@@ -1119,11 +1119,11 @@ def pagina_17_s7_s8_s9(pdf: PdfPages, total_pags: int):
         "Set 9 · Parque de Bomberos (maqueta de 1 pieza al 60 %)",
         "Set 9 · Parque de Bombeiros (maqueta de 1 peza ao 60 %)",
         ["S9-bomberos-escala-60.stl"],
-        "190,0 × 114,0 × 114,4 mm (351 g con sostén). Izquierda: pieza en la cama con el sostén en naranja bajo "
-        "los dinteles, la sirena y el camión. Derecha: tras retirar los sostenes y verificar que no queden picos, "
-        "se sitúa junto al zócalo de Lúa V5 como escenario de conversación guiada por la persona adulta.",
-        "190,0 × 114,0 × 114,4 mm (351 g con sostén). Esquerda: peza na cama co sostén en laranxa. Dereita: tras "
-        "retirar os sosténs, sitúase xunto ao zócalo de Lúa V5 como escenario de conversa.",
+        "190,0 × 114,0 × 114,4 mm (744 g al 100 %; ~265 g con relleno 30 %). Izquierda: pieza limpia en la cama "
+        "(el laminador añade soporte bajo los dinteles, la sirena y el camión). Derecha: tras retirar los soportes "
+        "y verificar que no queden picos, se sitúa junto al zócalo de Lúa V5 como escenario guiado por el adulto.",
+        "190,0 × 114,0 × 114,4 mm (sen soportes modelados). Esquerda: peza limpa na cama para laminar. Dereita: tras "
+        "retirar os soportes do laminador, sitúase xunto ao zócalo de Lúa V5.",
         "s9_bomberos.png",
         alto_bloque_mm=98.0,
     )
@@ -1143,11 +1143,11 @@ def pagina_18_s10_s11_resumen(pdf: PdfPages, total_pags: int):
         "Set 10 · Hospital Infantil (maqueta de 1 pieza al 60 %)",
         "Set 10 · Hospital Infantil (maqueta de 1 peza ao 60 %)",
         ["S10-hospital-escala-60.stl"],
-        "190,0 × 113,7 × 87,3 mm (408 g con sostén). Izquierda: pieza en la cama con el sostén en naranja bajo la "
-        "cruz de la fachada y la ambulancia. Derecha: tras retirar los sostenes en el taller, la maqueta limpia "
-        "acompaña a Lúa V5 en la mesa para anticipar visitas médicas.",
-        "190,0 × 113,7 × 87,3 mm (408 g con sostén). Esquerda: peza na cama co sostén en laranxa. Dereita: tras "
-        "retirar os sosténs no taller, a maqueta limpa acompaña a Lúa V5 na mesa.",
+        "190,0 × 113,7 × 87,3 mm (821 g al 100 %; ~290 g con relleno 30 %). Izquierda: STL limpio sobre la cama "
+        "(el laminador añade soporte bajo la cruz de la fachada y la ambulancia). Derecha: tras limpiar soportes en "
+        "el taller, la maqueta acompaña a Lúa V5 en la mesa para anticipar visitas médicas.",
+        "190,0 × 113,7 × 87,3 mm (sen soportes modelados). Esquerda: peza limpa na cama. Dereita: tras retirar os "
+        "soportes do laminador no taller, a maqueta acompaña a Lúa V5 na mesa.",
         "s10_hospital.png",
         alto_bloque_mm=88.0,
     )
@@ -1156,21 +1156,21 @@ def pagina_18_s10_s11_resumen(pdf: PdfPages, total_pags: int):
         "Set 11 · Estación de Trenes (maqueta de 1 pieza al 33 %)",
         "Set 11 · Estación de Trens (maqueta de 1 peza ao 33 %)",
         ["S11-trenes-escala-33.stl"],
-        "160,5 × 190,0 × 54,4 mm (244 g con sostén). Como el circuito original mide 576 mm, está escalada al 33 % "
-        "para caber en 190 mm. Izquierda: en la cama con el sostén en naranja. Derecha: maqueta limpia junto a "
-        "Lúa V5 (observa la diferencia real de escala entre el tren al 33 % y el cubo de Lúa V5 al 100 %).",
-        "160,5 × 190,0 × 54,4 mm (244 g con sostén). Escalada ao 33 % para caber en 190 mm. Esquerda: na cama co "
-        "sostén en laranxa. Dereita: maqueta limpa xunto a Lúa V5 a escala 100 %.",
+        "160,5 × 190,0 × 54,4 mm (184 g al 100 %). Como el circuito original mide 576 mm, está escalada al 33 % "
+        "para caber en 190 mm. Izquierda: STL limpio en la cama (soportes aplicados en el laminador). Derecha: "
+        "maqueta limpia junto a Lúa V5 (observa la diferencia real de escala entre el tren al 33 % y Lúa al 100 %).",
+        "160,5 × 190,0 × 54,4 mm (sen soportes modelados). Escalada ao 33 % para caber en 190 mm. Esquerda: na cama "
+        "sen soporte modelado. Dereita: maqueta limpa xunto a Lúa V5 a escala 100 %.",
         "s11_trenes.png",
         alto_bloque_mm=88.0,
     )
     c.tabla(
-        ["Fichero STL en entrega/", "Escala", "En cama (mm)", "Masa", "Retirada de sostén y alcance"],
+        ["Fichero STL en entrega/", "Escala", "En cama (mm)", "Caras", "Soportes en laminador y alcance"],
         [
-            ["S8-policia/S8-policia-escala-60.stl", "60 %", "190,0 × 114,0 × 83,2", "376 g", "Retirar sostén naranja de puerta y vehículo · Maqueta de 1 pieza"],
-            ["S9-bomberos/S9-bomberos-escala-60.stl", "60 %", "190,0 × 114,0 × 114,4", "351 g", "Retirar sostén naranja de arcos y camión · Maqueta de 1 pieza"],
-            ["S10-hospital/S10-hospital-escala-60.stl", "60 %", "190,0 × 113,7 × 87,3", "408 g", "Retirar sostén naranja de fachada y ambulancia · Maqueta de 1 pieza"],
-            ["S11-trenes/S11-trenes-escala-33.stl", "33 %", "160,5 × 190,0 × 54,4", "244 g", "Retirar sostén naranja de pórticos y vagones · Maqueta de 1 pieza"],
+            ["S8-policia/S8-policia-escala-60.stl", "60 %", "190,0 × 114,0 × 83,2", "2046", "Sin soporte en STL · Laminador sostiene puerta y vehículo · 1 pieza"],
+            ["S9-bomberos/S9-bomberos-escala-60.stl", "60 %", "190,0 × 114,0 × 114,4", "6542", "Sin soporte en STL · Laminador sostiene arcos y camión · 1 pieza"],
+            ["S10-hospital/S10-hospital-escala-60.stl", "60 %", "190,0 × 113,7 × 87,3", "1550", "Sin soporte en STL · Laminador sostiene fachada y ambulancia · 1 pieza"],
+            ["S11-trenes/S11-trenes-escala-33.stl", "33 %", "160,5 × 190,0 × 54,4", "3144", "Sin soporte en STL · Laminador sostiene pórticos y vagones · 1 pieza"],
         ],
         [50.0, 14.0, 34.0, 18.0, 68.0],
         fontsize=7.3,

@@ -1,18 +1,18 @@
 carpeta,pieza,cantidad,sets,gramos_pieza,sosten_cm3,medida,estado
 P1-probeta-encaje,P1-MAC-G-015,1,P1-probeta-encaje,109,0.0,verde,imprimir
 P1-probeta-encaje,P1-HEM-G-015,1,P1-probeta-encaje,108,0.0,verde,imprimir
-P1-probeta-encaje,P1-MAC-G-020,1,P1-probeta-encaje,109,0.1,verde,imprimir
-P1-probeta-encaje,P1-HEM-G-020,1,P1-probeta-encaje,108,0.1,verde,imprimir
-P1-probeta-encaje,P1-MAC-G-025,1,P1-probeta-encaje,109,0.1,verde,imprimir
-P1-probeta-encaje,P1-HEM-G-025,1,P1-probeta-encaje,108,0.1,verde,imprimir
+P1-probeta-encaje,P1-MAC-G-020,1,P1-probeta-encaje,109,0.0,verde,imprimir
+P1-probeta-encaje,P1-HEM-G-020,1,P1-probeta-encaje,108,0.0,verde,imprimir
+P1-probeta-encaje,P1-MAC-G-025,1,P1-probeta-encaje,109,0.0,verde,imprimir
+P1-probeta-encaje,P1-HEM-G-025,1,P1-probeta-encaje,108,0.0,verde,imprimir
 P1-probeta-encaje,P1-MAC-E-015,1,P1-probeta-encaje,109,0.0,verde,imprimir
 P1-probeta-encaje,P1-HEM-E-015,1,P1-probeta-encaje,108,0.0,verde,imprimir
-P1-probeta-encaje,P1-MAC-E-020,1,P1-probeta-encaje,109,0.1,verde,imprimir
-P1-probeta-encaje,P1-HEM-E-020,1,P1-probeta-encaje,108,0.1,verde,imprimir
-P1-probeta-encaje,P1-MAC-E-025,1,P1-probeta-encaje,109,0.1,verde,imprimir
-P1-probeta-encaje,P1-HEM-E-025,1,P1-probeta-encaje,108,0.1,verde,imprimir
-00-comun,K-PATIN-G,1,S0-kit-lua S1-camino,116,94.4,verde,imprimir
-00-comun,K-ZOCALO-G,2,S0-kit-lua S1-camino S2-estacion-sonido S3-laboratorio-rampas S4-maquina-soplo S5-puente-equilibrio S6-jardin,568,1.7,verde,imprimir
+P1-probeta-encaje,P1-MAC-E-020,1,P1-probeta-encaje,109,0.0,verde,imprimir
+P1-probeta-encaje,P1-HEM-E-020,1,P1-probeta-encaje,108,0.0,verde,imprimir
+P1-probeta-encaje,P1-MAC-E-025,1,P1-probeta-encaje,109,0.0,verde,imprimir
+P1-probeta-encaje,P1-HEM-E-025,1,P1-probeta-encaje,108,0.0,verde,imprimir
+00-comun,K-PATIN-G,1,S0-kit-lua S1-camino,116,0.0,verde,imprimir
+00-comun,K-ZOCALO-G,2,S0-kit-lua S1-camino S2-estacion-sonido S3-laboratorio-rampas S4-maquina-soplo S5-puente-equilibrio S6-jardin,568,0.0,verde,imprimir
 00-comun,K-PLACA-INICIO,1,S0-kit-lua S1-camino,31,0.0,verde,imprimir
 00-comun,K-PLACA-META,1,S0-kit-lua S1-camino,31,0.0,verde,imprimir
 00-comun,K-PLACA-ESCUCHA,1,S0-kit-lua S2-estacion-sonido,31,0.0,verde,imprimir
@@ -31,7 +31,7 @@ S1-camino,S1-CMD-SAL-G,1,S1-camino,17,0.0,verde,imprimir
 S1-camino,S1-DEST-PARQUE,1,S1-camino,31,0.0,verde,imprimir
 S1-camino,S1-DEST-CAMA,1,S1-camino,31,0.0,verde,imprimir
 S2-estacion-sonido,S2-BAL-BASE-E,1,S2-estacion-sonido,221,0.0,verde,imprimir
-S2-estacion-sonido,S2-BAL-BRAZO-E,1,S2-estacion-sonido,55,7.9,verde,imprimir
+S2-estacion-sonido,S2-BAL-BRAZO-E,1,S2-estacion-sonido,55,0.0,verde,imprimir
 S2-estacion-sonido,S2-RES-AZU-E-A,1,S2-estacion-sonido,398,0.0,verde,imprimir
 S2-estacion-sonido,S2-RES-AZU-E-B,1,S2-estacion-sonido,397,0.0,verde,imprimir
 S2-estacion-sonido,S2-RES-AZU-E-C,1,S2-estacion-sonido,403,0.0,verde,imprimir
@@ -41,44 +41,48 @@ S2-estacion-sonido,S2-RES-AMA-E-C,1,S2-estacion-sonido,413,0.0,verde,imprimir
 S2-estacion-sonido,S2-RES-ROJ-E-A,1,S2-estacion-sonido,412,0.0,verde,imprimir
 S2-estacion-sonido,S2-RES-ROJ-E-B,1,S2-estacion-sonido,408,0.0,verde,imprimir
 S2-estacion-sonido,S2-RES-ROJ-E-C,1,S2-estacion-sonido,411,0.0,verde,imprimir
-S2-estacion-sonido,S2-RAS-E,2,S2-estacion-sonido,124,1.2,verde,imprimir
-S2-estacion-sonido,S2-ESP-E,1,S2-estacion-sonido,100,0.9,verde,imprimir
-00-comun,S3-PIL-1-G,1,S2-estacion-sonido S3-laboratorio-rampas S5-puente-equilibrio,46,0.6,verde,imprimir
-00-comun,S3-PIL-2-G,1,S2-estacion-sonido S3-laboratorio-rampas S5-puente-equilibrio,46,0.6,verde,imprimir
-00-comun,S3-PIL-3-G,1,S2-estacion-sonido S3-laboratorio-rampas S5-puente-equilibrio,46,0.6,verde,imprimir
-00-comun,S3-PIL-4-G,1,S2-estacion-sonido S3-laboratorio-rampas S5-puente-equilibrio,46,0.7,verde,imprimir
-00-comun,S3-PIL-5-G,1,S2-estacion-sonido S3-laboratorio-rampas S5-puente-equilibrio,46,0.7,verde,imprimir
-00-comun,S3-PIL-6-G,1,S2-estacion-sonido S3-laboratorio-rampas S5-puente-equilibrio,47,0.8,verde,imprimir
+S2-estacion-sonido,S2-RAS-E,2,S2-estacion-sonido,124,0.0,verde,imprimir
+S2-estacion-sonido,S2-ESP-E,1,S2-estacion-sonido,100,0.0,verde,imprimir
+00-comun,S3-PIL-1-G,1,S2-estacion-sonido S3-laboratorio-rampas S5-puente-equilibrio,46,0.0,verde,imprimir
+00-comun,S3-PIL-2-G,1,S2-estacion-sonido S3-laboratorio-rampas S5-puente-equilibrio,46,0.0,verde,imprimir
+00-comun,S3-PIL-3-G,1,S2-estacion-sonido S3-laboratorio-rampas S5-puente-equilibrio,46,0.0,verde,imprimir
+00-comun,S3-PIL-4-G,1,S2-estacion-sonido S3-laboratorio-rampas S5-puente-equilibrio,46,0.0,verde,imprimir
+00-comun,S3-PIL-5-G,1,S2-estacion-sonido S3-laboratorio-rampas S5-puente-equilibrio,46,0.0,verde,imprimir
+00-comun,S3-PIL-6-G,1,S2-estacion-sonido S3-laboratorio-rampas S5-puente-equilibrio,47,0.0,verde,imprimir
 S3-laboratorio-rampas,S3-BIS-G,1,S3-laboratorio-rampas,167,0.0,verde,imprimir
-S3-laboratorio-rampas,S3-RAM-G,1,S3-laboratorio-rampas,177,1.5,verde,imprimir
-S3-laboratorio-rampas,S3-FRI-G,1,S3-laboratorio-rampas,160,0.4,verde,imprimir
+S3-laboratorio-rampas,S3-RAM-G,1,S3-laboratorio-rampas,177,0.0,verde,imprimir
+S3-laboratorio-rampas,S3-FRI-G,1,S3-laboratorio-rampas,160,0.0,verde,imprimir
 S3-laboratorio-rampas,S3-CUR-PER-G,1,S3-laboratorio-rampas,576,0.0,verde,imprimir
-S3-laboratorio-rampas,S3-REC-G,1,S3-laboratorio-rampas,229,0.5,verde,imprimir
-S3-laboratorio-rampas,S3-ESF-LIS-G,2,S3-laboratorio-rampas,59,1.4,verde,imprimir
-S3-laboratorio-rampas,S3-ESF-RUG-G,2,S3-laboratorio-rampas,59,1.4,verde,imprimir
-S4-maquina-soplo,S4-CAN-E,2,S4-maquina-soplo,483,11.6,verde,imprimir
-S4-maquina-soplo,S4-COD-E,1,S4-maquina-soplo,147,13.7,verde,imprimir
-S4-maquina-soplo,S4-ROT-JAULA-E,1,S4-maquina-soplo,224,11.8,verde,imprimir
-S4-maquina-soplo,S4-ROT-ASPAS-E,1,S4-maquina-soplo,13,11.5,verde,imprimir
+S3-laboratorio-rampas,S3-REC-G,1,S3-laboratorio-rampas,229,0.0,verde,imprimir
+S3-laboratorio-rampas,S3-ESF-LIS-G,2,S3-laboratorio-rampas,59,0.0,verde,imprimir
+S3-laboratorio-rampas,S3-ESF-RUG-G,2,S3-laboratorio-rampas,59,0.0,verde,imprimir
+S4-maquina-soplo,S4-CAN-E,2,S4-maquina-soplo,483,0.0,verde,imprimir
+S4-maquina-soplo,S4-COD-E,1,S4-maquina-soplo,147,0.0,verde,imprimir
+S4-maquina-soplo,S4-ROT-JAULA-E,1,S4-maquina-soplo,224,0.0,verde,imprimir
+S4-maquina-soplo,S4-ROT-ASPAS-E,1,S4-maquina-soplo,13,0.0,verde,imprimir
 S4-maquina-soplo,S4-COM-LIG-E,1,S4-maquina-soplo,34,0.0,verde,imprimir
 S4-maquina-soplo,S4-COM-PES-E,1,S4-maquina-soplo,68,0.0,verde,imprimir
-S4-maquina-soplo,S4-MOL-JAULA-G,1,S4-maquina-soplo,507,16.7,verde,imprimir
-S4-maquina-soplo,S4-MOL-ASPAS-G,1,S4-maquina-soplo,26,22.8,verde,imprimir
+S4-maquina-soplo,S4-MOL-JAULA-G,1,S4-maquina-soplo,507,0.0,verde,imprimir
+S4-maquina-soplo,S4-MOL-ASPAS-G,1,S4-maquina-soplo,26,0.0,verde,imprimir
 S5-puente-equilibrio,S5-FUL-G,1,S5-puente-equilibrio,154,0.0,verde,imprimir
-S5-puente-equilibrio,S5-VIG-G,1,S5-puente-equilibrio,193,0.8,verde,imprimir
-S5-puente-equilibrio,S5-MAS-20,2,S5-puente-equilibrio,20,4.8,verde,imprimir
-S5-puente-equilibrio,S5-MAS-40,1,S5-puente-equilibrio,40,6.6,verde,imprimir
-S5-puente-equilibrio,S5-MAS-60,1,S5-puente-equilibrio,60,8.2,verde,imprimir
+S5-puente-equilibrio,S5-VIG-G,1,S5-puente-equilibrio,193,0.0,verde,imprimir
+S5-puente-equilibrio,S5-MAS-20,2,S5-puente-equilibrio,20,0.0,verde,imprimir
+S5-puente-equilibrio,S5-MAS-40,1,S5-puente-equilibrio,40,0.0,verde,imprimir
+S5-puente-equilibrio,S5-MAS-60,1,S5-puente-equilibrio,60,0.0,verde,imprimir
 S5-puente-equilibrio,S5-PAS-G,4,S5-puente-equilibrio,51,0.0,verde,imprimir
 S6-jardin,S6-TIE-G,1,S6-jardin,544,0.0,verde,imprimir
-S6-jardin,S6-SEM-G,1,S6-jardin,84,9.2,verde,imprimir
+S6-jardin,S6-SEM-G,1,S6-jardin,84,0.0,verde,imprimir
 S6-jardin,S6-TAL-G,5,S6-jardin,89,0.0,verde,imprimir
-S6-jardin,S6-FLO-G,1,S6-jardin,83,24.0,verde,imprimir
-S6-jardin,S6-COP-G,1,S6-jardin,142,48.8,verde,imprimir
-S6-jardin,S6-FRU-MAN,1,S6-jardin,58,2.3,verde,imprimir
-S6-jardin,S6-FRU-NAR,1,S6-jardin,58,1.9,verde,imprimir
-S6-jardin,S6-FRU-MANZ,1,S6-jardin,58,1.9,verde,imprimir
-S6-jardin,S6-PRI-AZU,1,S6-jardin,65,4.2,verde,imprimir
-S6-jardin,S6-PRI-AMA,1,S6-jardin,90,3.3,verde,imprimir
+S6-jardin,S6-FLO-G,1,S6-jardin,83,0.0,verde,imprimir
+S6-jardin,S6-COP-G,1,S6-jardin,142,0.0,verde,imprimir
+S6-jardin,S6-FRU-MAN,1,S6-jardin,58,0.0,verde,imprimir
+S6-jardin,S6-FRU-NAR,1,S6-jardin,58,0.0,verde,imprimir
+S6-jardin,S6-FRU-MANZ,1,S6-jardin,58,0.0,verde,imprimir
+S6-jardin,S6-PRI-AZU,1,S6-jardin,65,0.0,verde,imprimir
+S6-jardin,S6-PRI-AMA,1,S6-jardin,90,0.0,verde,imprimir
 S6-jardin,S6-SIL-ARB,1,S6-jardin,124,0.0,verde,imprimir
 S6-jardin,S6-SIL-LUN,1,S6-jardin,112,0.0,verde,imprimir
+S8-policia,S8-policia-escala-60,1,S8-policia,741,0.0,verde,imprimir
+S9-bomberos,S9-bomberos-escala-60,1,S9-bomberos,744,0.0,verde,imprimir
+S10-hospital,S10-hospital-escala-60,1,S10-hospital,821,0.0,verde,imprimir
+S11-trenes,S11-trenes-escala-33,1,S11-trenes,184,0.0,verde,imprimir

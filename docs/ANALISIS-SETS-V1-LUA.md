@@ -11,9 +11,9 @@
 ## 0. Lo que NO se cumple o no está comprobado, primero
 
 1. **Sets 8 a 11 (30/10, orden de Frank: van todos): van escalados a la cama**
-   (60 % y 33 %, `agents/paquete_escenas.py`); policía en verde, bomberos,
-   hospital y trenes con un fallo de medida cada uno (ver el LEEME). Lo de
-   abajo sigue valiendo para jugar con ellos:
+   (60 % y 33 %, `agents/paquete_escenas.py`) y **sin soportes modelados en el STL**
+   (por petición de Masque3D del 30/10/2026 para laminar con los soportes de su
+   propio software). Lo de abajo sigue valiendo para jugar con ellos:
    Cada uno es un único STL decorativo de 318 × 191 a 491 × 582 mm, con 1 a 12
    cuerpos sueltos y una gata de juguete fundida al suelo que no es Lúa V5. No
    caben en la cama y no tienen fuente (solo el STL), así que no se pueden
@@ -49,7 +49,7 @@
 | El patín del Set 1 | geometría | no se enganchaba a nada; su carril recto de 50 mm no pasa por la curva de r 63,6 (flecha 4,9 mm con 0,4 de holgura) | patín de Lúa V5: dos clics en la base y dos pivotes redondos (pasan por curva y T) |
 | Lúa sobre el camino | `agents/check_lua_camino.py` | la base de Lúa pisaba las fichas de comando (sobresalen 4,4 mm): 6 808 mm³ de choque | 0 mm³ en recta, curva y T: el patín levanta la base 13,2 mm |
 | El zócalo | geometría | una baldosa con bolsillo: nada sujetaba ni orientaba a Lúa, y la placa quedaba debajo de ella | cuna con la huella de Lúa (abierta por delante para salir deslizando); al revés, las patas chocan (1 228 mm³); placa en una franja aparte |
-| Voladizos sin sostén | `check-v3-piezas.py` de lua-firmware | 70 de 114 STL (contando las copias que se repiten entre carpetas) | 0: el sostén va dibujado en el STL (`sosten.py`, Blender) |
+| Voladizos y soportes | `check-v3-piezas.py` / correo de Masque3D (30/10/2026) | 70 de 114 STL con voladizos | **0 soportes modelados en los 87 STL (`sosten_cm3 = 0.0`)**: Masque3D pidió el 30/10/2026 eliminar los soportes de todos los sets para añadirlos en su laminador sin encarecer la tirada (con bloqueo de soporte dentro de las roscas del Set 6) |
 | Paredes < 3,2 mm | ídem | 27 de 114 STL (7 son el mismo zócalo, con un filo de 0,5): iconos de 2,4, filos de 0,02 en fulcro, prismas, pantalla, jaula, curva peraltada… | 0 fuera de los dientes de rosca |
 | La rosca del jardín | cuerpos del STL | 36 tacos cuadrados que no tocaban el núcleo: 37 cuerpos sueltos en la semilla, 38 en el tallo | hélice continua, flancos a 51°, diente de 3 × 8 mm; no sale tirando (200 mm³ de choque a 1 mm), sí desenroscando |
 | Aspas del rotor y del molinete | cuerpos del STL | las 4 aspas sueltas del eje | nacen dentro del eje |

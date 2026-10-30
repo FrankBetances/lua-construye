@@ -926,16 +926,18 @@ def render_taller_sostenes(rapido: bool):
 
 def main():
     rapido = "--rapido" in sys.argv
-    print(f"· render_manual_sets · Blender {bpy.app.version_string} · rapido={rapido}")
-    render_portada(rapido)
-    render_p1(rapido)
-    render_s0(rapido)
-    render_s1(rapido)
-    render_s2(rapido)
-    render_s3(rapido)
-    render_s4(rapido)
-    render_s5(rapido)
-    render_s6(rapido)
+    solo_cama = "--solo-cama" in sys.argv
+    print(f"· render_manual_sets · Blender {bpy.app.version_string} · rapido={rapido} · solo_cama={solo_cama}")
+    if not solo_cama:
+        render_portada(rapido)
+        render_p1(rapido)
+        render_s0(rapido)
+        render_s1(rapido)
+        render_s2(rapido)
+        render_s3(rapido)
+        render_s4(rapido)
+        render_s5(rapido)
+        render_s6(rapido)
     render_oficios(rapido)
     render_taller_sostenes(rapido)
     print("· Todas las imágenes 3D del manual generadas en docs/cad/manual/")

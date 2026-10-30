@@ -1,9 +1,6 @@
-# Construye con Lúa · sets v1 · STL para masque3d · 29/10/2026 · NO PROBADO
+# Construye con Lúa · sets v1 · STL sin soportes para masque3d · 30/10/2026 · NO PROBADO
 
-**Nada de esto se ha impreso.** Cada STL pasa la medida de pieza de lua-firmware
-(cerrada, apoyada en la cama, nada colgando a más de 45° sin su sostén, paredes
-de 3,2 mm o más fuera de los dientes de rosca). Eso dice que se puede imprimir
-según el fichero. **No dice que encaje, que gire ni que aguante.**
+**Nada de esto se ha impreso.** Cada STL va **limpio, sin soportes dibujados dentro del fichero** (por indicación de Masque3D del 30/10/2026 para no encarecer la impresión), cerrado (2-manifold en `float32`), apoyado en `z = 0`, en milímetros sin escalar y con paredes de 3,2 mm o más fuera de los dientes de rosca. **El taller aplica los soportes directamente en el laminador** donde hagan falta. Eso dice que se puede laminar e imprimir según el fichero; **no dice que encaje, que gire ni que aguante.**
 
 ## Antes de imprimir: lo que falta o no está comprobado
 
@@ -25,42 +22,41 @@ según el fichero. **No dice que encaje, que gire ni que aguante.**
    No hay que cambiarle nada: el patín de esta carpeta es una **bandeja** donde
    apoya el fondo del cubo. Sujeta a Lúa por los lados; si se levanta a Lúa,
    el patín se queda en la ranura.
-6. **Cantidad de PLA: unos 17,8 kg con el relleno al 100 %.** Es una cota,
-   no una medida: con el relleno de abajo pesa bastante menos.
+6. **Cantidad de PLA: unos 17,8 kg en los sets 0 a 6 (más 2,5 kg en las 4 maquetas S8–S11) con relleno al 100 %.**
+   Es una cota superior maciza, no el peso real: con relleno del 30–40 % pesa bastante menos.
 7. **Sets 8 a 11 (policía, bomberos, hospital, trenes): van ESCALADOS** a la
    cama (policía, bomberos y hospital al 60 %; trenes al 33 %), en una pieza
-   cada uno y con su sostén dibujado. Son maquetas: no casan con Lúa V5. Medida:
-   policía en verde; **bomberos** con un voladizo de 152 mm² sin sostén,
-   **hospital** con pared fina y **trenes** con sostén pegado a la pieza. En
-   esas tres el taller puede **añadir soporte automático** donde su programa lo
-   pida (excepción a la regla de abajo).
+   cada uno y **sin soportes modelados** (el taller los añade en el laminador).
+   Son maquetas decorativas: no casan con Lúa V5.
 
-## Cómo imprimir
+## Cómo imprimir en Masque3D
 
-| | |
+| Parámetro | Indicación para el taller |
 | :--- | :--- |
-| Material | PLA |
-| Orientación | Cada STL va ya en su postura de cama, en mm, sin escalar. No girarlas. |
-| Sostén | **Ya va dibujado dentro del STL** donde hace falta (tabiques finos que se quitan con la mano). **No añadir soportes automáticos.** Las roscas no llevan ninguno dentro. |
-| Perímetros | 6 como mínimo |
-| Relleno | 100 % en piezas pequeñas (fichas, placas, patín, aspas, pasadores); 30–40 % en baldosas, zócalos y bloques grandes |
-| Cama | Todas caben en 200 × 200 × 200 mm |
+| **Material** | PLA |
+| **Orientación** | Cada STL va ya en su postura de cama (`z = 0`), en mm, sin escalar. |
+| **Soportes (Laminador)** | **Ningún STL lleva soporte dibujado dentro (`sosten_cm3 = 0.0`).** El taller genera los soportes necesarios en su laminador (carriles inferiores de `K-PATIN-G`, ejes de `S2-BAL-BRAZO-E`, `S3-RAM-G`, `S4-ROT-ASPAS-E` y `S4-MOL-ASPAS-G`, esferas `S3-ESF-*`, codo `S4-COD-E`, frutos `S6-FRU-*`, pétalos de `S6-FLO-G` y maquetas `S8..S11`). |
+| **Precaución en roscas (Set 6)** | **Bloquear soportes dentro de las roscas** de `S6-SEM-G`, `S6-TAL-G`, `S6-FLO-G` y `S6-COP-G` (sus flancos a 51° se imprimen en vertical sin soporte; un soporte dentro del filete impide enroscarlas). |
+| **Perímetros** | 6 como mínimo |
+| **Relleno** | 100 % en piezas pequeñas (fichas, placas, patín, aspas, pasadores); 30–40 % en baldosas, zócalos y bloques grandes |
+| **Cama** | Todas caben en 200 × 200 × 200 mm |
 
-## Qué hay
+## Qué hay en la carpeta (87 STL · 0 soportes modelados)
 
 `piezas.csv` lista cada STL con su carpeta, **cuántas copias imprimir**, en qué
-sets se usa, sus gramos a relleno 100 % y el resultado de la medida.
+sets se usa, sus gramos a relleno 100 % (`sosten_cm3 = 0.0` en todas) y el estado.
 
 | Carpeta | Qué es |
 | :--- | :--- |
 | `00-comun` | Lo que comparten los sets: el zócalo con la cuna de Lúa V5 (**2 copias**: INICIO y META del Set 1), el patín de Lúa, las placas de identidad y los seis pilares |
-| `P1-probeta-encaje` | Probetas de holgura. No son juguete |
+| `P1-probeta-encaje` | Probetas de holgura (6 parejas G y 6 parejas E). No son juguete |
 | `S1-camino` | Baldosas, curvas, T, fichas de comando y placas de destino |
 | `S2-estacion-sonido` | Resonadores (9 variantes), banco y brazo del martillo, raspador, espátula |
-| `S3-laboratorio-rampas` | Rampa, bisagra, tramo de fricción, curva peraltada, receptor y dos esferas de Ø45 |
+| `S3-laboratorio-rampas` | Rampa, bisagra, tramo de fricción, curva peraltada, receptor y esferas de Ø45 |
 | `S4-maquina-soplo` | Canal, codo, rotor y molinete (jaula + aspas), compuertas |
-| `S5-puente-equilibrio` | Fulcro, viga, masas de 20, 40 y 60 g (objetivo, sin pesar), clip |
+| `S5-puente-equilibrio` | Fulcro, viga, masas de 20, 40 y 60 g (objetivo volumétrico), clip |
 | `S6-jardin` | Tierra, semilla, tallos (5), flor, copa, frutos, prismas y pantallas |
+| `S8-policia` .. `S11-trenes` | Maquetas de una pieza escaladas a 190 mm de cama (60 % en S8–S10; 33 % en S11), limpias sin soporte modelado |
 
 Cómo se generó y qué se cambió respecto a la v1: `docs/ANALISIS-SETS-V1-LUA.md`
-del repositorio lua-construye.
+del repositorio `lua-construye`.
